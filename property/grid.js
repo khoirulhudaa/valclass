@@ -11,10 +11,10 @@ let propertiesGrid = [
     'v-col'
 ]
 let valueGrids = [
-    `grid-template-columns: auto;`,
-    `grid-template-columns: auto auto;`,
-    `grid-template-columns: auto auto auto;`,
-    `grid-template-columns: auto auto auto auto;`,
+    `grid-template-columns: auto; display: flex; flex-wrap: wrap;flex-direction: column;padding: 10px;box-sizing: border-box;`,
+    `grid-template-columns: auto auto; display: flex; flex-wrap: wrap;flex-direction: column;box-sizing: border-box;`,
+    `grid-template-columns: auto auto auto; display: flex; flex-wrap: wrap;flex-direction: column;box-sizing: border-box;`,
+    `grid-template-columns: auto auto auto auto; display: flex; flex-wrap: wrap;flex-direction: column;box-sizing: border-box;`,
     `grid-gap: 5px`,
     `grid-gap: 10px`,
     `grid-gap: 15px`,

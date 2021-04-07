@@ -33,6 +33,7 @@ let propertiesComponent = [
    'v-modal-light',
    'v-modal-smooth',
    'v-modal-green',
+   'v-card'
 ]
 
 let valueComponent = [
@@ -462,10 +463,10 @@ let valueComponent = [
      }`,
    `
      .v-navbar {
+      position: relative;
       z-index: 999;
       display: flex;
       font-family:sans-serif;
-      background-color: rgb(107, 107, 103);
       justify-content: space-around;
       height: 64px;
       align-items: center;
@@ -584,7 +585,6 @@ let valueComponent = [
       z-index: 999;
       display: flex;
       font-family:sans-serif;
-      background-color: rgb(107, 107, 103);
       justify-content: space-around;
       height: 64px;
       overflow: hidden;
@@ -814,11 +814,12 @@ let valueComponent = [
       background-color: rgb(14, 253, 201);
    }`,
    `.v-modal {
-      position: absolute;
+      position: fixed;
       top: 0;
       left: 0;
       padding: 0;
       width: 100vw;
+      z-index: 99999;
       height: 100vh;
       display: flex;
       justify-content: center;
@@ -849,7 +850,7 @@ let valueComponent = [
       overflow: hidden;
       border-radius: 8px;
       opacity: 1;
-      z-index: 3;
+      z-index: 99999;
       background-color: #fff;
       animation: slideUp-12gdg .5s ease-in;
       box-shadow: 2px 2px 20px rgb(73, 73, 73);
@@ -926,7 +927,7 @@ let valueComponent = [
          overflow: hidden;
          border-radius: 8px;
          opacity: 1;
-         z-index: 3;
+         z-index: 99999;
          background-color: #fff;
          animation: slideUp-12gdg .5s ease-in;
          box-shadow: 2px 2px 20px rgb(73, 73, 73);
@@ -941,6 +942,7 @@ let valueComponent = [
       padding: 0;
       width: 100vw;
       height: 100vh;
+      z-index: 99999;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -970,7 +972,7 @@ let valueComponent = [
       overflow: hidden;
       border-radius: 8px;
       opacity: 1;
-      z-index: 3;
+      z-index: 99999;
       background-color: #fff;
       animation: slideUp-12gdg .5s ease-in;
       box-shadow: 2px 2px 20px rgb(73, 73, 73);
@@ -1047,7 +1049,7 @@ let valueComponent = [
          overflow: hidden;
          border-radius: 8px;
          opacity: 1;
-         z-index: 3;
+         z-index: 99999;
          background-color: #fff;
          animation: slideUp-12gdg .5s ease-in;
          box-shadow: 2px 2px 20px rgb(73, 73, 73);
@@ -1062,6 +1064,7 @@ let valueComponent = [
       padding: 0;
       width: 100vw;
       height: 100vh;
+      z-index: 99999;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -1091,7 +1094,7 @@ let valueComponent = [
       overflow: hidden;
       border-radius: 8px;
       opacity: 1;
-      z-index: 3;
+      z-index: 99999;
       background-color: #fff;
       animation: slideUp-12gdg .5s ease-in;
       box-shadow: 2px 2px 20px rgb(73, 73, 73);
@@ -1168,7 +1171,7 @@ let valueComponent = [
          overflow: hidden;
          border-radius: 8px;
          opacity: 1;
-         z-index: 3;
+         z-index: 99999;
          background-color: #fff;
          animation: slideUp-12gdg .5s ease-in;
          box-shadow: 2px 2px 20px rgb(73, 73, 73);
@@ -1181,6 +1184,7 @@ let valueComponent = [
       top: 0;
       left: 0;
       padding: 0;
+      z-index: 99999;
       width: 100vw;
       height: 100vh;
       display: flex;
@@ -1212,7 +1216,7 @@ let valueComponent = [
       overflow: hidden;
       border-radius: 8px;
       opacity: 1;
-      z-index: 3;
+      z-index: 99999;
       background-color: #fff;
       animation: slideUp-12gdg .5s ease-in;
       box-shadow: 2px 2px 20px rgb(73, 73, 73);
@@ -1289,7 +1293,7 @@ let valueComponent = [
          overflow: hidden;
          border-radius: 8px;
          opacity: 1;
-         z-index: 3;
+         z-index: 99999;
          background-color: #fff;
          animation: slideUp-12gdg .5s ease-in;
          box-shadow: 2px 2px 20px rgb(73, 73, 73);
@@ -1333,7 +1337,7 @@ let valueComponent = [
       overflow: hidden;
       border-radius: 8px;
       opacity: 1;
-      z-index: 3;
+      z-index: 99999;
       background-color: #fff;
       animation: slideUp-12gdg .5s ease-in;
       box-shadow: 2px 2px 20px rgb(73, 73, 73);
@@ -1410,7 +1414,7 @@ let valueComponent = [
          overflow: hidden;
          border-radius: 8px;
          opacity: 1;
-         z-index: 3;
+         z-index: 99999;
          background-color: #fff;
          animation: slideUp-12gdg .5s ease-in;
          box-shadow: 2px 2px 20px rgb(73, 73, 73);
@@ -1452,9 +1456,9 @@ let valueComponent = [
       width: 500px;
       min-height: 250px;;
       overflow: hidden;
-      border-radius: 8px;
+      border-radius: 8px;z-index: 99999;
       opacity: 1;
-      z-index: 3;
+      z-index: 99999;
       background-color: #fff;
       animation: slideUp-12gdg .5s ease-in;
       box-shadow: 2px 2px 20px rgb(73, 73, 73);
@@ -1531,7 +1535,7 @@ let valueComponent = [
          overflow: hidden;
          border-radius: 8px;
          opacity: 1;
-         z-index: 3;
+         z-index: 99999;
          background-color: #fff;
          animation: slideUp-12gdg .5s ease-in;
          box-shadow: 2px 2px 20px rgb(73, 73, 73);
@@ -1575,7 +1579,7 @@ let valueComponent = [
       overflow: hidden;
       border-radius: 8px;
       opacity: 1;
-      z-index: 3;
+      z-index: 99999;
       background-color: #fff;
       animation: slideUp-12gdg .5s ease-in;
       box-shadow: 2px 2px 20px rgb(73, 73, 73);
@@ -1652,7 +1656,7 @@ let valueComponent = [
          overflow: hidden;
          border-radius: 8px;
          opacity: 1;
-         z-index: 3;
+         z-index: 99999;
          background-color: #fff;
          animation: slideUp-12gdg .5s ease-in;
          box-shadow: 2px 2px 20px rgb(73, 73, 73);
@@ -1696,7 +1700,7 @@ let valueComponent = [
       overflow: hidden;
       border-radius: 8px;
       opacity: 1;
-      z-index: 3;
+      z-index: 99999;
       background-color: #fff;
       animation: slideUp-12gdg .5s ease-in;
       box-shadow: 2px 2px 20px rgb(73, 73, 73);
@@ -1773,7 +1777,7 @@ let valueComponent = [
          overflow: hidden;
          border-radius: 8px;
          opacity: 1;
-         z-index: 3;
+         z-index: 99999;
          background-color: #fff;
          animation: slideUp-12gdg .5s ease-in;
          box-shadow: 2px 2px 20px rgb(73, 73, 73);
@@ -1817,7 +1821,7 @@ let valueComponent = [
       overflow: hidden;
       border-radius: 8px;
       opacity: 1;
-      z-index: 3;
+      z-index: 99999;
       background-color: #fff;
       animation: slideUp-12gdg .5s ease-in;
       box-shadow: 2px 2px 20px rgb(73, 73, 73);
@@ -1894,7 +1898,7 @@ let valueComponent = [
          overflow: hidden;
          border-radius: 8px;
          opacity: 1;
-         z-index: 3;
+         z-index: 99999;
          background-color: #fff;
          animation: slideUp-12gdg .5s ease-in;
          box-shadow: 2px 2px 20px rgb(73, 73, 73);
@@ -1938,7 +1942,7 @@ let valueComponent = [
       overflow: hidden;
       border-radius: 8px;
       opacity: 1;
-      z-index: 3;
+      z-index: 99999;
       background-color: #fff;
       animation: slideUp-12gdg .5s ease-in;
       box-shadow: 2px 2px 20px rgb(73, 73, 73);
@@ -2015,13 +2019,63 @@ let valueComponent = [
          overflow: hidden;
          border-radius: 8px;
          opacity: 1;
-         z-index: 3;
+         z-index: 99999;
          background-color: #fff;
          animation: slideUp-12gdg .5s ease-in;
          box-shadow: 2px 2px 20px rgb(73, 73, 73);
          transform: rotateX(90deg);
       }
    }
+   `,
+   `
+   .v-card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: rgb(255, 255, 255);
+      align-items: center;
+      min-height: max-content;
+      margin: 10px;
+      border-radius: 5px;
+      box-shadow: 2px 2px 22px rgba(70, 70, 70, 0.226);
+      overflow: hidden;   
+  }
+  
+  .v-card-images {
+      position: relative;
+      width: 100%;
+      height: 180px;
+      display: flex;
+      padding: 0;
+      box-sizing: border-box;
+      align-items: center;
+      overflow: hidden;
+      background-size: cover;
+      background-position: center;
+  }
+  
+  .v-card-images img {
+      position: relative;
+      width: 100%;
+      height: 100%;
+  }
+  
+  .v-card-content {
+      width: 100%;
+      height: max-content;
+      padding: 10px;
+  }
+  
+  .v-card-content h2 {
+      font-weight: bold;
+      margin: 10px;
+  }
+  
+  .v-card-content p {
+      font-weight: 500;
+      margin: 10px;
+  }
    `
 ]
 for (var i = 0; i <= propertiesComponent.length; i++) {
@@ -2031,6 +2085,12 @@ for (var i = 0; i <= propertiesComponent.length; i++) {
                `;
        document.getElementsByTagName('style')[0].appendChild(document.createTextNode(s));
    }
+}
+
+if(document.querySelector('.v-brand')) {
+   document.querySelector('.v-brand').addEventListener('click', () => {
+      window.location.reload();
+   })
 }
 
 if (document.querySelector('.modal')) {

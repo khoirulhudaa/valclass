@@ -30,7 +30,7 @@ let focuss = [
     `
     .v-focus-pulse:focus {
         transition: 0.3s;
-        opacity: 0.7;
+        opacity: 0.6;
     }`,
     `
     .v-focus-width:focus {
