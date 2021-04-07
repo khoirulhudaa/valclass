@@ -1,8 +1,8 @@
 let propertiesColumnCustom = [
     'v-col',
-    'v-col-2',
-    'v-col-3',
-    'v-col-4'
+    'v-cols-2',
+    'v-cols-3',
+    'v-cols-4'
 ]
 let valueColumnCustom = [
     `column-count: 1; 
