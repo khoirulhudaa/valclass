@@ -33,7 +33,8 @@ let propertiesComponent = [
    'v-modal-light',
    'v-modal-smooth',
    'v-modal-green',
-   'v-card'
+   'v-card',
+   'v-card-2',
 ]
 
 let valueComponent = [
@@ -2076,6 +2077,49 @@ let valueComponent = [
       font-weight: 500;
       margin: 10px;
   }
+   `,
+   `
+   .v-card-2 {
+      position: relative;
+      border-radius: 10px;
+      width: 370px;
+      overflow: hidden;
+      height: 180px;
+      margin: 20px;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 2px 2px 20px rgb(216, 216, 216);
+   }
+
+   .v-card-images-2 {
+      width: 35%;
+      overflow: hidden;
+      height: 100%;
+   }
+
+   .v-card-content-2 h2 {
+      font-weight: bold;
+   }
+
+   .v-card-content-2 p {
+      font-weight: 500;
+   }
+
+   .v-card-images-2 img {
+      width: 100%;
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
+
+   .v-card-content-2 {
+      padding: 0 5px 0 15px;
+      width: 65%;
+      height: 150px;
+   }
    `
 ]
 for (var i = 0; i <= propertiesComponent.length; i++) {
