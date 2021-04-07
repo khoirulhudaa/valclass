@@ -2084,7 +2084,7 @@ let valueComponent = [
       border-radius: 10px;
       width: 370px;
       overflow: hidden;
-      height: 180px;
+      height: 140px;
       margin: 20px;
       padding: 0;
       display: flex;
@@ -2097,6 +2097,11 @@ let valueComponent = [
       width: 35%;
       overflow: hidden;
       height: 100%;
+   }
+
+   .v-card-images-2:hover {
+      box-shadow: 0px 2px 20px rgb(173, 173, 173);
+      transition: 0.3s;
    }
 
    .v-card-content-2 h2 {
