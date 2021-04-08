@@ -679,6 +679,15 @@ if(document.querySelector("body").classList.contains("load")) {
     body.appendChild(script)
 }
 
+if(document.querySelector("body").classList.contains("image")) {
+    js = "./property/image.js";
+
+    script = document.createElement("script")
+    body = document.getElementsByTagName("body")[0]
+    script.src = js
+    body.appendChild(script)
+}
+
 //============================//==============================//
 
 // akhir dari pengkondisian untuk pemanggilan file property
