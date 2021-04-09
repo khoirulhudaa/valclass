@@ -172,7 +172,7 @@ let valueComponent = [
         cursor: pointer;
         margin: 10px;
         padding: 5px 15px;
-        background-color: rgb(2, 168, 245);
+        background-color: rgb(42, 131, 248);
         font-weight: 500;
         color: white;
         border: none;
@@ -202,7 +202,7 @@ let valueComponent = [
         cursor: pointer;
         margin: 10px;
         padding: 5px 15px;
-        background-color: rgb(42, 131, 248);
+        background-color: rgb(2, 168, 245);
         font-weight: 500;
         color: white;
         border: none;
