@@ -35,6 +35,7 @@ let propertiesComponent = [
    'v-modal-green',
    'v-card',
    'v-card-2',
+   'v-form'
 ]
 
 let valueComponent = [
@@ -2124,6 +2125,111 @@ let valueComponent = [
       padding: 0 5px 0 15px;
       width: 65%;
       height: 150px;
+   }
+   `,
+   ` 
+   .v-form {
+      position: relative;
+      margin-left: 20px;
+      height: max-content;
+      border-radius: 10px;
+      padding: 10px;
+      width: 600px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .v-form-section {
+      width: 100%;
+      display: flex;
+   }
+
+   .v-form-section:nth-child(2) {
+      display: block;
+   }
+
+   .v-form-section div:nth-child(2) {
+      margin-left: 10px;
+   }
+
+   .v-form label {
+      margin-top: -5px;
+   }
+
+   .v-form-section:nth-child(2) {
+      display: block;
+      margin-top: 15px;
+   }
+
+   .v-form input {
+      border-radius: 3px;
+      outline: none;
+      width: 100%;
+      margin: 10px 10px 10px 0;
+      font-weight: normal;
+      font-size: 19px;
+      border:1px solid rgb(201, 201, 201);
+      padding: 8px;
+   }
+
+   .v-form-caption {
+      margin-left: 1px;
+      color: rgb(172, 172, 172);
+   }
+
+   .v-btn-submit {
+      border: none;
+      outline: none;
+      cursor: pointer;
+      font-weight: 500;
+      padding: 4px 6px;
+      color: white;
+      margin-top: 15px;
+      border-radius: 4px;
+      font-size: 19px;
+      transition: 0.3s;
+   }
+
+   .v-btn-submit:hover {
+      filter: brightness(90%);
+      transition: 0.3s;
+   }
+
+   .v-form-checkbox {
+      display: flex;
+      margin-top: auto;
+      justify-content: left;
+      align-items: center;
+   }
+
+   .v-form-checkbox input {
+      width: max-content;
+   }
+
+   .v-form-checkbox label {
+      margin-top: 0px;
+      width: max-content;
+   }
+
+   .v-disabled {
+      transition: 0s;
+      filter: brightness(80%);
+   }
+
+   .v-disabled:hover {
+      transition: 0s;
+      cursor: default;
+      filter: brightness(80%);
+   }
+   
+   @media screen and (max-width: 575px){
+      .v-form {
+         width: 100%;
+         margin-left: 0px;
+      }
    }
    `
 ]
