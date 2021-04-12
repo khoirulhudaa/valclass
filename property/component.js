@@ -35,7 +35,9 @@ let propertiesComponent = [
    'v-modal-green',
    'v-card',
    'v-card-2',
-   'v-form'
+   'v-form',
+   'v-slider',
+   'v-swiper'
 ]
 
 let valueComponent = [
@@ -2231,6 +2233,202 @@ let valueComponent = [
          margin-left: 0px;
       }
    }
+   `,
+   `
+   .v-slider {
+      margin: 10px auto;
+      width: 800px;
+      max-width: 100%;
+      text-align: center;
+      transition: 0.5s;
+      color: white;
+  }
+  .v-slider h2 {
+      color: white;
+  }
+  .v-slider input[type=radio] {
+      display: none;
+      transition: 0.5s;
+  }
+  .v-slider label {
+      cursor: pointer;
+      text-decoration: none;
+      transition: 0.5s;
+  }
+  .v-slides {
+      transition: 0.5s;
+      background: #fff;
+      position: relative;
+      z-index: 1;
+  }
+  .v-overflow {
+      width: 100%;
+      overflow: hidden;
+      transition: 0.5s;
+      border-radius: 8px;
+  }
+  #slide1:checked ~ .v-slides .v-inner {
+      margin-left: 0%;
+      transition: 0.5s cubic-bezier(0. 770, 0.000, 0.175, 1.000);
+  }
+  #slide2:checked ~ .v-slides .v-inner {
+      margin-left: -100%;
+      transition: 0.5s cubic-bezier(0. 770, 0.000, 0.175, 1.000);
+  }
+  #slide3:checked ~ .v-slides .v-inner {
+      margin-left: -200%;
+      transition: 0.5s cubic-bezier(0. 770, 0.000, 0.175, 1.000);
+  }
+  #slide4:checked ~ .v-slides .v-inner {
+      margin-left: -300%;
+      transition: 0.5s cubic-bezier(0. 770, 0.000, 0.175, 1.000);
+  }
+  .v-slides .v-inner {
+      transition: 800ms;
+      width: 400%;
+      border-radius: 10px;
+      height: 400px;
+  }
+  .v-slides .v-slide {
+      position: relative;
+      width: 25%;
+      float: left;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      color: #fff;
+      background-color: rgb(184, 184, 184);
+  }
+  .v-slide h1 {
+      position: relative;
+      top: -110px;
+      color: white;
+      font-size: 35px;
+      opacity: 0.6;
+  }
+  .v-slide-content {
+      position: absolute;
+      bottom: 20px;
+      line-height: 1em;
+  }
+  .v-slides .slide_1 {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+  .v-slides .slide_2 {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+  .v-slides .slide_3 {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+  .v-slides .slide_4 {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+  .controls {
+      margin: -130px 0 0 0;
+      width: 100%;
+      height: 50px;
+      z-index: 3;
+      position: relative;
+  }
+  .controls label {
+      transition: opacity 0.2s ease-out;
+      display: none;
+      width: 50px;
+      height: 50px;
+      opacity: .4;
+  }
+  .controls label:hover {
+      opacity: .6;
+  }
+  #slide1:checked ~ .controls label:nth-child(2),
+  #slide2:checked ~ .controls label:nth-child(3),
+  #slide3:checked ~ .controls label:nth-child(4),
+  #slide4:checked ~ .controls label:nth-child(1) {
+      background-image: url('../../images/next.png');
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      float: right;
+      width: 50px;
+      height: 50px;
+      margin: 0 -50px 0 0;
+      display: block;
+  }
+  #slide1:checked ~ .controls label:nth-last-child(2),
+  #slide2:checked ~ .controls label:nth-last-child(3),
+  #slide3:checked ~ .controls label:nth-last-child(4),
+  #slide4:checked ~ .controls label:nth-last-child(1) {
+      background-image: url('../../images/left-arrow.png');
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      float: left;
+      width: 50px;
+      height: 50px;
+      margin: 0 0 0 -50px;
+      display: block;
+  }
+  .controls label {
+      position: relative;
+      top: -100px;
+      color: rgb(184, 184, 184);
+      transform: scale(0.9);
+  }
+  .bullets {
+      margin: 100px 0 0;  
+      text-align: center;
+  }
+  .bullets label {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 100%;
+      background: #ccc;
+      margin: 0 10px;
+  }
+  #slide1:checked ~ .bullets label:nth-child(1),
+  #slide2:checked ~ .bullets label:nth-child(2),
+  #slide3:checked ~ .bullets label:nth-child(3),
+  #slide4:checked ~ .bullets label:nth-child(4) {
+      background: #444;
+      box-shadow: 1px 1px 3px rgba(0,0,0,0.15), 
+      1px 1px 1px rgba(0,0,0,0.15), 
+      0 1px 1px rgba(0,0,0,0.15), 
+      0 1px 1px rgba(0,0,0,0.15);
+      animation: blts 1s linear;
+  }
+  @keyframes blts {
+  0% {
+      transform: scale(1);
+      }
+  50% {
+          transform: scale(1.6);
+      }
+  100% {
+          transform: scale(1);
+      }
+  }
+  @media screen and (max-width: 900px) {
+      #slide1:checked ~ .controls label:nth-child(2),
+      #slide2:checked ~ .controls label:nth-child(3),
+      #slide3:checked ~ .controls label:nth-child(4),
+      #slide4:checked ~ .controls label:nth-child(1),
+      #slide1:checked ~ .controls label:nth-last-child(2),
+      #slide2:checked ~ .controls label:nth-last-child(3),
+      #slide3:checked ~ .controls label:nth-last-child(4),
+      #slide4:checked ~ .controls label:nth-last-child(1) {
+         margin: 0;
+      }
+  }
    `
 ]
 for (var i = 0; i <= propertiesComponent.length; i++) {
@@ -2240,6 +2438,19 @@ for (var i = 0; i <= propertiesComponent.length; i++) {
                `;
        document.getElementsByTagName('style')[0].appendChild(document.createTextNode(s));
    }
+}
+
+if(document.querySelector('.v-swiper')) {
+   
+   document.getElementsByTagName("style")[0].appendChild(document.createTextNode(style))
+
+   link = document.createElement("link")
+   head = document.getElementsByTagName("head")[0]
+
+   tmp = link ;
+   tmp.href = "../swiper.css";
+   link.rel = "stylesheet"
+   head.appendChild(tmp)
 }
 
 if(document.querySelector('.v-brand')) {

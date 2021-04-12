@@ -61,7 +61,7 @@ let valuesMargins = [
     'margin-bottom: 20px;',
     'margin-bottom: 30px;',
     'margin-bottom: 40px;',
-]
+];
 for (var i = 0; i <= propertiesMargins.length; i++) {
     if (document.querySelector(`.${propertiesMargins[i]}`) && !document.querySelector('style').innerText.includes(propertiesMargins[i])) {
         let styles = ` 
