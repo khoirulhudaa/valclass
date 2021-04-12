@@ -2429,6 +2429,20 @@ let valueComponent = [
          margin: 0;
       }
   }
+   `,
+   `
+   .swiper-container {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+   }
+
+   .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 300px;
+      height: 300px;
+   }
    `
 ]
 for (var i = 0; i <= propertiesComponent.length; i++) {
@@ -2448,9 +2462,21 @@ if(document.querySelector('.v-swiper')) {
    head = document.getElementsByTagName("head")[0]
 
    tmp = link ;
-   tmp.href = "../swiper.css";
+   tmp.href = "https://unpkg.com/swiper/swiper-bundle.min.css";
    link.rel = "stylesheet"
    head.appendChild(tmp)
+
+   js = [ 
+      "https://unpkg.com/swiper/swiper-bundle.min.js",
+      "./swiper.js"
+  ]
+  
+  for(i = 0; i < js.length; i++) {
+      script = document.createElement("script")
+      body = document.getElementsByTagName("body")[0]
+      script.src = js[i];
+      body.appendChild(script)
+   }
 }
 
 if(document.querySelector('.v-brand')) {
