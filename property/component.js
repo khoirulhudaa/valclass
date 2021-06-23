@@ -2491,7 +2491,7 @@ if (document.querySelector('.modal')) {
       document.querySelector('.modal').classList.add('hiddenSModals')
 
    if (document.querySelector('.v-close')) {
-      document.querySelector('.v-close').innerHTML = '<img class="v-times-icon-xgHs76" src="./times-solid.svg">'
+      document.querySelector('.v-close').innerHTML = '<img class="v-times-icon-xgHs76" src="https://github.com/valclassdevelop/valclassDocumentation/blob/main/times-solid.svg">'
    }
 
    if(document.querySelector('.v-close')) {
