@@ -12,8 +12,8 @@ if (document.querySelector('.v-template-light-mode')) {
         font-weight: 500;
      }
      
-     .v-dark-mode-on {
-        background-color: rgb(160, 160, 160);
+     .v-light-mode-on {
+        background-color: #fff;
         border: none;
         width: 100px;
         outline: none;
@@ -64,13 +64,13 @@ if (document.querySelector('.v-template-light-mode')) {
         if (s % 2 == 0) {
             for (var i = 0; i < document.querySelectorAll('.v-template-light-mode').length; i++) {
                 document.querySelector('.toggle-mode').classList.remove('modeDarks');
-                document.querySelector('.v-dark-mode').classList.remove('v-dark-mode-on');
+                document.querySelector('.v-dark-mode').classList.remove('v-light-mode-on');
                 document.querySelectorAll('.v-template-light-mode')[i].classList.remove('lightModes');
             }
         } else {
             for (var i = 0; i < document.querySelectorAll('.v-template-light-mode').length; i++) {
                 document.querySelector('.toggle-mode').classList.add('modeDarks');
-                document.querySelector('.v-dark-mode').classList.add('v-dark-mode-on');
+                document.querySelector('.v-dark-mode').classList.add('v-light-mode-on');
                 document.querySelectorAll('.v-template-light-mode')[i].classList.add('lightModes');
             }
         }
