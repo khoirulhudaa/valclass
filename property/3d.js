@@ -1,7 +1,7 @@
 if(document.querySelector("body").classList.contains("3d")) {
     js = [ 
-        "./property/vanilla-tilt.js",
-        "./property/tilt.js"
+        "https://cdn.jsdelivr.net/gh/valclassdevelop/valclassDocumentation/property/vanilla-tilt.js",
+        "https://cdn.jsdelivr.net/gh/valclassdevelop/valclassDocumentation/property/tilt.js"
     ]
     
     for(i = 0; i < js.length; i++) {
