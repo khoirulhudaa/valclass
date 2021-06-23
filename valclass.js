@@ -714,3 +714,4 @@ if(document.querySelector("body").classList.contains("3d")) {
 
 // end of the conditions for calling the file property
 // #developerValclass - Muhammad Khoirul Huda -> developervalclass@gmail.com
+    
