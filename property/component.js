@@ -598,7 +598,6 @@ let valueComponent = [
        transition: 0.4s;
        right: 0;
        width: 100%;
-       background-color: blueviolet;
        align-items: left;
        opacity: 1;
        padding: 10px 25px 25px 25px;
