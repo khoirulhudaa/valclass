@@ -767,7 +767,7 @@ let valueComponent = [
    /* mobile */
    @media screen and (max-width: 576px) {
      .v-navbar-fixed {
-         display: fixed;
+         display: block;
          height: 70px;
          overflow: hidden;
          transition: 0.4s;
