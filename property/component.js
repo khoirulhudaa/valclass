@@ -624,7 +624,7 @@ let valueComponent = [
         cursor: pointer;
         height: 23px;
         top: 20px;
-        right: 30px;
+        right: 40px;
         justify-content: space-between;
         transition: 0.5s;
     }
