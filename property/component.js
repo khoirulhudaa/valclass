@@ -654,8 +654,9 @@ let valueComponent = [
  }`,
    `
      .v-navbar-fixed {
-       position: relative;
+       position: fixed;
        z-index: 999;
+       width: 100vw;
        display: flex;
        font-family:sans-serif;
        justify-content: space-around;
@@ -766,7 +767,7 @@ let valueComponent = [
    /* mobile */
    @media screen and (max-width: 576px) {
      .v-navbar-fixed {
-         display: block;
+         display: fixed;
          height: 70px;
          overflow: hidden;
          transition: 0.4s;
