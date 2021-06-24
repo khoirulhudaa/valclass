@@ -197,7 +197,7 @@ if(document.querySelector("body").classList.contains("grid")) {
 
 if(document.querySelector("body").classList.contains("component")) {
     js = [ 
-        "https://cdn.jsdelivr.net/gh/valclassdevelop/valclassDocumentation/property/components.js",
+        "https://cdn.jsdelivr.net/gh/valclassdevelop/valclassDocumentation/property/component.js",
         "https://cdn.jsdelivr.net/gh/valclassdevelop/valclassDocumentation/property/DOMnavbar.js"
     ]
     
