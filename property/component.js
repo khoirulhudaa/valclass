@@ -484,7 +484,7 @@ let valueComponent = [
    
    .v-brand {
      position: relative;
-     top: 5px;
+     top: 0px;
  }
  
     .v-navbar ul {
@@ -612,7 +612,7 @@ let valueComponent = [
 
     .v-brand {
         position: relative;
-        top: 20px;
+        top: 5px;
         left: 20px;
     }
         
@@ -672,7 +672,7 @@ let valueComponent = [
    
    .v-brand {
      position: relative;
-     top: 5px;
+     top: 0px;
  }
  
     .v-navbar-fixed ul {
@@ -800,7 +800,7 @@ let valueComponent = [
 
     .v-brand {
         position: relative;
-        top: 20px;
+        top: 5px;
         left: 20px;
     }
         
