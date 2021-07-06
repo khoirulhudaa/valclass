@@ -1,6 +1,4 @@
-# valclassDocumentation
-
-#Instalation
+# Instalation
 
 
 developervalclass@gmail.com
