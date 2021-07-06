@@ -21,7 +21,7 @@ let valuesTextColors = [
     'color: transparent;',
     'color: rgb(141, 141, 141);',
     'color: rgb(253, 207, 0);',
-    'color: rgb(14, 253, 201);',
+    'color: #0de982;',
     'color: #fff;'
 ]
 for (var i = 0; i <= propertiesTextColors.length; i++) {

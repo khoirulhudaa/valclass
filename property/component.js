@@ -328,7 +328,7 @@ let valueComponent = [
         cursor: pointer;
         margin: 10px;
         padding: 5px 15px;
-        background-color: rgb(14, 253, 201);
+        background-color: #0de982;
         font-weight: 500;
         color: white;
         border: none;

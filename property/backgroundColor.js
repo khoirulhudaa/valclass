@@ -21,7 +21,7 @@ let valuesBgColors = [
     'background-color: transparent;',
     'background-color: rgb(141, 141, 141);',
     'background-color: rgb(253, 207, 0);',
-    'background-color: rgb(14, 253, 201);',
+    'background-color: #0de982;',
     'background-color: #fff;'
 ]
 for (var i = 0; i <= propertiesBgColors.length; i++) {
