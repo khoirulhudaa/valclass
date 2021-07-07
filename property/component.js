@@ -1000,6 +1000,21 @@ let valueComponent = [
       box-shadow: 2px 2px 20px rgb(73, 73, 73);
       transform: scale() rotateX(90deg);
    }
+
+   .v-modal-content-lg {
+      position: absolute;
+      top: 10vh;
+      width: 700px;
+      min-height: 250px;;
+      overflow: hidden;
+      border-radius: 8px;
+      opacity: 1;
+      z-index: 99999;
+      background-color: #fff;
+      animation: slideUp-12gdg .5s ease-in;
+      box-shadow: 2px 2px 20px rgb(73, 73, 73);
+      transform: scale() rotateX(90deg);
+   }
    
    @keyframes slideUp-12gdg {
       0% {
@@ -1112,6 +1127,21 @@ let valueComponent = [
       position: absolute;
       top: 10vh;
       width: 500px;
+      min-height: 250px;;
+      overflow: hidden;
+      border-radius: 8px;
+      opacity: 1;
+      z-index: 99999;
+      background-color: #fff;
+      animation: slideUp-12gdg .5s ease-in;
+      box-shadow: 2px 2px 20px rgb(73, 73, 73);
+      transform: scale() rotateX(90deg);
+   }
+
+   .v-modal-content-lg {
+      position: absolute;
+      top: 10vh;
+      width: 700px;
       min-height: 250px;;
       overflow: hidden;
       border-radius: 8px;
@@ -1245,6 +1275,21 @@ let valueComponent = [
       transform: scale() rotateX(90deg);
    }
 
+   .v-modal-content-lg {
+      position: absolute;
+      top: 10vh;
+      width: 700px;
+      min-height: 250px;;
+      overflow: hidden;
+      border-radius: 8px;
+      opacity: 1;
+      z-index: 99999;
+      background-color: #fff;
+      animation: slideUp-12gdg .5s ease-in;
+      box-shadow: 2px 2px 20px rgb(73, 73, 73);
+      transform: scale() rotateX(90deg);
+   }
+
    @keyframes slideUp-12gdg {
       0% {
          opacity: 0;
@@ -1356,6 +1401,21 @@ let valueComponent = [
       position: absolute;
       top: 10vh;
       width: 500px;
+      min-height: 250px;;
+      overflow: hidden;
+      border-radius: 8px;
+      opacity: 1;
+      z-index: 99999;
+      background-color: #fff;
+      animation: slideUp-12gdg .5s ease-in;
+      box-shadow: 2px 2px 20px rgb(73, 73, 73);
+      transform: scale() rotateX(90deg);
+   }
+
+   .v-modal-content-lg {
+      position: absolute;
+      top: 10vh;
+      width: 700px;
       min-height: 250px;;
       overflow: hidden;
       border-radius: 8px;
@@ -1488,6 +1548,21 @@ let valueComponent = [
       transform: scale() rotateX(90deg);
    }
 
+   .v-modal-content-lg {
+      position: absolute;
+      top: 10vh;
+      width: 700px;
+      min-height: 250px;;
+      overflow: hidden;
+      border-radius: 8px;
+      opacity: 1;
+      z-index: 99999;
+      background-color: #fff;
+      animation: slideUp-12gdg .5s ease-in;
+      box-shadow: 2px 2px 20px rgb(73, 73, 73);
+      transform: scale() rotateX(90deg);
+   }
+
    @keyframes slideUp-12gdg {
       0% {
          opacity: 0;
@@ -1608,6 +1683,21 @@ let valueComponent = [
       box-shadow: 2px 2px 20px rgb(73, 73, 73);
       transform: scale() rotateX(90deg);
    }
+
+   .v-modal-content-lg {
+      position: absolute;
+      top: 10vh;
+      width: 700px;
+      min-height: 250px;;
+      overflow: hidden;
+      border-radius: 8px;
+      opacity: 1;
+      z-index: 99999;
+      background-color: #fff;
+      animation: slideUp-12gdg .5s ease-in;
+      box-shadow: 2px 2px 20px rgb(73, 73, 73);
+      transform: scale() rotateX(90deg);
+   }
    
    @keyframes slideUp-12gdg {
       0% {
@@ -1719,6 +1809,21 @@ let valueComponent = [
       position: absolute;
       top: 10vh;
       width: 500px;
+      min-height: 250px;;
+      overflow: hidden;
+      border-radius: 8px;
+      opacity: 1;
+      z-index: 99999;
+      background-color: #fff;
+      animation: slideUp-12gdg .5s ease-in;
+      box-shadow: 2px 2px 20px rgb(73, 73, 73);
+      transform: scale() rotateX(90deg);
+   }
+
+   .v-modal-content-lg {
+      position: absolute;
+      top: 10vh;
+      width: 700px;
       min-height: 250px;;
       overflow: hidden;
       border-radius: 8px;
@@ -1851,6 +1956,21 @@ let valueComponent = [
       transform: scale() rotateX(90deg);
    }
 
+   .v-modal-content-lg {
+      position: absolute;
+      top: 10vh;
+      width: 700px;
+      min-height: 250px;;
+      overflow: hidden;
+      border-radius: 8px;
+      opacity: 1;
+      z-index: 99999;
+      background-color: #fff;
+      animation: slideUp-12gdg .5s ease-in;
+      box-shadow: 2px 2px 20px rgb(73, 73, 73);
+      transform: scale() rotateX(90deg);
+   }
+
    @keyframes slideUp-12gdg {
       0% {
          opacity: 0;
@@ -1961,6 +2081,21 @@ let valueComponent = [
       position: absolute;
       top: 10vh;
       width: 500px;
+      min-height: 250px;;
+      overflow: hidden;
+      border-radius: 8px;
+      opacity: 1;
+      z-index: 99999;
+      background-color: #fff;
+      animation: slideUp-12gdg .5s ease-in;
+      box-shadow: 2px 2px 20px rgb(73, 73, 73);
+      transform: scale() rotateX(90deg);
+   }
+
+   .v-modal-content-lg {
+      position: absolute;
+      top: 10vh;
+      width: 700px;
       min-height: 250px;;
       overflow: hidden;
       border-radius: 8px;
@@ -2092,6 +2227,21 @@ let valueComponent = [
       box-shadow: 2px 2px 20px rgb(73, 73, 73);
       transform: scale() rotateX(90deg);
    }
+
+   .v-modal-content-lg {
+      position: absolute;
+      top: 10vh;
+      width: 700px;
+      min-height: 250px;;
+      overflow: hidden;
+      border-radius: 8px;
+      opacity: 1;
+      z-index: 99999;
+      background-color: #fff;
+      animation: slideUp-12gdg .5s ease-in;
+      box-shadow: 2px 2px 20px rgb(73, 73, 73);
+      transform: scale() rotateX(90deg);
+   }
    
    @keyframes slideUp-12gdg {
       0% {
@@ -2127,7 +2277,7 @@ let valueComponent = [
       align-items: center;
       color: white;
       padding: 0 30px;
-      background-color: rgb(14, 253, 201);
+      background-color: #0de982;
    }
    
    .hiddenModal {
@@ -2625,7 +2775,7 @@ if(document.querySelector('.v-brand')) {
    })
 }
 
-if (document.querySelector('.modal')) {
+if (document.querySelector('.modal') && document.querySelector('.v-modal-content')) {
 
       document.querySelector('.v-modal-content').classList.add('hiddenModal')
       document.querySelector('.modal').classList.add('hiddenSModals')
@@ -2648,6 +2798,34 @@ if (document.querySelector('.modal')) {
    document.querySelector('.v-btn-modal').addEventListener('click', () => {
       document.querySelector('.v-modal-content').classList.add('showModal-6gsdz')
       document.querySelector('.v-modal-content').classList.remove('hiddenModal')
+      document.querySelector('.modal').classList.add('showSModals')
+      document.querySelector('.modal').classList.remove('hiddenSModals')
+   })
+}
+
+if (document.querySelector('.modal') && document.querySelector('.v-modal-content-lg')) {
+
+      document.querySelector('.v-modal-content-lg').classList.add('hiddenModal')
+      document.querySelector('.modal').classList.add('hiddenSModals')
+
+   if (document.querySelector('.v-close')) {
+      document.querySelector('.v-close').innerHTML = '<img class="v-times-icon-xgHs76" src="https://github.com/valclassdevelop/valclassDocumentation/blob/main/times-solid.svg">'
+   }
+
+   if(document.querySelector('.v-close')) {
+      document.querySelector('.v-close').addEventListener('click', () => {
+         document.querySelector('.v-modal-content-lg').classList.add('hiddenModal')
+         document.querySelector('.v-modal-content-lg').classList.remove('showModal-6gsdz')
+         setTimeout(() => {
+            document.querySelector('.modal').classList.add('hiddenSModals')
+            document.querySelector('.modal').classList.remove('showSModals')
+         }, 300)
+      })
+   }
+   
+   document.querySelector('.v-btn-modal').addEventListener('click', () => {
+      document.querySelector('.v-modal-content-lg').classList.add('showModal-6gsdz')
+      document.querySelector('.v-modal-content-lg').classList.remove('hiddenModal')
       document.querySelector('.modal').classList.add('showSModals')
       document.querySelector('.modal').classList.remove('hiddenSModals')
    })
