@@ -6,6 +6,3 @@
 
 # Installation with NPM
 - $ npm install valclass
-
-
-developervalclass@gmail.com
