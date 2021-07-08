@@ -2,7 +2,7 @@
 
 ### visit our documentation [website here](https://valclassui-v1.vercel.app)
 
-## ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Valclass framework
+## ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) Valclass framework
 - :dash:Valclass accelerate the process of building a website for web developers. (2021)
 - :black_nib:valclass comes with a v- prefix in every class
 - :crossed_swords:valclass provides different features from any framework
