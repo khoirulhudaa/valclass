@@ -21,13 +21,16 @@
 #### $ npm install valclass
 
 # how to use valclass in .html file:grey_question:
-`<body class="font text-color display justify-content align-items">` :point_right: Include the class in the body tag according to the css property name required
-#### <h1 class="v-font-poppins v-font-xl v-weight-bold v-text-warning v-d-flex v-justify-center v-items-center"></h1> 
-`:point_right:`
-#### v-font-poppins :electric_plug: from the font class in the body tag
-#### v-font-xl :electric_plug: from the font class in the body tag
-#### v-weight-bold :electric_plug: of the font class in the body tag
-#### v-text-warning :electric_plug: from the text-color class in the body tag
-#### v-d-flex :electric_plug: from the display class in the body tag
-#### v-justify-center :electric_plug: from the justify-content class in the body tag
-#### v-items-center :electric_plug: from the align-items class in the body tag
+`<body class="font text-color display justify-content align-items">` :point_down: 
+Include the class in the body tag according to the css property name required
+
+:point_down:
+-------------------------
+
+#### :electric_plug: v-font-poppins : `from the font class in the body tag`
+#### :electric_plug: v-font-xl : `from the font class in the body tag`
+#### :electric_plug: v-weight-bold : `of the font class in the body tag`
+#### :electric_plug: v-text-warning : `from the text-color class in the body tag`
+#### :electric_plug: v-d-flex : `from the display class in the body tag`
+#### :electric_plug: v-justify-center : `from the justify-content class in the body tag`
+#### :electric_plug: v-items-center : `from the align-items class in the body tag`
