@@ -8,6 +8,8 @@
 - :crossed_swords:valclass provides different features from any framework
 - :magnet:vaclass is similar to tailwind so it's easy to remember
 
+# the image that becomes the identity of valclass
+
 # Instalation with CDN
 - https://cdn.jsdelivr.net/gh/valclassdevelop/valclassDocumentation/valclass.js
 
