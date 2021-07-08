@@ -18,7 +18,7 @@
 #### `$ npm install valclass`
 
 # Visit the valclass documentation website
-#### :rocket: [CLICK HERE](https://cdn.jsdelivr.net/gh/valclassdevelop/valclassDocumentation/valclass.js) `https://cdn.jsdelivr.net/gh/valclassdevelop/valclassDocumentation/valclass.js
+#### :rocket: [CLICK HERE](https://cdn.jsdelivr.net/gh/valclassdevelop/valclassDocumentation/valclass.js) #### `https://cdn.jsdelivr.net/gh/valclassdevelop/valclassDocumentation/valclass.js
 
 # how to use valclass in .html file:grey_question:
 #### `<body class="font text-color display justify-content align-items">` :point_down: 
