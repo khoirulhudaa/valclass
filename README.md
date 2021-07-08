@@ -22,11 +22,9 @@
 
 ## how to use valclass in .html file:grey_question:
 #### `<body class="font text-color display justify-content align-items">`
-#### `<h1 class="v-font-poppins v-font-xl v-weight-bold v-text-warning v-d-flex v-justify-center v-items-center"></h1>` 
-
-:point_down: 
-
 #### :round_pushpin: Include the class in the body tag according to the css property name required
+
+#### `<h1 class="v-font-poppins v-font-xl v-weight-bold v-text-warning v-d-flex v-justify-center v-items-center"></h1>` 
 
 :point_down:
 
