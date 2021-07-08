@@ -1,4 +1,4 @@
-## Hi, introduce a css framework called `valclass` ![Group 1 (2)](https://user-images.githubusercontent.com/79193720/124968810-281e1e00-e050-11eb-860c-2e5a29350368.png) :call_me_hand:
+## ![Group 1 (2)](https://user-images.githubusercontent.com/79193720/124968810-281e1e00-e050-11eb-860c-2e5a29350368.png) Hi, introduce a css framework called `valclass` :call_me_hand:
 
 ### visit our documentation [website here](https://valclassui-v1.vercel.app)
 
@@ -18,9 +18,9 @@
 #### $ npm install valclass
 
 # how to use valclass in .html file:grey_question:
-`<body class="font text-color display justify-content align-items">` :point_down: 
+#### `<body class="font text-color display justify-content align-items">` :point_down: 
 
-#### Include the class in the body tag according to the css property name required
+#### :round_pushpin: Include the class in the body tag according to the css property name required
 
 :point_down:
 
