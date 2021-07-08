@@ -1,4 +1,4 @@
-## Hi, introduce a css framework called valclass :call_me_hand:
+## ![#f03c15]Hi, introduce a css framework called valclass`#f03c15` :call_me_hand:
 
 ### visit our documentation [website here](https://valclassui-v1.vercel.app)
 
