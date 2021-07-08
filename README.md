@@ -9,6 +9,7 @@
 - :magnet:vaclass is similar to tailwind so it's easy to remember
 
 # the image that becomes the identity of valclass
+![1000x1000](https://user-images.githubusercontent.com/79193720/124966627-ba70f280-e04d-11eb-9e91-028fd20bfab3.png)
 
 # Instalation with CDN
 - https://cdn.jsdelivr.net/gh/valclassdevelop/valclassDocumentation/valclass.js
