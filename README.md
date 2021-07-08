@@ -12,7 +12,7 @@
 #### ![js 1 (1)](https://user-images.githubusercontent.com/79193720/124968473-cd84c200-e04f-11eb-856d-b26cd2600241.png) :point_right: Vanilla Javascript   ![css-removebg-preview (2)](https://user-images.githubusercontent.com/79193720/124968482-cf4e8580-e04f-11eb-83e8-d248ec826c94.png) :point_right: Cascading style sheet (css)
 
 # Instalation with CDN
-#### [click here](https://cdn.jsdelivr.net/gh/valclassdevelop/valclassDocumentation/valclass.js)`https://cdn.jsdelivr.net/gh/valclassdevelop/valclassDocumentation/valclass.js`
+#### :rocket: [click here] :point_right:       (https://cdn.jsdelivr.net/gh/valclassdevelop/valclassDocumentation/valclass.js)`https://cdn.jsdelivr.net/gh/valclassdevelop/valclassDocumentation/valclass.js`
 
 # Installation with NPM
 #### $ npm install valclass
