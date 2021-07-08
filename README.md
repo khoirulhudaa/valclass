@@ -9,10 +9,10 @@
 - :magnet:vaclass is similar to tailwind so it's easy to remember
 
 # the image that becomes the identity of valclass
-![1000x1000 1 (1)](https://user-images.githubusercontent.com/79193720/124968487-d07fb280-e04f-11eb-8571-2ca7f3905b99.png)
+![Group 1 (2)](https://user-images.githubusercontent.com/79193720/124968810-281e1e00-e050-11eb-860c-2e5a29350368.png)
 
 ## the language used by valclass
-![js 1 (1)](https://user-images.githubusercontent.com/79193720/124968473-cd84c200-e04f-11eb-856d-b26cd2600241.png)![css-removebg-preview (2)](https://user-images.githubusercontent.com/79193720/124968482-cf4e8580-e04f-11eb-83e8-d248ec826c94.png)
+![js 1 (1)](https://user-images.githubusercontent.com/79193720/124968473-cd84c200-e04f-11eb-856d-b26cd2600241.png)   ![css-removebg-preview (2)](https://user-images.githubusercontent.com/79193720/124968482-cf4e8580-e04f-11eb-83e8-d248ec826c94.png)
 
 
 # Instalation with CDN
