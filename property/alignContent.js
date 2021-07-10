@@ -1,3 +1,12 @@
+let propertiesAlignContent = [
+    'v-content-center',
+    'v-content-flex-end',
+    'v-content-flex-start',
+    'v-content-evenly',
+    'v-content-basebetweenline',
+    'v-content-around'
+]
+
 let valueContent = [
     'align-content: center;',
     'align-content: flex-end;',
