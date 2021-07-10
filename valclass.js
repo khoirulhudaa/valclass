@@ -707,6 +707,15 @@ if(document.querySelector("body").classList.contains("3d")) {
     body.appendChild(script)
 }
 
+if(document.querySelector("body").classList.contains("currency")) {
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclassDocumentation/property/currency.js";
+
+    script = document.createElement("script")
+    body = document.getElementsByTagName("body")[0]
+    script.src = js
+    body.appendChild(script)
+}
+
 //============================//==============================//
 
 // akhir dari pengkondisian untuk pemanggilan file property
