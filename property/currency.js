@@ -1,3 +1,21 @@
+let style = `
+.v-currency {
+    border-radius: 3px;
+    outline: none;
+    width: 100%;
+    margin: 10px 10px 10px 0;
+    font-weight: normal;
+    border-radius: 40px;
+    border: none;
+    outline: transparent;
+    font-size: 19px;
+    padding: 8px;
+}
+`
+if (!document.querySelector('style').innerText.includes(style)) {
+document.getElementsByTagName('style')[0].appendChild(document.createTextNode(style))
+}
+
 var attr = document.querySelectorAll('.v-currency');
 	var i;
 	for(i = 0; i <= attr.length; i++) {
