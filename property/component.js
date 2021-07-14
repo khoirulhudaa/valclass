@@ -12,6 +12,7 @@ let propertiesComponent = [
    'v-table-hovered',
    'v-table-striped',
    'v-table-head-dark',
+   'v-hero',
    'v-navbar',
    'v-navbar-fixed',
    'v-alert-info',
@@ -465,6 +466,52 @@ let valueComponent = [
      .v-table-head-dark tbody td {
         color: #353535;
      }`,
+     `
+     .v-hero {
+      position: relative;
+      width: 100%;
+      min-height: 280px;
+      padding: 60px;
+      background-color: rgb(253, 207, 0);
+   }
+   
+   .v-hero p {
+      width: 80%;
+      font-size: 18px;
+      color: white;
+      margin-left: 100px;
+   }
+   
+   .v-hero h1 {
+      margin-top: 30px;
+      font-size: 55px;
+      margin-left: 100px;
+      color: white;
+   }
+   
+   .v-hero button {
+      position: relative;
+      left: 95px;
+      top: 0;
+      width: auto;
+      height: auto;
+      font-weight: 500;
+      text-align: center;
+      background-color: rgb(238, 238, 238);
+      border-radius: 3px;
+      border-radius: 30px;
+      cursor: pointer;
+      margin: 10px 10px 10px 10px;
+      padding: 7px 15px;
+      font-weight: 500;
+      color: rgb(0, 0, 0);
+      border: none;
+      font-size: 1.3em;
+      border: none;
+      outline: none;
+      box-shadow: 2px 2px 10px rgba(92, 92, 92, 0.281);
+      transition: 0.2s;
+   }`,
    `
      .v-navbar {
        position: relative;
