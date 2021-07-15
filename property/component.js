@@ -499,9 +499,9 @@ let valueComponent = [
      `
      .v-hero {
       position: relative;
-      width: 100%;
+      max-width: 100vw;
       min-height: 280px;
-      padding: 60px;
+      padding: 40px;
       background-color: rgb(253, 207, 0);
    }
    
@@ -509,19 +509,19 @@ let valueComponent = [
       width: 80%;
       font-size: 18px;
       color: white;
-      margin-left: 100px;
+      margin-left: 0px;
    }
    
    .v-hero h1 {
       margin-top: 30px;
       font-size: 55px;
-      margin-left: 100px;
+      margin-left: 0px;
       color: white;
    }
    
    .v-hero button {
       position: relative;
-      left: 95px;
+      left: -10px;
       top: 0;
       width: auto;
       height: auto;
