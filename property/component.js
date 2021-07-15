@@ -45,8 +45,11 @@ let valueComponent = [
    `.v-btn {
         position: relative;
         top: 0;
-        width: auto;
-        height: auto;
+        width: max-content;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         text-align: center;
         border-radius: 3px;
         cursor: pointer;
@@ -74,8 +77,11 @@ let valueComponent = [
    `.v-btn-dark {
         position: relative;
         top: 0;
-        width: auto;
-        height: auto;
+        width: max-content;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-weight: 500;
         text-align: center;
         border-radius: 3px;
@@ -105,8 +111,11 @@ let valueComponent = [
    `.v-btn-light {
         position: relative;
         top: 0;
-        width: auto;
-        height: auto;
+        width: max-content;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-weight: 500;
         text-align: center;
         border-radius: 3px;
@@ -136,8 +145,11 @@ let valueComponent = [
    `.v-btn-danger {
         position: relative;
         top: 0;
-        width: auto;
-        height: auto;
+        width: max-content;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-weight: 500;
         text-align: center;
         border-radius: 3px;
@@ -167,8 +179,11 @@ let valueComponent = [
    `.v-btn-primary {
         position: relative;
         top: 0;
-        width: auto;
-        height: auto;
+        width: max-content;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-weight: 500;
         text-align: center;
         border-radius: 3px;
@@ -197,8 +212,11 @@ let valueComponent = [
    `.v-btn-info {
         position: relative;
         top: 0;
-        width: auto;
-        height: auto;
+        width: max-content;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-weight: 500;
         text-align: center;
         border-radius: 3px;
@@ -228,8 +246,11 @@ let valueComponent = [
    `.v-btn-smooth {
         position: relative;
         top: 0;
-        width: auto;
-        height: auto;
+        width: max-content;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-weight: 500;
         text-align: center;
         border-radius: 3px;
@@ -259,8 +280,11 @@ let valueComponent = [
    `.v-btn-secondary {
         position: relative;
         top: 0;
-        width: auto;
-        height: auto;
+        width: max-content;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-weight: 500;
         text-align: center;
         border-radius: 3px;
@@ -290,8 +314,11 @@ let valueComponent = [
    `.v-btn-warning {
         position: relative;
         top: 0;
-        width: auto;
-        height: auto;
+        width: max-content;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-weight: 500;
         text-align: center;
         border-radius: 3px;
@@ -321,8 +348,11 @@ let valueComponent = [
    `.v-btn-green {
         position: relative;
         top: 0;
-        width: auto;
-        height: auto;
+        width: max-content;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-weight: 500;
         text-align: center;
         border-radius: 3px;
