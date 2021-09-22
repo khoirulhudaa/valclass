@@ -716,6 +716,15 @@ if(document.querySelector("body").classList.contains("currency")) {
     body.appendChild(script)
 }
 
+if(document.querySelector("body").classList.contains("scroll")) {
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclassDocumentation/property/scroll.js";
+
+    script = document.createElement("script")
+    body = document.getElementsByTagName("body")[0]
+    script.src = js
+    body.appendChild(script)
+}
+
 //============================//==============================//
 
 // akhir dari pengkondisian untuk pemanggilan file property
