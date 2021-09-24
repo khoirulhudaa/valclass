@@ -12,7 +12,7 @@ let propertiesTextColors = [
     'v-text-white'
 ]
 let valuesTextColors = [
-    'color: rgb(70, 70, 70);',
+    'color: black;',
     'color: rgb(238, 238, 238);',
     'color: rgb(255, 76, 44);',
     'color: rgb(2, 168, 245);',
