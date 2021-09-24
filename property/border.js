@@ -57,7 +57,7 @@ let valuesBorders = [
     'border-radius: 10px;',
     'border-radius: 15px;',
     'border-radius: 20px;',
-    'border-radius: 100%;',
+    'border-radius: 99999px;',
     'border: 1px solid black;',
     'border: 2px solid black;',
     'border: 3px solid black;',
