@@ -13,9 +13,11 @@ let valuesBackgroundClip = [
 for (var i = 0; i <= propertiesBackgroundClip.length; i++) {
     if (document.querySelector(`.${propertiesBackgroundClip[i]}`) && !document.querySelector('style').innerText.includes(propertiesBackgroundClip[i])) {
         let styles = ` 
+            @media screen and (min-width: 900px){
                 .${propertiesBackgroundClip[i]} { 
                     ${valuesBackgroundClip[i]}
-                }`;
+                }
+            }`;
         document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
     }
 }

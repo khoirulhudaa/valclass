@@ -19,9 +19,11 @@ let valuesListStyle = [
 for (var i = 0; i <= propertiesListStyle.length; i++) {
     if (document.querySelector(`.${propertiesListStyle[i]}`) && !document.querySelector('style').innerText.includes(propertiesListStyle[i])) {
         let styles = ` 
+        @media screen and (min-width: 900px){
             .${propertiesListStyle[i]} { 
                 ${valuesListStyle[i]}
-            }`;
+            }
+        }`;
         document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
     }
 }

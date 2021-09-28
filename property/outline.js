@@ -79,9 +79,11 @@ let valuesOutlines = [
 for (var i = 0; i <= propertiesOutlines.length; i++) {
     if (document.querySelector(`.${propertiesOutlines[i]}`) && !document.querySelector('style').innerText.includes(propertiesOutlines[i])) {
         let styles = ` 
+        @media screen and (min-width: 900px){
             .${propertiesOutlines[i]} { 
                 ${valuesOutlines[i]}
-            }`;
+            }
+        }`;
         document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
     }
 }

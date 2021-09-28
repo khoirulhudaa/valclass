@@ -29,9 +29,11 @@ let valuesPages = [
 for (var i = 0; i <= propertiesPages.length; i++) {
     if (document.querySelector(`.${propertiesPages[i]}`) && !document.querySelector('style').innerText.includes(propertiesPages[i])) {
         let styles = ` 
+        @media screen and (min-width: 900px){
             .${propertiesPages[i]} { 
                 ${valuesPages[i]}
-            }`;
+            }
+        }`;
         document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
     }
 }

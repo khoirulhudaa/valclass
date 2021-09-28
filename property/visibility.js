@@ -11,9 +11,11 @@ let valuesvisibility = [
 for (var i = 0; i <= propertiesvisibility.length; i++) {
     if (document.querySelector(`.${propertiesvisibility[i]}`) && !document.querySelector('style').innerText.includes(propertiesvisibility[i])) {
         let styles = ` 
+        @media screen and (min-width: 900px){
             .${propertiesvisibility[i]} { 
                 ${valuesvisibility[i]}
-            }`;
+            }
+        }`;
         document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
     }
 }

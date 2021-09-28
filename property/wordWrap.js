@@ -9,9 +9,11 @@ let valuesWordWrap = [
 for (var i = 0; i <= propertiesWordWrap.length; i++) {
     if (document.querySelector(`.${propertiesWordWrap[i]}`) && !document.querySelector('style').innerText.includes(propertiesWordWrap[i])) {
         let styles = ` 
+        @media screen and (min-width: 900px){
             .${propertiesWordWrap[i]} { 
                 ${valuesWordWrap[i]}
-            }`;
+            }
+        }`;
         document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
     }
 }

@@ -45,9 +45,11 @@ let valuesTLRB = [
 for (var i = 0; i <= propertiesTLRB.length; i++) {
     if (document.querySelector(`.${propertiesTLRB[i]}`) && !document.querySelector('style').innerText.includes(propertiesTLRB[i])) {
         let styles = ` 
+        @media screen and (min-width: 900px){
             .${propertiesTLRB[i]} { 
                 ${valuesTLRB[i]}
-            }`;
+            }
+        }`;
         document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
     }
 }

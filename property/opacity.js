@@ -15,9 +15,11 @@ let valuesOpacity = [
 for (var i = 0; i <= propertiesOpacity.length; i++) {
     if (document.querySelector(`.${propertiesOpacity[i]}`) && !document.querySelector('style').innerText.includes(propertiesOpacity[i])) {
         let styles = ` 
+        @media screen and (min-width: 900px){
             .${propertiesOpacity[i]} { 
                 ${valuesOpacity[i]}
-            }`;
+            }
+        }`;
         document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
     }
 }

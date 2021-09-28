@@ -17,9 +17,11 @@ let valuesItems = [
 for (var i = 0; i <= propertiesItems.length; i++) {
     if (document.querySelector(`.${propertiesItems[i]}`) && !document.querySelector('style').innerText.includes(propertiesItems[i])) {
         let styles = ` 
+        @media screen and (min-width: 900px){
             .${propertiesItems[i]} { 
                 ${valuesItems[i]}
-            }`;
+            }
+        }`;
         document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
     }
 }

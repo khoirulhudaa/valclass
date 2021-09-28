@@ -15,9 +15,11 @@ let valuesSelf = [
 for (var i = 0; i <= propertiesSelf.length; i++) {
     if (document.querySelector(`.${propertiesSelf[i]}`) && !document.querySelector('style').innerText.includes(propertiesSelf[i])) {
         let styles = ` 
+        @media screen and (min-width: 900px){
             .${propertiesSelf[i]} { 
                 ${valuesSelf[i]}
-            }`;
+            }
+        }`;
         document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
     }
 }

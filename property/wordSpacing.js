@@ -15,9 +15,11 @@ let valuesWordSpacing = [
 for (var i = 0; i <= propertiesWordSpacing.length; i++) {
     if (document.querySelector(`.${propertiesWordSpacing[i]}`) && !document.querySelector('style').innerText.includes(propertiesWordSpacing[i])) {
         let styles = ` 
+        @media screen and (min-width: 900px){
             .${propertiesWordSpacing[i]} { 
                 ${valuesWordSpacing[i]}
-            }`;
+            }
+        }`;
         document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
     }
 }

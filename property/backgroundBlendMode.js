@@ -17,9 +17,11 @@ let valuesBackgroundBlend = [
 for (var i = 0; i <= propertiesBackgroundBlend.length; i++) {
     if (document.querySelector(`.${propertiesBackgroundBlend[i]}`) && !document.querySelector('style').innerText.includes(propertiesBackgroundBlend[i])) {
         let styles = ` 
+            @media screen and (min-width: 900px){
                 .${propertiesBackgroundBlend[i]} { 
                     ${valuesBackgroundBlend[i]}
-                }`;
+                }
+            }`;
         document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
     }
 }

@@ -27,9 +27,11 @@ let valuesBgColors = [
 for (var i = 0; i <= propertiesBgColors.length; i++) {
     if (document.querySelector(`.${propertiesBgColors[i]}`) && !document.querySelector('style').innerText.includes(propertiesBgColors[i])) {
         let styles = ` 
+            @media screen and (min-width: 900px){
                     .${propertiesBgColors[i]} { 
                     ${valuesBgColors[i]}
-                }`;
+                }
+            }`;
         document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
     }
 }

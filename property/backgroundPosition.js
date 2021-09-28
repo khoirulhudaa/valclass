@@ -37,9 +37,11 @@ let valuesBackgroundPosition = [
 for (var i = 0; i <= propertiesBackgroundPosition.length; i++) {
     if (document.querySelector(`.${propertiesBackgroundPosition[i]}`) && !document.querySelector('style').innerText.includes(propertiesBackgroundPosition[i])) {
         let styles = ` 
+            @media screen and (min-width: 900px){
                 .${propertiesBackgroundPosition[i]} { 
                     ${valuesBackgroundPosition[i]}
-                }`;
+                }
+            }`;
         document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
     }
 }

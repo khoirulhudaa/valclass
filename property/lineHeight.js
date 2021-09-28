@@ -26,9 +26,11 @@ let valuesLineHeight = [
 for (var i = 0; i <= propertiesLineHeight.length; i++) {
     if (document.querySelector(`.${propertiesLineHeight[i]}`) && !document.querySelector('style').innerText.includes(propertiesLineHeight[i])) {
         let styles = ` 
+        @media screen and (min-width: 900px){
             .${propertiesLineHeight[i]} { 
                 ${valuesLineHeight[i]}
-            }`;
+            }
+        }`;
         document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
     }
 }

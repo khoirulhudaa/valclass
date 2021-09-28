@@ -141,9 +141,11 @@ let valuesTransform = [
 for (var i = 0; i <= propertiesTransform.length; i++) {
     if (document.querySelector(`.${propertiesTransform[i]}`) && !document.querySelector('style').innerText.includes(propertiesTransform[i])) {
         let styles = ` 
+        @media screen and (min-width: 900px){
             .${propertiesTransform[i]} { 
                 ${valuesTransform[i]}
-            }`;
+            }
+        }`;
         document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
     }
 }

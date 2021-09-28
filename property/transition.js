@@ -31,9 +31,11 @@ let valuesTransition = [
 for (var i = 0; i <= propertiesTransition.length; i++) {
     if (document.querySelector(`.${propertiesTransition[i]}`) && !document.querySelector('style').innerText.includes(propertiesTransition[i])) {
         let styles = ` 
+        @media screen and (min-width: 900px){
             .${propertiesTransition[i]} { 
                 ${valuesTransition[i]}
-            }`;
+            }
+        }`;
         document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
     }
 }

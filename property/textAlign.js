@@ -13,9 +13,11 @@ let valuesTextAlign = [
 for (var i = 0; i <= propertiesTextAlign.length; i++) {
     if (document.querySelector(`.${propertiesTextAlign[i]}`) && !document.querySelector('style').innerText.includes(propertiesTextAlign[i])) {
         let styles = ` 
+            @media screen and (min-width: 900px){
                     .${propertiesTextAlign[i]} { 
                     ${valuesTextAlign[i]}
-                }`;
+                }
+            }`;
         document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
     }
 }

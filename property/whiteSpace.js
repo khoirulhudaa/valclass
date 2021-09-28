@@ -15,9 +15,11 @@ let valuesWhiteSpaces = [
 for (var i = 0; i <= propertiesWhiteSpaces.length; i++) {
     if (document.querySelector(`.${propertiesWhiteSpaces[i]}`) && !document.querySelector('style').innerText.includes(propertiesWhiteSpaces[i])) {
         let styles = ` 
+        @media screen and (min-width: 900px){
             .${propertiesWhiteSpaces[i]} { 
                 ${valuesWhiteSpaces[i]}
-            }`;
+            }
+        }`;
         document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
     }
 }

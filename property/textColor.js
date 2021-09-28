@@ -27,9 +27,11 @@ let valuesTextColors = [
 for (var i = 0; i <= propertiesTextColors.length; i++) {
     if (document.querySelector(`.${propertiesTextColors[i]}`) && !document.querySelector('style').innerText.includes(propertiesTextColors[i])) {
         let styles = ` 
+            @media screen and (min-width: 900px){
                     .${propertiesTextColors[i]} { 
                     ${valuesTextColors[i]}
-                }`;
+                }
+            }`;
         document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
     }
 }

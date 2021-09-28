@@ -15,9 +15,11 @@ let valuesVertical = [
 for (var i = 0; i <= propertiesVertical.length; i++) {
     if (document.querySelector(`.${propertiesVertical[i]}`) && !document.querySelector('style').innerText.includes(propertiesVertical[i])) {
         let styles = ` 
+        @media screen and (min-width: 900px){
             .${propertiesVertical[i]} { 
                 ${valuesVertical[i]}
-            }`;
+            }
+        }`;
         document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
     }
 }

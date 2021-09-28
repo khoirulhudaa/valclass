@@ -65,9 +65,11 @@ let valuesMargins = [
 for (var i = 0; i <= propertiesMargins.length; i++) {
     if (document.querySelector(`.${propertiesMargins[i]}`) && !document.querySelector('style').innerText.includes(propertiesMargins[i])) {
         let styles = ` 
+        @media screen and (min-width: 900px){
             .${propertiesMargins[i]} { 
                 ${valuesMargins[i]}
-            }`;
+            }
+        }`;
         document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
     }
 }

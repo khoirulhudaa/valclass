@@ -15,9 +15,11 @@ let valuesLetterSpacing = [
 for (var i = 0; i <= propertiesLetterSpacing.length; i++) {
     if (document.querySelector(`.${propertiesLetterSpacing[i]}`) && !document.querySelector('style').innerText.includes(propertiesLetterSpacing[i])) {
         let styles = ` 
+        @media screen and (min-width: 900px){
             .${propertiesLetterSpacing[i]} { 
                 ${valuesLetterSpacing[i]}
-            }`;
+            }
+        }`;
         document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
     }
 }

@@ -54,10 +54,12 @@ let valuesPadding = [
 ]
 for (var i = 0; i <= propertiesPadding.length; i++) {
     if (document.querySelector(`.${propertiesPadding[i]}`) && !document.querySelector('style').innerText.includes(propertiesPadding[i])) {
-        let styles = ` 
+        let styles = `  
+        @media screen and (min-width: 900px){
             .${propertiesPadding[i]} { 
                 ${valuesPadding[i]}
-            }`;
+            }
+        }`;
         document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
     }
 }

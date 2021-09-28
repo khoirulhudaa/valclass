@@ -11,9 +11,11 @@ let valuesBackgroundAttachment = [
 for (var i = 0; i <= propertiesBackgroundAttachment.length; i++) {
     if (document.querySelector(`.${propertiesBackgroundAttachment[i]}`) && !document.querySelector('style').innerText.includes(propertiesBackgroundAttachment[i])) {
         let styles = ` 
+            @media screen and (min-width: 900px){
                 .${propertiesBackgroundAttachment[i]} { 
                     ${valuesBackgroundAttachment[i]}
-                }`;
+                }
+            }`;
         document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
     }
 }

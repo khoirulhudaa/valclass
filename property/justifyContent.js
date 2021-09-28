@@ -33,10 +33,12 @@ let valuesJustify = [
 ]
 for (var i = 0; i <= propertiesJustify.length; i++) {
     if (document.querySelector(`.${propertiesJustify[i]}`) && !document.querySelector('style').innerText.includes(propertiesJustify[i])) {
-        let styles = ` 
+        let styles = `
+        @media screen and (min-width: 900px){
             .${propertiesJustify[i]} { 
                 ${valuesJustify[i]}
-            }`;
+            }
+        }`;
         document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
     }
 }

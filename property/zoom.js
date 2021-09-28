@@ -17,9 +17,11 @@ let valuesZooms = [
 for (var i = 0; i <= propertiesZooms.length; i++) {
     if (document.querySelector(`.${propertiesZooms[i]}`) && !document.querySelector('style').innerText.includes(propertiesZooms[i])) {
         let styles = ` 
+        @media screen and (min-width: 900px){
             .${propertiesZooms[i]} { 
                 ${valuesZooms[i]}
-            }`;
+            }
+        }`;
         document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
     }
 }

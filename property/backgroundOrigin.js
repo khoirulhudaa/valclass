@@ -11,9 +11,11 @@ let valuesBackgroundOrigin = [
 for (var i = 0; i <= propertiesBackgroundOrigin.length; i++) {
     if (document.querySelector(`.${propertiesBackgroundOrigin[i]}`) && !document.querySelector('style').innerText.includes(propertiesBackgroundOrigin[i])) {
         let styles = ` 
+            @media screen and (min-width: 900px){
                 .${propertiesBackgroundOrigin[i]} { 
                     ${valuesBackgroundOrigin[i]}
-                }`;
+                }
+            }`;
         document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
     }
 }

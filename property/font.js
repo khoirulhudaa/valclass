@@ -40,9 +40,11 @@ let valuesFonts = [
 for (var i = 0; i <= propertiesFonts.length; i++) {
     if (document.querySelector(`.${propertiesFonts[i]}`) && !document.querySelector('style').innerText.includes(propertiesFonts[i])) {
         let styles = ` 
+            @media screen and (min-width: 900px){
                 .${propertiesFonts[i]} { 
                     ${valuesFonts[i]}
-                }`;
+                }
+            }`;
         document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
     }
 }

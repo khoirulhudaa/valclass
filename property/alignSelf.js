@@ -17,9 +17,11 @@ let valuesAlignSelf = [
 for (var i = 0; i <= propertiesAlignSelf.length; i++) {
     if (document.querySelector(`.${propertiesAlignSelf[i]}`) && !document.querySelector('style').innerText.includes(propertiesAlignSelf[i])) {
         let styles = ` 
+            @media screen and (min-width: 900px){
                 .${propertiesAlignSelf[i]} { 
                     ${valuesAlignSelf[i]}
-                }`;
+                }
+            }`;
         document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
     }
 }

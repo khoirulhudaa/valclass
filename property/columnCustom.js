@@ -16,10 +16,12 @@ let valueColumnCustom = [
 ]
 for (var i = 0; i <= propertiesColumnCustom.length; i++) {
     if (document.querySelector(`.${propertiesColumnCustom[i]}`) && !document.querySelector('style').innerText.includes(propertiesColumnCustom[i])) {
-        let styles = ` 
+        let styles = `
+            @media screen and (min-width: 900px){ 
                 .${propertiesColumnCustom[i]} { 
                     ${valueColumnCustom[i]}
-                }`;
+                }
+            }`;
         document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
     }
 }

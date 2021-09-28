@@ -23,9 +23,11 @@ let valuesIndex = [
 for (var i = 0; i <= propertiesIndex.length; i++) {
     if (document.querySelector(`.${propertiesIndex[i]}`) && !document.querySelector('style').innerText.includes(propertiesIndex[i])) {
         let styles = ` 
+        @media screen and (min-width: 900px){
             .${propertiesIndex[i]} { 
                 ${valuesIndex[i]}
-            }`;
+            }
+        }`;
         document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
     }
 }

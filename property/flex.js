@@ -56,9 +56,11 @@ let valuesFlex = [
 for (var i = 0; i <= propertiesFlex.length; i++) {
     if (document.querySelector(`.${propertiesFlex[i]}`) && !document.querySelector('style').innerText.includes(propertiesFlex[i])) {
         let styles = ` 
+            @media screen and (min-width: 900px){
                 .${propertiesFlex[i]} { 
                     ${valuesFlex[i]}
-                }`;
+                }
+            }`;
         document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
     }
 }

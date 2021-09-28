@@ -13,9 +13,11 @@ let valuesTextTransform = [
 for (var i = 0; i <= propertiesTextTransform.length; i++) {
     if (document.querySelector(`.${propertiesTextTransform[i]}`) && !document.querySelector('style').innerText.includes(propertiesTextTransform[i])) {
         let styles = ` 
+        @media screen and (min-width: 900px){
             .${propertiesTextTransform[i]} { 
                 ${valuesTextTransform[i]}
-            }`;
+            }
+        }`;
         document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
     }
 }

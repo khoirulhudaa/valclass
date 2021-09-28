@@ -41,9 +41,11 @@ let valuesDisplay = [
 for (var i = 0; i <= propertiesDisplay.length; i++) {
     if (document.querySelector(`.${propertiesDisplay[i]}`) && !document.querySelector('style').innerText.includes(propertiesDisplay[i])) {
         let styles = ` 
+            @media screen and (min-width: 900px){
                 .${propertiesDisplay[i]} { 
                     ${valuesDisplay[i]}
-                }`;
+                }
+            }`;
         document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
     }
 }

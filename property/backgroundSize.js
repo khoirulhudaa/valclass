@@ -33,9 +33,11 @@ let valuesBackgroundSize = [
 for (var i = 0; i <= propertiesBackgroundSize.length; i++) {
     if (document.querySelector(`.${propertiesBackgroundSize[i]}`) && !document.querySelector('style').innerText.includes(propertiesBackgroundSize[i])) {
         let styles = ` 
+            @media screen and (min-width: 900px){
                 .${propertiesBackgroundSize[i]} { 
                     ${valuesBackgroundSize[i]}
-                }`;
+                }
+            }`;
         document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
     }
 }

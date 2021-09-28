@@ -35,9 +35,11 @@ let valuesOverflows = [
 for (var i = 0; i <= propertiesOverflows.length; i++) {
     if (document.querySelector(`.${propertiesOverflows[i]}`) && !document.querySelector('style').innerText.includes(propertiesOverflows[i])) {
         let styles = ` 
+        @media screen and (min-width: 900px){
             .${propertiesOverflows[i]} { 
                 ${valuesOverflows[i]}
-            }`;
+            }
+        }`;
         document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
     }
 }

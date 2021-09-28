@@ -73,9 +73,11 @@ let valuesWidthHeight = [
 for (var i = 0; i <= propertiesWidthHeight.length; i++) {
     if (document.querySelector(`.${propertiesWidthHeight[i]}`) && !document.querySelector('style').innerText.includes(propertiesWidthHeight[i])) {
         let styles = ` 
+        @media screen and (min-width: 900px){
             .${propertiesWidthHeight[i]} { 
                 ${valuesWidthHeight[i]}
-            }`;
+            }
+        }`;
         document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
     }
 }

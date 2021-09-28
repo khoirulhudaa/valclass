@@ -32,10 +32,12 @@ let valuesPerspective = [
 ]
 for (var i = 0; i <= propertiesPerspective.length; i++) {
     if (document.querySelector(`.${propertiesPerspective[i]}`) && !document.querySelector('style').innerText.includes(propertiesPerspective[i])) {
-        let styles = ` 
+        let styles = `  
+        @media screen and (min-width: 900px){
             .${propertiesPerspective[i]} { 
                 ${valuesPerspective[i]}
-            }`;
+            }
+        }`;
         document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
     }
 }

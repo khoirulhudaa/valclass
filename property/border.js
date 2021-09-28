@@ -94,9 +94,11 @@ let valuesBorders = [
 for (var i = 0; i <= propertiesBorders.length; i++) {
     if (document.querySelector(`.${propertiesBorders[i]}`) && !document.querySelector('style').innerText.includes(propertiesBorders[i])) {
         let styles = ` 
+            @media screen and (min-width: 900px){
                 .${propertiesBorders[i]} { 
                     ${valuesBorders[i]}
-                }`;
+                }
+            }`;
         document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
     }
 }

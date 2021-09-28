@@ -13,9 +13,11 @@ let valuesBoxShadow = [
 for (var i = 0; i <= propertiesBoxShadow.length; i++) {
     if (document.querySelector(`.${propertiesBoxShadow[i]}`) && !document.querySelector('style').innerText.includes(propertiesBoxShadow[i])) {
         let styles = ` 
+            @media screen and (min-width: 900px){
                 .${propertiesBoxShadow[i]} { 
                     ${valuesBoxShadow[i]}
-                }`;
+                }
+            }`;
         document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
     }
 }

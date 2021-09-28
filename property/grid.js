@@ -25,9 +25,11 @@ let valueGrids = [
 for (var i = 0; i <= propertiesGrid.length; i++) {
     if (document.querySelector(`.${propertiesGrid[i]}`) && !document.querySelector('style').innerText.includes(propertiesGrid[i])) {
         let styles = ` 
+            @media screen and (min-width: 900px){
                 .${propertiesGrid[i]} { 
                     ${valueGrids[i]}
-                }`;
+                }
+            }`;
         document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
     }
 }
