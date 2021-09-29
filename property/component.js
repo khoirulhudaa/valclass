@@ -2416,7 +2416,7 @@ let valueComponent = [
   .v-card-images {
       position: relative;
       width: 100%;
-      height: 180px;
+      height: 60%;
       display: flex;
       padding: 0;
       box-sizing: border-box;
@@ -2429,12 +2429,12 @@ let valueComponent = [
   .v-card-images img {
       position: relative;
       width: 100%;
-      height: 100%;
+      height: auto;
   }
   
   .v-card-content {
       width: 100%;
-      height: max-content;
+      height: 40%;
       padding: 10px;
   }
   
