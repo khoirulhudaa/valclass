@@ -79,9 +79,276 @@ let valuesOutlines = [
 for (var i = 0; i <= propertiesOutlines.length; i++) {
     if (document.querySelector(`.${propertiesOutlines[i]}`) && !document.querySelector('style').innerText.includes(propertiesOutlines[i])) {
         let styles = ` 
-        @media screen and (min-width: 900px){
+        @media screen and (min-width: 900px) and (max-width: 1920px) {
             .${propertiesOutlines[i]} { 
                 ${valuesOutlines[i]}
+            }
+        }`;
+        document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+    }
+}
+let propertiesOutlines2 = [
+    'mb:v-o-style-dotted',
+    'mb:v-o-style-dashed',
+    'mb:v-o-style-double',
+    'mb:v-o-style-groove',
+    'mb:v-o-style-solid',
+    'mb:v-o-style-ridge',
+    'mb:v-o-style-hidden',
+    'mb:v-o-1',
+    'mb:v-o-2',
+    'mb:v-o-3',
+    'mb:v-o-4',
+    'mb:v-o-top-1',
+    'mb:v-o-top-2',
+    'mb:v-o-top-3',
+    'mb:v-o-top-4',
+    'mb:v-o-left-1',
+    'mb:v-o-left-2',
+    'mb:v-o-left-3',
+    'mb:v-o-left-4',
+    'mb:v-o-right-1',
+    'mb:v-o-right-2',
+    'mb:v-o-right-3',
+    'mb:v-o-right-4',
+    'mb:v-o-bottom-1',
+    'mb:v-o-bottom-2',
+    'mb:v-o-bottom-3',
+    'mb:v-o-bottom-4',
+    'mb:v-o-dark',
+    'mb:v-o-light',
+    'mb:v-o-danger',
+    'mb:v-o-info',
+    'mb:v-o-primary',
+    'mb:v-o-smooth',
+    'mb:v-o-transparent',
+    'mb:v-o-secondary',
+    'mb:v-o-warning',
+    'mb:v-o-green'
+]
+let valuesOutlines2 = [
+    'outline-style: dotted;',
+    'outline-style: dashed;',
+    'outline-style: double',
+    'outline-style: groove;',
+    'outline-style: solid',
+    'outline-style: ridge;',
+    'outline-style: hidden;',
+    'outline: 1px;',
+    'outline: 2px;',
+    'outline: 3px;',
+    'outline: 4px;',
+    'outline-top: 1px;',
+    'outline-top: 2px;',
+    'outline-top: 3px;',
+    'outline-top: 4px;',
+    'outline-left: 1px;',
+    'outline-left: 2px;',
+    'outline-left: 3px;',
+    'outline-left: 4px;',
+    'outline-right: 1px;',
+    'outline-right: 2px;',
+    'outline-right: 3px;',
+    'outline-right: 4px;',
+    'outline-bottom: 1px;',
+    'outline-bottom: 2px;',
+    'outline-bottom: 3px;',
+    'outline-bottom: 4px;',
+    'outline-color: rgb(70, 70, 70);',
+    'outline-color: rgb(238, 238, 238);',
+    'outline-color: rgb(255, 76, 44);',
+    'outline-color: rgb(2, 168, 245);',
+    'outline-color: rgb(42, 131, 248);',
+    'outline-color: rgb(255, 242, 242);',
+    'outline-color: transparent;',
+    'outline-color: rgb(141, 141, 141);',
+    'outline-color: rgb(253, 207, 0);',
+    'outline-color: rgb(11, 245, 101);'
+]
+for (var i = 0; i <= propertiesOutlines2.length; i++) {
+    if (document.querySelector(`.${propertiesOutlines2[i]}`) && !document.querySelector('style').innerText.includes(propertiesOutlines2[i])) {
+        let styles = ` 
+        @media screen and (min-width: 320px) and (max-width: 600px){
+            .${propertiesOutlines2[i]} { 
+                ${valuesOutlines2[i]}
+            }
+        }`;
+        document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+    }
+}
+let propertiesOutlines3 = [
+    'tb:v-o-style-dotted',
+    'tb:v-o-style-dashed',
+    'tb:v-o-style-double',
+    'tb:v-o-style-groove',
+    'tb:v-o-style-solid',
+    'tb:v-o-style-ridge',
+    'tb:v-o-style-hidden',
+    'tb:v-o-1',
+    'tb:v-o-2',
+    'tb:v-o-3',
+    'tb:v-o-4',
+    'tb:v-o-top-1',
+    'tb:v-o-top-2',
+    'tb:v-o-top-3',
+    'tb:v-o-top-4',
+    'tb:v-o-left-1',
+    'tb:v-o-left-2',
+    'tb:v-o-left-3',
+    'tb:v-o-left-4',
+    'tb:v-o-right-1',
+    'tb:v-o-right-2',
+    'tb:v-o-right-3',
+    'tb:v-o-right-4',
+    'tb:v-o-bottom-1',
+    'tb:v-o-bottom-2',
+    'tb:v-o-bottom-3',
+    'tb:v-o-bottom-4',
+    'tb:v-o-dark',
+    'tb:v-o-light',
+    'tb:v-o-danger',
+    'tb:v-o-info',
+    'tb:v-o-primary',
+    'tb:v-o-smooth',
+    'tb:v-o-transparent',
+    'tb:v-o-secondary',
+    'tb:v-o-warning',
+    'tb:v-o-green'
+]
+let valuesOutlines3 = [
+    'outline-style: dotted;',
+    'outline-style: dashed;',
+    'outline-style: double',
+    'outline-style: groove;',
+    'outline-style: solid',
+    'outline-style: ridge;',
+    'outline-style: hidden;',
+    'outline: 1px;',
+    'outline: 2px;',
+    'outline: 3px;',
+    'outline: 4px;',
+    'outline-top: 1px;',
+    'outline-top: 2px;',
+    'outline-top: 3px;',
+    'outline-top: 4px;',
+    'outline-left: 1px;',
+    'outline-left: 2px;',
+    'outline-left: 3px;',
+    'outline-left: 4px;',
+    'outline-right: 1px;',
+    'outline-right: 2px;',
+    'outline-right: 3px;',
+    'outline-right: 4px;',
+    'outline-bottom: 1px;',
+    'outline-bottom: 2px;',
+    'outline-bottom: 3px;',
+    'outline-bottom: 4px;',
+    'outline-color: rgb(70, 70, 70);',
+    'outline-color: rgb(238, 238, 238);',
+    'outline-color: rgb(255, 76, 44);',
+    'outline-color: rgb(2, 168, 245);',
+    'outline-color: rgb(42, 131, 248);',
+    'outline-color: rgb(255, 242, 242);',
+    'outline-color: transparent;',
+    'outline-color: rgb(141, 141, 141);',
+    'outline-color: rgb(253, 207, 0);',
+    'outline-color: rgb(11, 245, 101);'
+]
+for (var i = 0; i <= propertiesOutlines3.length; i++) {
+    if (document.querySelector(`.${propertiesOutlines3[i]}`) && !document.querySelector('style').innerText.includes(propertiesOutlines3[i])) {
+        let styles = ` 
+        @media screen and (min-width: 600px) and (max-width: 900px){
+            .${propertiesOutlines3[i]} { 
+                ${valuesOutlines3[i]}
+            }
+        }`;
+        document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+    }
+}
+let propertiesOutlines4 = [
+    'pc:v-o-style-dotted',
+    'pc:v-o-style-dashed',
+    'pc:v-o-style-double',
+    'pc:v-o-style-groove',
+    'pc:v-o-style-solid',
+    'pc:v-o-style-ridge',
+    'pc:v-o-style-hidden',
+    'pc:v-o-1',
+    'pc:v-o-2',
+    'pc:v-o-3',
+    'pc:v-o-4',
+    'pc:v-o-top-1',
+    'pc:v-o-top-2',
+    'pc:v-o-top-3',
+    'pc:v-o-top-4',
+    'pc:v-o-left-1',
+    'pc:v-o-left-2',
+    'pc:v-o-left-3',
+    'pc:v-o-left-4',
+    'pc:v-o-right-1',
+    'pc:v-o-right-2',
+    'pc:v-o-right-3',
+    'pc:v-o-right-4',
+    'pc:v-o-bottom-1',
+    'pc:v-o-bottom-2',
+    'pc:v-o-bottom-3',
+    'pc:v-o-bottom-4',
+    'pc:v-o-dark',
+    'pc:v-o-light',
+    'pc:v-o-danger',
+    'pc:v-o-info',
+    'pc:v-o-primary',
+    'pc:v-o-smooth',
+    'pc:v-o-transparent',
+    'pc:v-o-secondary',
+    'pc:v-o-warning',
+    'pc:v-o-green'
+]
+let valuesOutlines4 = [
+    'outline-style: dotted;',
+    'outline-style: dashed;',
+    'outline-style: double',
+    'outline-style: groove;',
+    'outline-style: solid',
+    'outline-style: ridge;',
+    'outline-style: hidden;',
+    'outline: 1px;',
+    'outline: 2px;',
+    'outline: 3px;',
+    'outline: 4px;',
+    'outline-top: 1px;',
+    'outline-top: 2px;',
+    'outline-top: 3px;',
+    'outline-top: 4px;',
+    'outline-left: 1px;',
+    'outline-left: 2px;',
+    'outline-left: 3px;',
+    'outline-left: 4px;',
+    'outline-right: 1px;',
+    'outline-right: 2px;',
+    'outline-right: 3px;',
+    'outline-right: 4px;',
+    'outline-bottom: 1px;',
+    'outline-bottom: 2px;',
+    'outline-bottom: 3px;',
+    'outline-bottom: 4px;',
+    'outline-color: rgb(70, 70, 70);',
+    'outline-color: rgb(238, 238, 238);',
+    'outline-color: rgb(255, 76, 44);',
+    'outline-color: rgb(2, 168, 245);',
+    'outline-color: rgb(42, 131, 248);',
+    'outline-color: rgb(255, 242, 242);',
+    'outline-color: transparent;',
+    'outline-color: rgb(141, 141, 141);',
+    'outline-color: rgb(253, 207, 0);',
+    'outline-color: rgb(11, 245, 101);'
+]
+for (var i = 0; i <= propertiesOutlines4.length; i++) {
+    if (document.querySelector(`.${propertiesOutlines4[i]}`) && !document.querySelector('style').innerText.includes(propertiesOutlines4[i])) {
+        let styles = ` 
+        @media screen and (min-width: 1920px){
+            .${propertiesOutlines4[i]} { 
+                ${valuesOutlines4[i]}
             }
         }`;
         document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));

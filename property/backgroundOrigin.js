@@ -11,9 +11,75 @@ let valuesBackgroundOrigin = [
 for (var i = 0; i <= propertiesBackgroundOrigin.length; i++) {
     if (document.querySelector(`.${propertiesBackgroundOrigin[i]}`) && !document.querySelector('style').innerText.includes(propertiesBackgroundOrigin[i])) {
         let styles = ` 
-            @media screen and (min-width: 900px){
+            @media screen and (min-width: 900px) and (max-width: 1920px)
                 .${propertiesBackgroundOrigin[i]} { 
                     ${valuesBackgroundOrigin[i]}
+                }
+            }`;
+        document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+    }
+}
+
+let propertiesBackgroundOrigin2 = [
+    'mb:v-bg-content-box',
+    'mb:v-bg-border-box',
+    'mb:v-bg-padding-box'
+]
+let valuesBackgroundOrigin2 = [
+    'background-origin: content-box',
+    'background-origin: border-box',
+    'background-origin: padding-box'
+]
+for (var i = 0; i <= propertiesBackgroundOrigin2.length; i++) {
+    if (document.querySelector(`.${propertiesBackgroundOrigin2[i]}`) && !document.querySelector('style').innerText.includes(propertiesBackgroundOrigin2[i])) {
+        let styles = ` 
+            @media screen and (min-width: 320px) and (max-width: 600px){
+                .${propertiesBackgroundOrigin2[i]} { 
+                    ${valuesBackgroundOrigin2[i]}
+                }
+            }`;
+        document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+    }
+}
+
+let propertiesBackgroundOrigin3 = [
+    'tb:v-bg-content-box',
+    'tb:v-bg-border-box',
+    'tb:v-bg-padding-box'
+]
+let valuesBackgroundOrigin3 = [
+    'background-origin: content-box',
+    'background-origin: border-box',
+    'background-origin: padding-box'
+]
+for (var i = 0; i <= propertiesBackgroundOrigin3.length; i++) {
+    if (document.querySelector(`.${propertiesBackgroundOrigin3[i]}`) && !document.querySelector('style').innerText.includes(propertiesBackgroundOrigin3[i])) {
+        let styles = ` 
+            @media screen and (min-width: 600px) and (max-width: 900px){
+                .${propertiesBackgroundOrigin3[i]} { 
+                    ${valuesBackgroundOrigin3[i]}
+                }
+            }`;
+        document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+    }
+}
+
+let propertiesBackgroundOrigin4 = [
+    'pc:v-bg-content-box',
+    'pc:v-bg-border-box',
+    'pc:v-bg-padding-box'
+]
+let valuesBackgroundOrigin4 = [
+    'background-origin: content-box',
+    'background-origin: border-box',
+    'background-origin: padding-box'
+]
+for (var i = 0; i <= propertiesBackgroundOrigin4.length; i++) {
+    if (document.querySelector(`.${propertiesBackgroundOrigin4[i]}`) && !document.querySelector('style').innerText.includes(propertiesBackgroundOrigin4[i])) {
+        let styles = ` 
+            @media screen and (min-width: 1920px){
+                .${propertiesBackgroundOrigin4[i]} { 
+                    ${valuesBackgroundOrigin4[i]}
                 }
             }`;
         document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));

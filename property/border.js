@@ -1,4 +1,3 @@
-
 let propertiesBorders = [
     'v-border-dotted',
     'v-border-dashed',
@@ -94,9 +93,324 @@ let valuesBorders = [
 for (var i = 0; i <= propertiesBorders.length; i++) {
     if (document.querySelector(`.${propertiesBorders[i]}`) && !document.querySelector('style').innerText.includes(propertiesBorders[i])) {
         let styles = ` 
-            @media screen and (min-width: 900px){
+            @media screen and (min-width: 900px) and (max-width: 1920px) {
                 .${propertiesBorders[i]} { 
                     ${valuesBorders[i]}
+                }
+            }`;
+        document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+    }
+}
+
+
+let propertiesBorders2 = [
+    'mb:v-border-dotted',
+    'mb:v-border-dashed',
+    'mb:v-border-double',
+    'mb:v-border-groove',
+    'mb:v-border-solid',
+    'mb:v-border-ridge',
+    'mb:v-border-hidden',
+    'mb:v-radius-sm',
+    'mb:v-radius-md',
+    'mb:v-radius-lg',
+    'mb:v-radius-xl',
+    'mb:v-radius-full',
+    'mb:v-border-1',
+    'mb:v-border-2',
+    'mb:v-border-3',
+    'mb:v-border-4',
+    'mb:v-border-t-1',
+    'mb:v-border-t-2',
+    'mb:v-border-t-3',
+    'mb:v-border-t-4',
+    'mb:v-border-l-1',
+    'mb:v-border-l-2',
+    'mb:v-border-l-3',
+    'mb:v-border-l-4',
+    'mb:v-border-r-1',
+    'mb:v-border-r-2',
+    'mb:v-border-r-3',
+    'mb:v-border-r-4',
+    'mb:v-border-b-1',
+    'mb:v-border-b-2',
+    'mb:v-border-b-3',
+    'mb:v-border-b-4',
+    'mb:v-border-dark',
+    'mb:v-border-light',
+    'mb:v-border-danger',
+    'mb:v-border-info',
+    'mb:v-border-primary',
+    'mb:v-border-smooth',
+    'mb:v-border-transparent',
+    'mb:v-border-secondary',
+    'mb:v-border-warning',
+    'mb:v-border-green',
+    'mb:v-border-collapse',
+    'mb:v-border-separate',
+]
+let valuesBorders2 = [
+    'border-style: dotted;',
+    'border-style: dashed;',
+    'border-style: double',
+    'border-style: groove;',
+    'border-style: solid',
+    'border-style: ridge;',
+    'border-style: hidden;',
+    'border-radius: 5px;',
+    'border-radius: 10px;',
+    'border-radius: 15px;',
+    'border-radius: 20px;',
+    'border-radius: 99999px;',
+    'border: 1px solid black;',
+    'border: 2px solid black;',
+    'border: 3px solid black;',
+    'border: 4px solid black;',
+    'border-top: 1px solid black;',
+    'border-top: 2px solid black;',
+    'border-top: 3px solid black;',
+    'border-top: 4px solid black;',
+    'border-left: 1px solid black;',
+    'border-left: 2px solid black;',
+    'border-left: 3px solid black;',
+    'border-left: 4px solid black;',
+    'border-right: 1px solid black;',
+    'border-right: 2px solid black;',
+    'border-right: 3px solid black;',
+    'border-right: 4px solid black;',
+    'border-bottom: 1px solid black;',
+    'border-bottom: 2px solid black;',
+    'border-bottom: 3px solid black;',
+    'border-bottom: 4px solid black;',
+    'border-color: rgb(70, 70, 70);',
+    'border-color: rgb(238, 238, 238);',
+    'border-color: rgb(255, 76, 44);',
+    'border-color: rgb(2, 168, 245);',
+    'border-color: rgb(42, 131, 248);',
+    'border-color: rgb(255, 242, 242);',
+    'border-color: transparent;',
+    'border-color: rgb(141, 141, 141);',
+    'border-color: rgb(253, 207, 0);',
+    'border-color: rgb(14, 253, 201);',
+    'border-collapse: collapse;',
+    'border-collapse: separate'
+]
+for (var i = 0; i <= propertiesBorders2.length; i++) {
+    if (document.querySelector(`.${propertiesBorders2[i]}`) && !document.querySelector('style').innerText.includes(propertiesBorders2[i])) {
+        let styles = ` 
+            @media screen and (min-width: 320px) and (max-width: 600px){
+                .${propertiesBorders2[i]} { 
+                    ${valuesBorders2[i]}
+                }
+            }`;
+        document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+    }
+}
+
+
+let propertiesBorders3 = [
+    'tb:v-border-dotted',
+    'tb:v-border-dashed',
+    'tb:v-border-double',
+    'tb:v-border-groove',
+    'tb:v-border-solid',
+    'tb:v-border-ridge',
+    'tb:v-border-hidden',
+    'tb:v-radius-sm',
+    'tb:v-radius-md',
+    'tb:v-radius-lg',
+    'tb:v-radius-xl',
+    'tb:v-radius-full',
+    'tb:v-border-1',
+    'tb:v-border-2',
+    'tb:v-border-3',
+    'tb:v-border-4',
+    'tb:v-border-t-1',
+    'tb:v-border-t-2',
+    'tb:v-border-t-3',
+    'tb:v-border-t-4',
+    'tb:v-border-l-1',
+    'tb:v-border-l-2',
+    'tb:v-border-l-3',
+    'tb:v-border-l-4',
+    'tb:v-border-r-1',
+    'tb:v-border-r-2',
+    'tb:v-border-r-3',
+    'tb:v-border-r-4',
+    'tb:v-border-b-1',
+    'tb:v-border-b-2',
+    'tb:v-border-b-3',
+    'tb:v-border-b-4',
+    'tb:v-border-dark',
+    'tb:v-border-light',
+    'tb:v-border-danger',
+    'tb:v-border-info',
+    'tb:v-border-primary',
+    'tb:v-border-smooth',
+    'tb:v-border-transparent',
+    'tb:v-border-secondary',
+    'tb:v-border-warning',
+    'tb:v-border-green',
+    'tb:v-border-collapse',
+    'tb:v-border-separate',
+]
+let valuesBorders3 = [
+    'border-style: dotted;',
+    'border-style: dashed;',
+    'border-style: double',
+    'border-style: groove;',
+    'border-style: solid',
+    'border-style: ridge;',
+    'border-style: hidden;',
+    'border-radius: 5px;',
+    'border-radius: 10px;',
+    'border-radius: 15px;',
+    'border-radius: 20px;',
+    'border-radius: 99999px;',
+    'border: 1px solid black;',
+    'border: 2px solid black;',
+    'border: 3px solid black;',
+    'border: 4px solid black;',
+    'border-top: 1px solid black;',
+    'border-top: 2px solid black;',
+    'border-top: 3px solid black;',
+    'border-top: 4px solid black;',
+    'border-left: 1px solid black;',
+    'border-left: 2px solid black;',
+    'border-left: 3px solid black;',
+    'border-left: 4px solid black;',
+    'border-right: 1px solid black;',
+    'border-right: 2px solid black;',
+    'border-right: 3px solid black;',
+    'border-right: 4px solid black;',
+    'border-bottom: 1px solid black;',
+    'border-bottom: 2px solid black;',
+    'border-bottom: 3px solid black;',
+    'border-bottom: 4px solid black;',
+    'border-color: rgb(70, 70, 70);',
+    'border-color: rgb(238, 238, 238);',
+    'border-color: rgb(255, 76, 44);',
+    'border-color: rgb(2, 168, 245);',
+    'border-color: rgb(42, 131, 248);',
+    'border-color: rgb(255, 242, 242);',
+    'border-color: transparent;',
+    'border-color: rgb(141, 141, 141);',
+    'border-color: rgb(253, 207, 0);',
+    'border-color: rgb(14, 253, 201);',
+    'border-collapse: collapse;',
+    'border-collapse: separate'
+]
+for (var i = 0; i <= propertiesBorders3.length; i++) {
+    if (document.querySelector(`.${propertiesBorders3[i]}`) && !document.querySelector('style').innerText.includes(propertiesBorders3[i])) {
+        let styles = ` 
+            @media screen and (min-width: 600px) and (max-width: 900px){
+                .${propertiesBorders3[i]} { 
+                    ${valuesBorders3[i]}
+                }
+            }`;
+        document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+    }
+}
+
+
+let propertiesBorders4 = [
+    'pc:v-border-dotted',
+    'pc:v-border-dashed',
+    'pc:v-border-double',
+    'pc:v-border-groove',
+    'pc:v-border-solid',
+    'pc:v-border-ridge',
+    'pc:v-border-hidden',
+    'pc:v-radius-sm',
+    'pc:v-radius-md',
+    'pc:v-radius-lg',
+    'pc:v-radius-xl',
+    'pc:v-radius-full',
+    'pc:v-border-1',
+    'pc:v-border-2',
+    'pc:v-border-3',
+    'pc:v-border-4',
+    'pc:v-border-t-1',
+    'pc:v-border-t-2',
+    'pc:v-border-t-3',
+    'pc:v-border-t-4',
+    'pc:v-border-l-1',
+    'pc:v-border-l-2',
+    'pc:v-border-l-3',
+    'pc:v-border-l-4',
+    'pc:v-border-r-1',
+    'pc:v-border-r-2',
+    'pc:v-border-r-3',
+    'pc:v-border-r-4',
+    'pc:v-border-b-1',
+    'pc:v-border-b-2',
+    'pc:v-border-b-3',
+    'pc:v-border-b-4',
+    'pc:v-border-dark',
+    'pc:v-border-light',
+    'pc:v-border-danger',
+    'pc:v-border-info',
+    'pc:v-border-primary',
+    'pc:v-border-smooth',
+    'pc:v-border-transparent',
+    'pc:v-border-secondary',
+    'pc:v-border-warning',
+    'pc:v-border-green',
+    'pc:v-border-collapse',
+    'pc:v-border-separate',
+]
+let valuesBorders4 = [
+    'border-style: dotted;',
+    'border-style: dashed;',
+    'border-style: double',
+    'border-style: groove;',
+    'border-style: solid',
+    'border-style: ridge;',
+    'border-style: hidden;',
+    'border-radius: 5px;',
+    'border-radius: 10px;',
+    'border-radius: 15px;',
+    'border-radius: 20px;',
+    'border-radius: 99999px;',
+    'border: 1px solid black;',
+    'border: 2px solid black;',
+    'border: 3px solid black;',
+    'border: 4px solid black;',
+    'border-top: 1px solid black;',
+    'border-top: 2px solid black;',
+    'border-top: 3px solid black;',
+    'border-top: 4px solid black;',
+    'border-left: 1px solid black;',
+    'border-left: 2px solid black;',
+    'border-left: 3px solid black;',
+    'border-left: 4px solid black;',
+    'border-right: 1px solid black;',
+    'border-right: 2px solid black;',
+    'border-right: 3px solid black;',
+    'border-right: 4px solid black;',
+    'border-bottom: 1px solid black;',
+    'border-bottom: 2px solid black;',
+    'border-bottom: 3px solid black;',
+    'border-bottom: 4px solid black;',
+    'border-color: rgb(70, 70, 70);',
+    'border-color: rgb(238, 238, 238);',
+    'border-color: rgb(255, 76, 44);',
+    'border-color: rgb(2, 168, 245);',
+    'border-color: rgb(42, 131, 248);',
+    'border-color: rgb(255, 242, 242);',
+    'border-color: transparent;',
+    'border-color: rgb(141, 141, 141);',
+    'border-color: rgb(253, 207, 0);',
+    'border-color: rgb(14, 253, 201);',
+    'border-collapse: collapse;',
+    'border-collapse: separate'
+]
+for (var i = 0; i <= propertiesBorders4.length; i++) {
+    if (document.querySelector(`.${propertiesBorders4[i]}`) && !document.querySelector('style').innerText.includes(propertiesBorders4[i])) {
+        let styles = ` 
+            @media screen and (min-width: 1920px){
+                .${propertiesBorders4[i]} { 
+                    ${valuesBorders4[i]}
                 }
             }`;
         document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
