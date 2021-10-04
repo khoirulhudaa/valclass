@@ -35,16 +35,16 @@ for (var i = 0; i <= propertiesLineHeight.length; i++) {
     }
 }
 let propertiesLineHeight2 = [
-    'mb:v-leading-1',
-    'mb:v-leading-2',
-    'mb:v-leading-3',
-    'mb:v-leading-4',
-    'mb:v-leading-none',
-    'mb:v-leading-tight',
-    'mb:v-leading-snug',
-    'mb:v-leading-normal',
-    'mb:v-leading-relaxed',
-    'mb:v-leading-loose'
+    'mb_v-leading-1',
+    'mb_v-leading-2',
+    'mb_v-leading-3',
+    'mb_v-leading-4',
+    'mb_v-leading-none',
+    'mb_v-leading-tight',
+    'mb_v-leading-snug',
+    'mb_v-leading-normal',
+    'mb_v-leading-relaxed',
+    'mb_v-leading-loose'
 ]
 let valuesLineHeight2 = [
     'line-height: .75rem;',
@@ -70,16 +70,16 @@ for (var i = 0; i <= propertiesLineHeight2.length; i++) {
     }
 }
 let propertiesLineHeight3 = [
-    'tb:v-leading-1',
-    'tb:v-leading-2',
-    'tb:v-leading-3',
-    'tb:v-leading-4',
-    'tb:v-leading-none',
-    'tb:v-leading-tight',
-    'tb:v-leading-snug',
-    'tb:v-leading-normal',
-    'tb:v-leading-relaxed',
-    'tb:v-leading-loose'
+    'tb_v-leading-1',
+    'tb_v-leading-2',
+    'tb_v-leading-3',
+    'tb_v-leading-4',
+    'tb_v-leading-none',
+    'tb_v-leading-tight',
+    'tb_v-leading-snug',
+    'tb_v-leading-normal',
+    'tb_v-leading-relaxed',
+    'tb_v-leading-loose'
 ]
 let valuesLineHeight3 = [
     'line-height: .75rem;',
@@ -105,16 +105,16 @@ for (var i = 0; i <= propertiesLineHeight3.length; i++) {
     }
 }
 let propertiesLineHeight4 = [
-    'pc:v-leading-1',
-    'pc:v-leading-2',
-    'pc:v-leading-3',
-    'pc:v-leading-4',
-    'pc:v-leading-none',
-    'pc:v-leading-tight',
-    'pc:v-leading-snug',
-    'pc:v-leading-normal',
-    'pc:v-leading-relaxed',
-    'pc:v-leading-loose'
+    'pc_v-leading-1',
+    'pc_v-leading-2',
+    'pc_v-leading-3',
+    'pc_v-leading-4',
+    'pc_v-leading-none',
+    'pc_v-leading-tight',
+    'pc_v-leading-snug',
+    'pc_v-leading-normal',
+    'pc_v-leading-relaxed',
+    'pc_v-leading-loose'
 ]
 let valuesLineHeight4 = [
     'line-height: .75rem;',

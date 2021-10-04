@@ -28,13 +28,13 @@ for (var i = 0; i <= propertiesListStyle.length; i++) {
     }
 }
 let propertiesListStyle2 = [
-    'mb:v-list-none',
-    'mb:v-list-square',
-    'mb:v-list-circle',
-    'mb:v-list-desc',
-    'mb:v-list-decimal',
-    'mb:v-list-armenian',
-    'mb:v-list-georgian'
+    'mb_v-list-none',
+    'mb_v-list-square',
+    'mb_v-list-circle',
+    'mb_v-list-desc',
+    'mb_v-list-decimal',
+    'mb_v-list-armenian',
+    'mb_v-list-georgian'
 ]
 let valuesListStyle2 = [
     'list-style-type: none',
@@ -57,13 +57,13 @@ for (var i = 0; i <= propertiesListStyle2.length; i++) {
     }
 }
 let propertiesListStyle3 = [
-    'tb:v-list-none',
-    'tb:v-list-square',
-    'tb:v-list-circle',
-    'tb:v-list-desc',
-    'tb:v-list-decimal',
-    'tb:v-list-armenian',
-    'tb:v-list-georgian'
+    'tb_v-list-none',
+    'tb_v-list-square',
+    'tb_v-list-circle',
+    'tb_v-list-desc',
+    'tb_v-list-decimal',
+    'tb_v-list-armenian',
+    'tb_v-list-georgian'
 ]
 let valuesListStyle3 = [
     'list-style-type: none',
@@ -86,13 +86,13 @@ for (var i = 0; i <= propertiesListStyle3.length; i++) {
     }
 }
 let propertiesListStyle4 = [
-    'pc:v-list-none',
-    'pc:v-list-square',
-    'pc:v-list-circle',
-    'pc:v-list-desc',
-    'pc:v-list-decimal',
-    'pc:v-list-armenian',
-    'pc:v-list-georgian'
+    'pc_v-list-none',
+    'pc_v-list-square',
+    'pc_v-list-circle',
+    'pc_v-list-desc',
+    'pc_v-list-decimal',
+    'pc_v-list-armenian',
+    'pc_v-list-georgian'
 ]
 let valuesListStyle4 = [
     'list-style-type: none',

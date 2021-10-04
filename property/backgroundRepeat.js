@@ -19,8 +19,8 @@ for (var i = 0; i <= propertiesBackgroundRepeat.length; i++) {
 }
 
 let propertiesBackgroundRepeat2 = [
-    'mb:v-bg-repeat',
-    'mb:v-bg-norepeat'
+    'mb_v-bg-repeat',
+    'mb_v-bg-norepeat'
 ]
 let valuesBackgroundRepeat2 = [
     'background-repeat: repeat',
@@ -39,8 +39,8 @@ for (var i = 0; i <= propertiesBackgroundRepeat2.length; i++) {
 }
 
 let propertiesBackgroundRepeat3 = [
-    'tb:v-bg-repeat',
-    'tb:v-bg-norepeat'
+    'tb_v-bg-repeat',
+    'tb_v-bg-norepeat'
 ]
 let valuesBackgroundRepeat3 = [
     'background-repeat: repeat',
@@ -59,8 +59,8 @@ for (var i = 0; i <= propertiesBackgroundRepeat3.length; i++) {
 }
 
 let propertiesBackgroundRepeat4 = [
-    'pc:v-bg-repeat',
-    'pc:v-bg-norepeat'
+    'pc_v-bg-repeat',
+    'pc_v-bg-norepeat'
 ]
 let valuesBackgroundRepeat4 = [
     'background-repeat: repeat',

@@ -21,9 +21,9 @@ for (var i = 0; i <= propertiesBackgroundAttachment.length; i++) {
 }
 
 let propertiesBackgroundAttachment2 = [
-    'mb:v-attachment-fixed',
-    'mb:v-attachment-local',
-    'mb:v-attachment-scroll'
+    'mb_v-attachment-fixed',
+    'mb_v-attachment-local',
+    'mb_v-attachment-scroll'
 ]
 let valuesBackgroundAttachment2 = [
     'background-attachment: fixed',
@@ -43,9 +43,9 @@ for (var i = 0; i <= propertiesBackgroundAttachment2.length; i++) {
 }
 
 let propertiesBackgroundAttachment3 = [
-    'tb:v-attachment-fixed',
-    'tb:v-attachment-local',
-    'tb:v-attachment-scroll'
+    'tb_v-attachment-fixed',
+    'tb_v-attachment-local',
+    'tb_v-attachment-scroll'
 ]
 let valuesBackgroundAttachment3 = [
     'background-attachment: fixed',
@@ -65,9 +65,9 @@ for (var i = 0; i <= propertiesBackgroundAttachment3.length; i++) {
 }
 
 let propertiesBackgroundAttachment4 = [
-    'pc:v-attachment-fixed',
-    'pc:v-attachment-local',
-    'pc:v-attachment-scroll'
+    'pc_v-attachment-fixed',
+    'pc_v-attachment-local',
+    'pc_v-attachment-scroll'
 ]
 let valuesBackgroundAttachment4 = [
     'background-attachment: fixed',

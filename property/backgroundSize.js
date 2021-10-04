@@ -43,20 +43,20 @@ for (var i = 0; i <= propertiesBackgroundSize.length; i++) {
 }
 
 let propertiesBackgroundSize2= [
-    'mb:v-bg-sz-auto',
-    'mb:v-bg-sz-contain',
-    'mb:v-bg-sz-cover',
-    'mb:v-bg-sz--1',
-    'mb:v-bg-sz--2',
-    'mb:v-bg-sz--3',
-    'mb:v-bg-sz--4',
-    'mb:v-bg-sz--full',
-    'mb:v-bg-sz-0',
-    'mb:v-bg-sz-1',
-    'mb:v-bg-sz-2',
-    'mb:v-bg-sz-3',
-    'mb:v-bg-sz-4',
-    'mb:v-bg-sz-full'
+    'mb_v-bg-sz-auto',
+    'mb_v-bg-sz-contain',
+    'mb_v-bg-sz-cover',
+    'mb_v-bg-sz--1',
+    'mb_v-bg-sz--2',
+    'mb_v-bg-sz--3',
+    'mb_v-bg-sz--4',
+    'mb_v-bg-sz--full',
+    'mb_v-bg-sz-0',
+    'mb_v-bg-sz-1',
+    'mb_v-bg-sz-2',
+    'mb_v-bg-sz-3',
+    'mb_v-bg-sz-4',
+    'mb_v-bg-sz-full'
 ]
 let valuesBackgroundSize2 = [
     'background-size: auto',
@@ -87,20 +87,20 @@ for (var i = 0; i <= propertiesBackgroundSize2.length; i++) {
 }
 
 let propertiesBackgroundSize3= [
-    'tb:v-bg-sz-auto',
-    'tb:v-bg-sz-contain',
-    'tb:v-bg-sz-cover',
-    'tb:v-bg-sz--1',
-    'tb:v-bg-sz--2',
-    'tb:v-bg-sz--3',
-    'tb:v-bg-sz--4',
-    'tb:v-bg-sz--full',
-    'tb:v-bg-sz-0',
-    'tb:v-bg-sz-1',
-    'tb:v-bg-sz-2',
-    'tb:v-bg-sz-3',
-    'tb:v-bg-sz-4',
-    'tb:v-bg-sz-full'
+    'tb_v-bg-sz-auto',
+    'tb_v-bg-sz-contain',
+    'tb_v-bg-sz-cover',
+    'tb_v-bg-sz--1',
+    'tb_v-bg-sz--2',
+    'tb_v-bg-sz--3',
+    'tb_v-bg-sz--4',
+    'tb_v-bg-sz--full',
+    'tb_v-bg-sz-0',
+    'tb_v-bg-sz-1',
+    'tb_v-bg-sz-2',
+    'tb_v-bg-sz-3',
+    'tb_v-bg-sz-4',
+    'tb_v-bg-sz-full'
 ]
 let valuesBackgroundSize3 = [
     'background-size: auto',
@@ -131,20 +131,20 @@ for (var i = 0; i <= propertiesBackgroundSize3.length; i++) {
 }
 
 let propertiesBackgroundSize4 = [
-    'pc:v-bg-sz-auto',
-    'pc:v-bg-sz-contain',
-    'pc:v-bg-sz-cover',
-    'pc:v-bg-sz--1',
-    'pc:v-bg-sz--2',
-    'pc:v-bg-sz--3',
-    'pc:v-bg-sz--4',
-    'pc:v-bg-sz--full',
-    'pc:v-bg-sz-0',
-    'pc:v-bg-sz-1',
-    'pc:v-bg-sz-2',
-    'pc:v-bg-sz-3',
-    'pc:v-bg-sz-4',
-    'pc:v-bg-sz-full'
+    'pc_v-bg-sz-auto',
+    'pc_v-bg-sz-contain',
+    'pc_v-bg-sz-cover',
+    'pc_v-bg-sz--1',
+    'pc_v-bg-sz--2',
+    'pc_v-bg-sz--3',
+    'pc_v-bg-sz--4',
+    'pc_v-bg-sz--full',
+    'pc_v-bg-sz-0',
+    'pc_v-bg-sz-1',
+    'pc_v-bg-sz-2',
+    'pc_v-bg-sz-3',
+    'pc_v-bg-sz-4',
+    'pc_v-bg-sz-full'
 ]
 let valuesBackgroundSize4 = [
     'background-size: auto',

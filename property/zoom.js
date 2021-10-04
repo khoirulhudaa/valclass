@@ -26,12 +26,12 @@ for (var i = 0; i <= propertiesZooms.length; i++) {
     }
 }
 let propertiesZooms2 = [
-    'mb:v-zoom-none',
-    'mb:v-zoom-sm',
-    'mb:v-zoom-md',
-    'mb:v-zoom-lg',
-    'mb:v-zoom-xl',
-    'mb:v-zoom-full' 
+    'mb_v-zoom-none',
+    'mb_v-zoom-sm',
+    'mb_v-zoom-md',
+    'mb_v-zoom-lg',
+    'mb_v-zoom-xl',
+    'mb_v-zoom-full' 
 ]
 let valuesZooms2 = [
     'zoom: none;',
@@ -53,12 +53,12 @@ for (var i = 0; i <= propertiesZooms2.length; i++) {
     }
 }
 let propertiesZooms3 = [
-    'tb:v-zoom-none',
-    'tb:v-zoom-sm',
-    'tb:v-zoom-md',
-    'tb:v-zoom-lg',
-    'tb:v-zoom-xl',
-    'tb:v-zoom-full' 
+    'tb_v-zoom-none',
+    'tb_v-zoom-sm',
+    'tb_v-zoom-md',
+    'tb_v-zoom-lg',
+    'tb_v-zoom-xl',
+    'tb_v-zoom-full' 
 ]
 let valuesZooms3 = [
     'zoom: none;',
@@ -80,12 +80,12 @@ for (var i = 0; i <= propertiesZooms3.length; i++) {
     }
 }
 let propertiesZooms4 = [
-    'pc:v-zoom-none',
-    'pc:v-zoom-sm',
-    'pc:v-zoom-md',
-    'pc:v-zoom-lg',
-    'pc:v-zoom-xl',
-    'pc:v-zoom-full' 
+    'pc_v-zoom-none',
+    'pc_v-zoom-sm',
+    'pc_v-zoom-md',
+    'pc_v-zoom-lg',
+    'pc_v-zoom-xl',
+    'pc_v-zoom-full' 
 ]
 let valuesZooms4 = [
     'zoom: none;',

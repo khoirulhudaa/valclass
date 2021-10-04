@@ -20,9 +20,9 @@ for (var i = 0; i <= propertiesvisibility.length; i++) {
     }
 }
 let propertiesvisibility2 = [
-    'mb:v-visibility-collapse',
-    'mb:v-visibility-hidden',
-    'mb:v-visibility-visible'
+    'mb_v-visibility-collapse',
+    'mb_v-visibility-hidden',
+    'mb_v-visibility-visible'
 ]
 let valuesvisibility2 = [
     'visibility: collapse;',
@@ -41,9 +41,9 @@ for (var i = 0; i <= propertiesvisibility2.length; i++) {
     }
 }
 let propertiesvisibility3 = [
-    'tb:v-visibility-collapse',
-    'tb:v-visibility-hidden',
-    'tb:v-visibility-visible'
+    'tb_v-visibility-collapse',
+    'tb_v-visibility-hidden',
+    'tb_v-visibility-visible'
 ]
 let valuesvisibility3 = [
     'visibility: collapse;',
@@ -62,9 +62,9 @@ for (var i = 0; i <= propertiesvisibility3.length; i++) {
     }
 }
 let propertiesvisibility4 = [
-    'pc:v-visibility-collapse',
-    'pc:v-visibility-hidden',
-    'pc:v-visibility-visible'
+    'pc_v-visibility-collapse',
+    'pc_v-visibility-hidden',
+    'pc_v-visibility-visible'
 ]
 let valuesvisibility4 = [
     'visibility: collapse;',

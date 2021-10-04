@@ -36,17 +36,17 @@ for (var i = 0; i <= propertiesTextColors.length; i++) {
     }
 }
 let propertiesTextColors2 = [
-    'mb:v-text-dark',
-    'mb:v-text-light',
-    'mb:v-text-danger',
-    'mb:v-text-info',
-    'mb:v-text-primary',
-    'mb:v-text-smooth',
-    'mb:v-text-transparent',
-    'mb:v-text-secondary',
-    'mb:v-text-warning',
-    'mb:v-text-green',
-    'mb:v-text-white'
+    'mb_v-text-dark',
+    'mb_v-text-light',
+    'mb_v-text-danger',
+    'mb_v-text-info',
+    'mb_v-text-primary',
+    'mb_v-text-smooth',
+    'mb_v-text-transparent',
+    'mb_v-text-secondary',
+    'mb_v-text-warning',
+    'mb_v-text-green',
+    'mb_v-text-white'
 ]
 let valuesTextColors2 = [
     'color: black;',
@@ -73,17 +73,17 @@ for (var i = 0; i <= propertiesTextColors2.length; i++) {
     }
 }
 let propertiesTextColors3 = [
-    'tb:v-text-dark',
-    'tb:v-text-light',
-    'tb:v-text-danger',
-    'tb:v-text-info',
-    'tb:v-text-primary',
-    'tb:v-text-smooth',
-    'tb:v-text-transparent',
-    'tb:v-text-secondary',
-    'tb:v-text-warning',
-    'tb:v-text-green',
-    'tb:v-text-white'
+    'tb_v-text-dark',
+    'tb_v-text-light',
+    'tb_v-text-danger',
+    'tb_v-text-info',
+    'tb_v-text-primary',
+    'tb_v-text-smooth',
+    'tb_v-text-transparent',
+    'tb_v-text-secondary',
+    'tb_v-text-warning',
+    'tb_v-text-green',
+    'tb_v-text-white'
 ]
 let valuesTextColors3 = [
     'color: black;',
@@ -110,17 +110,17 @@ for (var i = 0; i <= propertiesTextColors3.length; i++) {
     }
 }
 let propertiesTextColors4 = [
-    'pc:v-text-dark',
-    'pc:v-text-light',
-    'pc:v-text-danger',
-    'pc:v-text-info',
-    'pc:v-text-primary',
-    'pc:v-text-smooth',
-    'pc:v-text-transparent',
-    'pc:v-text-secondary',
-    'pc:v-text-warning',
-    'pc:v-text-green',
-    'pc:v-text-white'
+    'pc_v-text-dark',
+    'pc_v-text-light',
+    'pc_v-text-danger',
+    'pc_v-text-info',
+    'pc_v-text-primary',
+    'pc_v-text-smooth',
+    'pc_v-text-transparent',
+    'pc_v-text-secondary',
+    'pc_v-text-warning',
+    'pc_v-text-green',
+    'pc_v-text-white'
 ]
 let valuesTextColors4 = [
     'color: black;',

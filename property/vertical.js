@@ -24,11 +24,11 @@ for (var i = 0; i <= propertiesVertical.length; i++) {
     }
 }
 let propertiesVertical2 = [
-    'mb:v-vertical-baseline',
-    'mb:v-vertical-text-top',
-    'mb:v-vertical-text-bottom',
-    'mb:v-vertical-sub',
-    'mb:v-vertical-super'
+    'mb_v-vertical-baseline',
+    'mb_v-vertical-text-top',
+    'mb_v-vertical-text-bottom',
+    'mb_v-vertical-sub',
+    'mb_v-vertical-super'
 ]
 let valuesVertical2 = [
     'vertical-align: baseline;',
@@ -49,11 +49,11 @@ for (var i = 0; i <= propertiesVertical2.length; i++) {
     }
 }
 let propertiesVertical3 = [
-    'tb:v-vertical-baseline',
-    'tb:v-vertical-text-top',
-    'tb:v-vertical-text-bottom',
-    'tb:v-vertical-sub',
-    'tb:v-vertical-super'
+    'tb_v-vertical-baseline',
+    'tb_v-vertical-text-top',
+    'tb_v-vertical-text-bottom',
+    'tb_v-vertical-sub',
+    'tb_v-vertical-super'
 ]
 let valuesVertical3 = [
     'vertical-align: baseline;',
@@ -74,11 +74,11 @@ for (var i = 0; i <= propertiesVertical3.length; i++) {
     }
 }
 let propertiesVertical4 = [
-    'pc:v-vertical-baseline',
-    'pc:v-vertical-text-top',
-    'pc:v-vertical-text-bottom',
-    'pc:v-vertical-sub',
-    'pc:v-vertical-super'
+    'pc_v-vertical-baseline',
+    'pc_v-vertical-text-top',
+    'pc_v-vertical-text-bottom',
+    'pc_v-vertical-sub',
+    'pc_v-vertical-super'
 ]
 let valuesVertical4 = [
     'vertical-align: baseline;',

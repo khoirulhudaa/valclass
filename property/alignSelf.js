@@ -27,12 +27,12 @@ for (var i = 0; i <= propertiesAlignSelf.length; i++) {
 }
 
 let propertiesAlignSelf2 = [
-    'mb:v-self-center',
-    'mb:v-self-flex-end',
-    'mb:v-self-flex-start',
-    'mb:v-self-stretch',
-    'mb:v-self-baseline',
-    'mb:v-self-auto'
+    'mb_v-self-center',
+    'mb_v-self-flex-end',
+    'mb_v-self-flex-start',
+    'mb_v-self-stretch',
+    'mb_v-self-baseline',
+    'mb_v-self-auto'
 ]
 let valuesAlignSelf2 = [
     'align-self: center;',
@@ -55,12 +55,12 @@ for (var i = 0; i <= propertiesAlignSelf2.length; i++) {
 }
 
 let propertiesAlignSelf3 = [
-    'tb:v-self-center',
-    'tb:v-self-flex-end',
-    'tb:v-self-flex-start',
-    'tb:v-self-stretch',
-    'tb:v-self-baseline',
-    'tb:v-self-auto'
+    'tb_v-self-center',
+    'tb_v-self-flex-end',
+    'tb_v-self-flex-start',
+    'tb_v-self-stretch',
+    'tb_v-self-baseline',
+    'tb_v-self-auto'
 ]
 let valuesAlignSelf3 = [
     'align-self: center;',
@@ -83,12 +83,12 @@ for (var i = 0; i <= propertiesAlignSelf3.length; i++) {
 }
 
 let propertiesAlignSelf4 = [
-    'pc:v-self-center',
-    'pc:v-self-flex-end',
-    'pc:v-self-flex-start',
-    'pc:v-self-stretch',
-    'pc:v-self-baseline',
-    'pc:v-self-auto'
+    'pc_v-self-center',
+    'pc_v-self-flex-end',
+    'pc_v-self-flex-start',
+    'pc_v-self-stretch',
+    'pc_v-self-baseline',
+    'pc_v-self-auto'
 ]
 let valuesAlignSelf4 = [
     'align-self: center;',

@@ -25,11 +25,11 @@ for (var i = 0; i <= propertiesPosition.length; i++) {
     }
 }
 let propertiesPosition2 = [
-    'mb:v-relative',
-    'mb:v-absolute',
-    'mb:v-fixed',
-    'mb:v-sticky',
-    'mb:v-static'
+    'mb_v-relative',
+    'mb_v-absolute',
+    'mb_v-fixed',
+    'mb_v-sticky',
+    'mb_v-static'
 ]
 
 let valuesPosition2 = [
@@ -51,11 +51,11 @@ for (var i = 0; i <= propertiesPosition2.length; i++) {
     }
 }
 let propertiesPosition3 = [
-    'tb:v-relative',
-    'tb:v-absolute',
-    'tb:v-fixed',
-    'tb:v-sticky',
-    'tb:v-static'
+    'tb_v-relative',
+    'tb_v-absolute',
+    'tb_v-fixed',
+    'tb_v-sticky',
+    'tb_v-static'
 ]
 
 let valuesPosition3 = [
@@ -77,11 +77,11 @@ for (var i = 0; i <= propertiesPosition3.length; i++) {
     }
 }
 let propertiesPosition4 = [
-    'pc:v-relative',
-    'pc:v-absolute',
-    'pc:v-fixed',
-    'pc:v-sticky',
-    'pc:v-static'
+    'pc_v-relative',
+    'pc_v-absolute',
+    'pc_v-fixed',
+    'pc_v-sticky',
+    'pc_v-static'
 ]
 
 let valuesPosition4 = [

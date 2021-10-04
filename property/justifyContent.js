@@ -43,20 +43,20 @@ for (var i = 0; i <= propertiesJustify.length; i++) {
     }
 }
 let propertiesJustify2 = [
-    'mb:v-justify-center',
-    'mb:v-justify-left',
-    'mb:v-justify-right',
-    'mb:v-justify-safe',
-    'mb:v-justify-unsafe',
-    'mb:v-justify-start',
-    'mb:v-justify-end',
-    'mb:v-justify-flex-start',
-    'mb:v-justify-flex-end',
-    'mb:v-justify-between',
-    'mb:v-justify-around',
-    'mb:v-justify-evenly',
-    'mb:v-justify-stretch',
-    'mb:v-justify-last-baseline'
+    'mb_v-justify-center',
+    'mb_v-justify-left',
+    'mb_v-justify-right',
+    'mb_v-justify-safe',
+    'mb_v-justify-unsafe',
+    'mb_v-justify-start',
+    'mb_v-justify-end',
+    'mb_v-justify-flex-start',
+    'mb_v-justify-flex-end',
+    'mb_v-justify-between',
+    'mb_v-justify-around',
+    'mb_v-justify-evenly',
+    'mb_v-justify-stretch',
+    'mb_v-justify-last-baseline'
 ]
 let valuesJustify2 = [
     'justify-content: center',
@@ -86,20 +86,20 @@ for (var i = 0; i <= propertiesJustify2.length; i++) {
     }
 }
 let propertiesJustify3 = [
-    'tb:v-justify-center',
-    'tb:v-justify-left',
-    'tb:v-justify-right',
-    'tb:v-justify-safe',
-    'tb:v-justify-unsafe',
-    'tb:v-justify-start',
-    'tb:v-justify-end',
-    'tb:v-justify-flex-start',
-    'tb:v-justify-flex-end',
-    'tb:v-justify-between',
-    'tb:v-justify-around',
-    'tb:v-justify-evenly',
-    'tb:v-justify-stretch',
-    'tb:v-justify-last-baseline'
+    'tb_v-justify-center',
+    'tb_v-justify-left',
+    'tb_v-justify-right',
+    'tb_v-justify-safe',
+    'tb_v-justify-unsafe',
+    'tb_v-justify-start',
+    'tb_v-justify-end',
+    'tb_v-justify-flex-start',
+    'tb_v-justify-flex-end',
+    'tb_v-justify-between',
+    'tb_v-justify-around',
+    'tb_v-justify-evenly',
+    'tb_v-justify-stretch',
+    'tb_v-justify-last-baseline'
 ]
 let valuesJustify3 = [
     'justify-content: center',
@@ -129,20 +129,20 @@ for (var i = 0; i <= propertiesJustify3.length; i++) {
     }
 }
 let propertiesJustify4 = [
-    'pc:v-justify-center',
-    'pc:v-justify-left',
-    'pc:v-justify-right',
-    'pc:v-justify-safe',
-    'pc:v-justify-unsafe',
-    'pc:v-justify-start',
-    'pc:v-justify-end',
-    'pc:v-justify-flex-start',
-    'pc:v-justify-flex-end',
-    'pc:v-justify-between',
-    'pc:v-justify-around',
-    'pc:v-justify-evenly',
-    'pc:v-justify-stretch', 
-    'pc:v-justify-last-baseline'
+    'pc_v-justify-center',
+    'pc_v-justify-left',
+    'pc_v-justify-right',
+    'pc_v-justify-safe',
+    'pc_v-justify-unsafe',
+    'pc_v-justify-start',
+    'pc_v-justify-end',
+    'pc_v-justify-flex-start',
+    'pc_v-justify-flex-end',
+    'pc_v-justify-between',
+    'pc_v-justify-around',
+    'pc_v-justify-evenly',
+    'pc_v-justify-stretch', 
+    'pc_v-justify-last-baseline'
 ]
 let valuesJustify4 = [
     'justify-content: center',

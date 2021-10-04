@@ -23,10 +23,10 @@ for (var i = 0; i <= propertiesBackgroundClip.length; i++) {
 }
 
 let propertiesBackgroundClip2 = [
-    'mb:v-bg-clip-border',
-    'mb:v-bg-clip-padding',
-    'mb:v-bg-clip-content',
-    'mb:v-bg-clip-text'
+    'mb_v-bg-clip-border',
+    'mb_v-bg-clip-padding',
+    'mb_v-bg-clip-content',
+    'mb_v-bg-clip-text'
 ]
 let valuesBackgroundClip2 = [
     'background-clip: border-box',
@@ -47,10 +47,10 @@ for (var i = 0; i <= propertiesBackgroundClip2.length; i++) {
 }
 
 let propertiesBackgroundClip3 = [
-    'tb:v-bg-clip-border',
-    'tb:v-bg-clip-padding',
-    'tb:v-bg-clip-content',
-    'tb:v-bg-clip-text'
+    'tb_v-bg-clip-border',
+    'tb_v-bg-clip-padding',
+    'tb_v-bg-clip-content',
+    'tb_v-bg-clip-text'
 ]
 let valuesBackgroundClip3 = [
     'background-clip: border-box',
@@ -71,10 +71,10 @@ for (var i = 0; i <= propertiesBackgroundClip3.length; i++) {
 }
 
 let propertiesBackgroundClip4 = [
-    'pc:v-bg-clip-border',
-    'pc:v-bg-clip-padding',
-    'pc:v-bg-clip-content',
-    'pc:v-bg-clip-text'
+    'pc_v-bg-clip-border',
+    'pc_v-bg-clip-padding',
+    'pc_v-bg-clip-content',
+    'pc_v-bg-clip-text'
 ]
 let valuesBackgroundClip4 = [
     'background-clip: border-box',

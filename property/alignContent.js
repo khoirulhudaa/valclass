@@ -28,12 +28,12 @@ for (var i = 0; i <= propertiesAlignContent.length; i++) {
 }
 
 let propertiesAlignContent2 = [
-    'mb:v-content-center',
-    'mb:v-content-flex-end',
-    'mb:v-content-flex-start',
-    'mb:v-content-evenly',
-    'mb:v-content-basebetweenline',
-    'mb:v-content-around'
+    'mb_v-content-center',
+    'mb_v-content-flex-end',
+    'mb_v-content-flex-start',
+    'mb_v-content-evenly',
+    'mb_v-content-basebetweenline',
+    'mb_v-content-around'
 ]
 
 let valueContent2 = [
@@ -57,12 +57,12 @@ for (var i = 0; i <= propertiesAlignContent2.length; i++) {
 }
 
 let propertiesAlignContent3 = [
-    'tb:v-content-center',
-    'tb:v-content-flex-end',
-    'tb:v-content-flex-start',
-    'tb:v-content-evenly',
-    'tb:v-content-basebetweenline',
-    'tb:v-content-around'
+    'tb_v-content-center',
+    'tb_v-content-flex-end',
+    'tb_v-content-flex-start',
+    'tb_v-content-evenly',
+    'tb_v-content-basebetweenline',
+    'tb_v-content-around'
 ]
 
 let valueContent3 = [
@@ -86,12 +86,12 @@ for (var i = 0; i <= propertiesAlignContent3.length; i++) {
 }
 
 let propertiesAlignContent4 = [
-    'pc:v-content-center',
-    'pc:v-content-flex-end',
-    'pc:v-content-flex-start',
-    'pc:v-content-evenly',
-    'pc:v-content-basebetweenline',
-    'pc:v-content-around'
+    'pc_v-content-center',
+    'pc_v-content-flex-end',
+    'pc_v-content-flex-start',
+    'pc_v-content-evenly',
+    'pc_v-content-basebetweenline',
+    'pc_v-content-around'
 ]
 
 let valueContent4 = [

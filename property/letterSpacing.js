@@ -24,11 +24,11 @@ for (var i = 0; i <= propertiesLetterSpacing.length; i++) {
     }
 }
 let propertiesLetterSpacing2 = [
-    'mb:v-let-spacing-normal',
-    'mb:v-let-spacing-1',
-    'mb:v-let-spacing-2',
-    'mb:v-let-spacing-3',
-    'mb:v-let-spacing-4'
+    'mb_v-let-spacing-normal',
+    'mb_v-let-spacing-1',
+    'mb_v-let-spacing-2',
+    'mb_v-let-spacing-3',
+    'mb_v-let-spacing-4'
 ]
 let valuesLetterSpacing2 = [
     'letter-spacing: normal',
@@ -49,11 +49,11 @@ for (var i = 0; i <= propertiesLetterSpacing2.length; i++) {
     }
 }
 let propertiesLetterSpacing3 = [
-    'tb:v-let-spacing-normal',
-    'tb:v-let-spacing-1',
-    'tb:v-let-spacing-2',
-    'tb:v-let-spacing-3',
-    'tb:v-let-spacing-4'
+    'tb_v-let-spacing-normal',
+    'tb_v-let-spacing-1',
+    'tb_v-let-spacing-2',
+    'tb_v-let-spacing-3',
+    'tb_v-let-spacing-4'
 ]
 let valuesLetterSpacing3 = [
     'letter-spacing: normal',
@@ -74,11 +74,11 @@ for (var i = 0; i <= propertiesLetterSpacing3.length; i++) {
     }
 }
 let propertiesLetterSpacing4 = [
-    'pc:v-let-spacing-normal',
-    'pc:v-let-spacing-1',
-    'pc:v-let-spacing-2',
-    'pc:v-let-spacing-3',
-    'pc:v-let-spacing-4'
+    'pc_v-let-spacing-normal',
+    'pc_v-let-spacing-1',
+    'pc_v-let-spacing-2',
+    'pc_v-let-spacing-3',
+    'pc_v-let-spacing-4'
 ]
 let valuesLetterSpacing4 = [
     'letter-spacing: normal',

@@ -24,11 +24,11 @@ for (var i = 0; i <= propertiesOpacity.length; i++) {
     }
 }
 let propertiesOpacity2 = [
-    'mb:v-opacity-0',
-    'mb:v-opacity-1',
-    'mb:v-opacity-2',
-    'mb:v-opacity-3',
-    'mb:v-opacity-4'
+    'mb_v-opacity-0',
+    'mb_v-opacity-1',
+    'mb_v-opacity-2',
+    'mb_v-opacity-3',
+    'mb_v-opacity-4'
 ]
 let valuesOpacity2 = [
     'opacity: 0%',
@@ -49,11 +49,11 @@ for (var i = 0; i <= propertiesOpacity2.length; i++) {
     }
 }
 let propertiesOpacity3 = [
-    'tb:v-opacity-0',
-    'tb:v-opacity-1',
-    'tb:v-opacity-2',
-    'tb:v-opacity-3',
-    'tb:v-opacity-4'
+    'tb_v-opacity-0',
+    'tb_v-opacity-1',
+    'tb_v-opacity-2',
+    'tb_v-opacity-3',
+    'tb_v-opacity-4'
 ]
 let valuesOpacity3 = [
     'opacity: 0%',
@@ -74,11 +74,11 @@ for (var i = 0; i <= propertiesOpacity3.length; i++) {
     }
 }
 let propertiesOpacity4 = [
-    'pc:v-opacity-0',
-    'pc:v-opacity-1',
-    'pc:v-opacity-2',
-    'pc:v-opacity-3',
-    'pc:v-opacity-4'
+    'pc_v-opacity-0',
+    'pc_v-opacity-1',
+    'pc_v-opacity-2',
+    'pc_v-opacity-3',
+    'pc_v-opacity-4'
 ]
 let valuesOpacity4 = [
     'opacity: 0%',

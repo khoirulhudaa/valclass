@@ -24,11 +24,11 @@ for (var i = 0; i <= propertiesWordSpacing.length; i++) {
     }
 }
 let propertiesWordSpacing2 = [
-    'mb:v-word-spacing-normal',
-    'mb:v-word-spacing-1',
-    'mb:v-word-spacing-2',
-    'mb:v-word-spacing-3',
-    'mb:v-word-spacing-4'
+    'mb_v-word-spacing-normal',
+    'mb_v-word-spacing-1',
+    'mb_v-word-spacing-2',
+    'mb_v-word-spacing-3',
+    'mb_v-word-spacing-4'
 ]
 let valuesWordSpacing2 = [
   'word-spacing: normal',
@@ -49,11 +49,11 @@ for (var i = 0; i <= propertiesWordSpacing2.length; i++) {
     }
 }
 let propertiesWordSpacing3 = [
-    'tb:v-word-spacing-normal',
-    'tb:v-word-spacing-1',
-    'tb:v-word-spacing-2',
-    'tb:v-word-spacing-3',
-    'tb:v-word-spacing-4'
+    'tb_v-word-spacing-normal',
+    'tb_v-word-spacing-1',
+    'tb_v-word-spacing-2',
+    'tb_v-word-spacing-3',
+    'tb_v-word-spacing-4'
 ]
 let valuesWordSpacing3 = [
   'word-spacing: normal',
@@ -74,11 +74,11 @@ for (var i = 0; i <= propertiesWordSpacing3.length; i++) {
     }
 }
 let propertiesWordSpacing4 = [
-    'pc:v-word-spacing-normal',
-    'pc:v-word-spacing-1',
-    'pc:v-word-spacing-2',
-    'pc:v-word-spacing-3',
-    'pc:v-word-spacing-4'
+    'pc_v-word-spacing-normal',
+    'pc_v-word-spacing-1',
+    'pc_v-word-spacing-2',
+    'pc_v-word-spacing-3',
+    'pc_v-word-spacing-4'
 ]
 let valuesWordSpacing4 = [
     'word-spacing: normal',

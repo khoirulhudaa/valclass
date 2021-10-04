@@ -42,20 +42,20 @@ for (var i = 0; i <= propertiesPerspective.length; i++) {
     }
 }
 let propertiesPerspective2 = [
-    'mb:v-perspective--1',
-    'mb:v-perspective--2',
-    'mb:v-perspective--3',
-    'mb:v-perspective--4',
-    'mb:v-perspective-none',
-    'mb:v-perspective-1',
-    'mb:v-perspective-2',
-    'mb:v-perspective-3',
-    'mb:v-perspective-4',
-    'mb:v-perspective-top',
-    'mb:v-perspective-bottom',
-    'mb:v-perspective-left',
-    'mb:v-perspective-right',
-    'mb:v-perspective-center'
+    'mb_v-perspective--1',
+    'mb_v-perspective--2',
+    'mb_v-perspective--3',
+    'mb_v-perspective--4',
+    'mb_v-perspective-none',
+    'mb_v-perspective-1',
+    'mb_v-perspective-2',
+    'mb_v-perspective-3',
+    'mb_v-perspective-4',
+    'mb_v-perspective-top',
+    'mb_v-perspective-bottom',
+    'mb_v-perspective-left',
+    'mb_v-perspective-right',
+    'mb_v-perspective-center'
 ]
 let valuesPerspective2 = [
     'perspective: -20px;',
@@ -85,20 +85,20 @@ for (var i = 0; i <= propertiesPerspective2.length; i++) {
     }
 }
 let propertiesPerspective3 = [
-    'tb:v-perspective--1',
-    'tb:v-perspective--2',
-    'tb:v-perspective--3',
-    'tb:v-perspective--4',
-    'tb:v-perspective-none',
-    'tb:v-perspective-1',
-    'tb:v-perspective-2',
-    'tb:v-perspective-3',
-    'tb:v-perspective-4',
-    'tb:v-perspective-top',
-    'tb:v-perspective-bottom',
-    'tb:v-perspective-left',
-    'tb:v-perspective-right',
-    'tb:v-perspective-center'
+    'tb_v-perspective--1',
+    'tb_v-perspective--2',
+    'tb_v-perspective--3',
+    'tb_v-perspective--4',
+    'tb_v-perspective-none',
+    'tb_v-perspective-1',
+    'tb_v-perspective-2',
+    'tb_v-perspective-3',
+    'tb_v-perspective-4',
+    'tb_v-perspective-top',
+    'tb_v-perspective-bottom',
+    'tb_v-perspective-left',
+    'tb_v-perspective-right',
+    'tb_v-perspective-center'
 ]
 let valuesPerspective3 = [
     'perspective: -20px;',
@@ -128,20 +128,20 @@ for (var i = 0; i <= propertiesPerspective3.length; i++) {
     }
 }
 let propertiesPerspective4 = [
-    'pc:v-perspective--1',
-    'pc:v-perspective--2',
-    'pc:v-perspective--3',
-    'pc:v-perspective--4',
-    'pc:v-perspective-none',
-    'pc:v-perspective-1',
-    'pc:v-perspective-2',
-    'pc:v-perspective-3',
-    'pc:v-perspective-4',
-    'pc:v-perspective-top',
-    'pc:v-perspective-bottom',
-    'pc:v-perspective-left',
-    'pc:v-perspective-right',
-    'pc:v-perspective-center'
+    'pc_v-perspective--1',
+    'pc_v-perspective--2',
+    'pc_v-perspective--3',
+    'pc_v-perspective--4',
+    'pc_v-perspective-none',
+    'pc_v-perspective-1',
+    'pc_v-perspective-2',
+    'pc_v-perspective-3',
+    'pc_v-perspective-4',
+    'pc_v-perspective-top',
+    'pc_v-perspective-bottom',
+    'pc_v-perspective-left',
+    'pc_v-perspective-right',
+    'pc_v-perspective-center'
 ]
 let valuesPerspective4 = [
     'perspective: -20px;',

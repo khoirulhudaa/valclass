@@ -24,11 +24,11 @@ for (var i = 0; i <= propertiesWhiteSpaces.length; i++) {
     }
 }
 let propertiesWhiteSpaces2 = [
-    'mb:v-space-wrap',
-    'mb:v-space-nowrap',
-    'mb:v-space-pre',
-    'mb:v-space-pre-line',
-    'mb:v-space-pre-wrap'
+    'mb_v-space-wrap',
+    'mb_v-space-nowrap',
+    'mb_v-space-pre',
+    'mb_v-space-pre-line',
+    'mb_v-space-pre-wrap'
 ]
 let valuesWhiteSpaces2 = [
     'white-space: collapse;',
@@ -49,11 +49,11 @@ for (var i = 0; i <= propertiesWhiteSpaces2.length; i++) {
     }
 }
 let propertiesWhiteSpaces3 = [
-    'tb:v-space-wrap',
-    'tb:v-space-nowrap',
-    'tb:v-space-pre',
-    'tb:v-space-pre-line',
-    'tb:v-space-pre-wrap'
+    'tb_v-space-wrap',
+    'tb_v-space-nowrap',
+    'tb_v-space-pre',
+    'tb_v-space-pre-line',
+    'tb_v-space-pre-wrap'
 ]
 let valuesWhiteSpaces3 = [
     'white-space: collapse;',
@@ -74,11 +74,11 @@ for (var i = 0; i <= propertiesWhiteSpaces3.length; i++) {
     }
 }
 let propertiesWhiteSpaces4 = [
-    'pc:v-space-wrap',
-    'pc:v-space-nowrap',
-    'pc:v-space-pre',
-    'pc:v-space-pre-line',
-    'pc:v-space-pre-wrap'
+    'pc_v-space-wrap',
+    'pc_v-space-nowrap',
+    'pc_v-space-pre',
+    'pc_v-space-pre-line',
+    'pc_v-space-pre-wrap'
 ]
 let valuesWhiteSpaces4 = [
     'white-space: collapse;',

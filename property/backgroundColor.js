@@ -27,27 +27,25 @@ let valuesBgColors = [
 for (var i = 0; i <= propertiesBgColors.length; i++) {
     if (document.querySelector(`.${propertiesBgColors[i]}`) && !document.querySelector('style').innerText.includes(propertiesBgColors[i])) {
         let styles = ` 
-            @media screen and (min-width: 900px) and (max-width: 1920px) {
-                    .${propertiesBgColors[i]} { 
-                    ${valuesBgColors[i]}
-                }
+            .${propertiesBgColors[i]} { 
+                ${valuesBgColors[i]}
             }`;
         document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
     }
 }
 
 let propertiesBgColors2 = [
-    'mb:v-dark',
-    'mb:v-light',
-    'mb:v-danger',
-    'mb:v-info',
-    'mb:v-primary',
-    'mb:v-smooth',
-    'mb:v-transparent',
-    'mb:v-secondary',
-    'mb:v-warning',
-    'mb:v-green',
-    'mb:v-white'
+    'mb_v-dark',
+    'mb_v-light',
+    'mb_v-danger',
+    'mb_v-info',
+    'mb_v-primary',
+    'mb_v-smooth',
+    'mb_v-transparent',
+    'mb_v-secondary',
+    'mb_v-warning',
+    'mb_v-green',
+    'mb_v-white'
 ]
 let valuesBgColors2 = [
     'background-color: rgb(70, 70, 70);',
@@ -75,17 +73,17 @@ for (var i = 0; i <= propertiesBgColors2.length; i++) {
 }
 
 let propertiesBgColors3 = [
-    'tb:v-dark',
-    'tb:v-light',
-    'tb:v-danger',
-    'tb:v-info',
-    'tb:v-primary',
-    'tb:v-smooth',
-    'tb:v-transparent',
-    'tb:v-secondary',
-    'tb:v-warning',
-    'tb:v-green',
-    'tb:v-white'
+    'tb_v-dark',
+    'tb_v-light',
+    'tb_v-danger',
+    'tb_v-info',
+    'tb_v-primary',
+    'tb_v-smooth',
+    'tb_v-transparent',
+    'tb_v-secondary',
+    'tb_v-warning',
+    'tb_v-green',
+    'tb_v-white'
 ]
 let valuesBgColors3 = [
     'background-color: rgb(70, 70, 70);',
@@ -113,17 +111,17 @@ for (var i = 0; i <= propertiesBgColors3.length; i++) {
 }
 
 let propertiesBgColors4 = [
-    'pc:v-dark',
-    'pc:v-light',
-    'pc:v-danger',
-    'pc:v-info',
-    'pc:v-primary',
-    'pc:v-smooth',
-    'pc:v-transparent',
-    'pc:v-secondary',
-    'pc:v-warning',
-    'pc:v-green',
-    'pc:v-white'
+    'pc_v-dark',
+    'pc_v-light',
+    'pc_v-danger',
+    'pc_v-info',
+    'pc_v-primary',
+    'pc_v-smooth',
+    'pc_v-transparent',
+    'pc_v-secondary',
+    'pc_v-warning',
+    'pc_v-green',
+    'pc_v-white'
 ]
 let valuesBgColors4 = [
     'background-color: rgb(70, 70, 70);',

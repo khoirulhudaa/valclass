@@ -22,10 +22,10 @@ for (var i = 0; i <= propertiesTextShadow.length; i++) {
     }
 }
 let propertiesTextShadow2 = [
-    'mb:v-text-shadow-sm',
-    'mb:v-text-shadow-md',
-    'mb:v-text-shadow-lg',
-    'mb:v-text-shadow-xl'
+    'mb_v-text-shadow-sm',
+    'mb_v-text-shadow-md',
+    'mb_v-text-shadow-lg',
+    'mb_v-text-shadow-xl'
 ]
 let valuesTextShadow2 = [
     "text-shadow: 2px 2px 2px rgb(199, 199, 199);",
@@ -45,10 +45,10 @@ for (var i = 0; i <= propertiesTextShadow2.length; i++) {
     }
 }
 let propertiesTextShadow3 = [
-    'tb:v-text-shadow-sm',
-    'tb:v-text-shadow-md',
-    'tb:v-text-shadow-lg',
-    'tb:v-text-shadow-xl'
+    'tb_v-text-shadow-sm',
+    'tb_v-text-shadow-md',
+    'tb_v-text-shadow-lg',
+    'tb_v-text-shadow-xl'
 ]
 let valuesTextShadow3 = [
     "text-shadow: 2px 2px 2px rgb(199, 199, 199);",
@@ -68,10 +68,10 @@ for (var i = 0; i <= propertiesTextShadow3.length; i++) {
     }
 }
 let propertiesTextShadow4 = [
-    'pc:v-text-shadow-sm',
-    'pc:v-text-shadow-md',
-    'pc:v-text-shadow-lg',
-    'pc:v-text-shadow-xl'
+    'pc_v-text-shadow-sm',
+    'pc_v-text-shadow-md',
+    'pc_v-text-shadow-lg',
+    'pc_v-text-shadow-xl'
 ]
 let valuesTextShadow4 = [
     "text-shadow: 2px 2px 2px rgb(199, 199, 199);",

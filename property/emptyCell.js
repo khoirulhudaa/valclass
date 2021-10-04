@@ -18,8 +18,8 @@ for (var i = 0; i <= propertiesEmptyCells.length; i++) {
     }
 }
 let propertiesEmptyCells2 = [
-    'mb:v-cells-show',
-    'mb:v-cells-hidden'
+    'mb_v-cells-show',
+    'mb_v-cells-hidden'
 ]
 let valuesEmptyCells2 = [
     'empty-cells: show',
@@ -37,8 +37,8 @@ for (var i = 0; i <= propertiesEmptyCells2.length; i++) {
     }
 }
 let propertiesEmptyCells3 = [
-    'tb:v-cells-show',
-    'tb:v-cells-hidden'
+    'tb_v-cells-show',
+    'tb_v-cells-hidden'
 ]
 let valuesEmptyCells3 = [
     'empty-cells: show',
@@ -56,8 +56,8 @@ for (var i = 0; i <= propertiesEmptyCells3.length; i++) {
     }
 }
 let propertiesEmptyCells4 = [
-    'pc:v-cells-show',
-    'pc:v-cells-hidden'
+    'pc_v-cells-show',
+    'pc_v-cells-hidden'
 ]
 let valuesEmptyCells4 = [
     'empty-cells: show',

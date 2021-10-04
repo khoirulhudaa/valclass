@@ -22,10 +22,10 @@ for (var i = 0; i <= propertiesTextAlign.length; i++) {
     }
 }
 let propertiesTextAlign2 = [
-    'mb:v-text-center',
-    'mb:v-text-left',
-    'mb:v-text-right',
-    'mb:v-text-jsutify'
+    'mb_v-text-center',
+    'mb_v-text-left',
+    'mb_v-text-right',
+    'mb_v-text-jsutify'
 ]
 let valuesTextAlign2 = [
     'text-align: center;',
@@ -45,10 +45,10 @@ for (var i = 0; i <= propertiesTextAlign2.length; i++) {
     }
 }
 let propertiesTextAlign3 = [
-    'tb:v-text-center',
-    'tb:v-text-left',
-    'tb:v-text-right',
-    'tb:v-text-jsutify'
+    'tb_v-text-center',
+    'tb_v-text-left',
+    'tb_v-text-right',
+    'tb_v-text-jsutify'
 ]
 let valuesTextAlign3 = [
     'text-align: center;',
@@ -68,10 +68,10 @@ for (var i = 0; i <= propertiesTextAlign3.length; i++) {
     }
 }
 let propertiesTextAlign4 = [
-    'pc:v-text-center',
-    'pc:v-text-left',
-    'pc:v-text-right',
-    'pc:v-text-jsutify'
+    'pc_v-text-center',
+    'pc_v-text-left',
+    'pc_v-text-right',
+    'pc_v-text-jsutify'
 ]
 let valuesTextAlign4 = [
     'text-align: center;',

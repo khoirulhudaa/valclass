@@ -21,9 +21,9 @@ for (var i = 0; i <= propertiesWordBreak.length; i++) {
     }
 }
 let propertiesWordBreak2 = [
-    'mb:v-break-normal',
-    'mb:v-break-words',
-    'mb:v-break-all'
+    'mb_v-break-normal',
+    'mb_v-break-words',
+    'mb_v-break-all'
 ]
 let valuesWordBreak2 = [
   `overflow-wrap: normal; 
@@ -43,9 +43,9 @@ for (var i = 0; i <= propertiesWordBreak2.length; i++) {
     }
 }
 let propertiesWordBreak3 = [
-    'tb:v-break-normal',
-    'tb:v-break-words',
-    'tb:v-break-all'
+    'tb_v-break-normal',
+    'tb_v-break-words',
+    'tb_v-break-all'
 ]
 let valuesWordBreak3 = [
   `overflow-wrap: normal; 
@@ -65,9 +65,9 @@ for (var i = 0; i <= propertiesWordBreak3.length; i++) {
     }
 }
 let propertiesWordBreak4 = [
-    'pc:v-break-normal',
-    'pc:v-break-words',
-    'pc:v-break-all'
+    'pc_v-break-normal',
+    'pc_v-break-words',
+    'pc_v-break-all'
 ]
 let valuesWordBreak4 = [
   `overflow-wrap: normal; 

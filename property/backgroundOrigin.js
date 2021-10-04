@@ -21,9 +21,9 @@ for (var i = 0; i <= propertiesBackgroundOrigin.length; i++) {
 }
 
 let propertiesBackgroundOrigin2 = [
-    'mb:v-bg-content-box',
-    'mb:v-bg-border-box',
-    'mb:v-bg-padding-box'
+    'mb_v-bg-content-box',
+    'mb_v-bg-border-box',
+    'mb_v-bg-padding-box'
 ]
 let valuesBackgroundOrigin2 = [
     'background-origin: content-box',
@@ -43,9 +43,9 @@ for (var i = 0; i <= propertiesBackgroundOrigin2.length; i++) {
 }
 
 let propertiesBackgroundOrigin3 = [
-    'tb:v-bg-content-box',
-    'tb:v-bg-border-box',
-    'tb:v-bg-padding-box'
+    'tb_v-bg-content-box',
+    'tb_v-bg-border-box',
+    'tb_v-bg-padding-box'
 ]
 let valuesBackgroundOrigin3 = [
     'background-origin: content-box',
@@ -65,9 +65,9 @@ for (var i = 0; i <= propertiesBackgroundOrigin3.length; i++) {
 }
 
 let propertiesBackgroundOrigin4 = [
-    'pc:v-bg-content-box',
-    'pc:v-bg-border-box',
-    'pc:v-bg-padding-box'
+    'pc_v-bg-content-box',
+    'pc_v-bg-border-box',
+    'pc_v-bg-padding-box'
 ]
 let valuesBackgroundOrigin4 = [
     'background-origin: content-box',

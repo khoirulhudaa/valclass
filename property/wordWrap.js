@@ -18,8 +18,8 @@ for (var i = 0; i <= propertiesWordWrap.length; i++) {
     }
 }
 let propertiesWordWrap2 = [
-    'mb:v-word-wrap-normal',
-    'mb:v-word-wrap-break-word'
+    'mb_v-word-wrap-normal',
+    'mb_v-word-wrap-break-word'
 ]
 let valuesWordWrap2 = [
   'word-wrap: normal',
@@ -37,8 +37,8 @@ for (var i = 0; i <= propertiesWordWrap2.length; i++) {
     }
 }
 let propertiesWordWrap3 = [
-    'tb:v-word-wrap-normal',
-    'tb:v-word-wrap-break-word'
+    'tb_v-word-wrap-normal',
+    'tb_v-word-wrap-break-word'
 ]
 let valuesWordWrap3 = [
   'word-wrap: normal',
@@ -56,8 +56,8 @@ for (var i = 0; i <= propertiesWordWrap3.length; i++) {
     }
 }
 let propertiesWordWrap4 = [
-    'pc:v-word-wrap-normal',
-    'pc:v-word-wrap-break-word'
+    'pc_v-word-wrap-normal',
+    'pc_v-word-wrap-break-word'
 ]
 let valuesWordWrap4 = [
   'word-wrap: normal',

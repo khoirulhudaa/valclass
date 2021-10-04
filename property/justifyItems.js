@@ -26,12 +26,12 @@ for (var i = 0; i <= propertiesItems.length; i++) {
     }
 }
 let propertiesItems2 = [
-    'mb:v-just-items-auto',
-    'mb:v-just-items-start',
-    'mb:v-just-items-end',
-    'mb:v-just-items-center',
-    'mb:v-just-items-flex-end',
-    'mb:v-just-items-flex-start'
+    'mb_v-just-items-auto',
+    'mb_v-just-items-start',
+    'mb_v-just-items-end',
+    'mb_v-just-items-center',
+    'mb_v-just-items-flex-end',
+    'mb_v-just-items-flex-start'
 ]
 let valuesItems2 = [
     'justify-items: auto',
@@ -53,12 +53,12 @@ for (var i = 0; i <= propertiesItems2.length; i++) {
     }
 }
 let propertiesItems3 = [
-    'tb:v-just-items-auto',
-    'tb:v-just-items-start',
-    'tb:v-just-items-end',
-    'tb:v-just-items-center',
-    'tb:v-just-items-flex-end',
-    'tb:v-just-items-flex-start'
+    'tb_v-just-items-auto',
+    'tb_v-just-items-start',
+    'tb_v-just-items-end',
+    'tb_v-just-items-center',
+    'tb_v-just-items-flex-end',
+    'tb_v-just-items-flex-start'
 ]
 let valuesItems3 = [
     'justify-items: auto',
@@ -79,12 +79,12 @@ for (var i = 0; i <= propertiesItems3.length; i++) {
         document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
     }
 }let propertiesItems4 = [
-    'pc:v-just-items-auto',
-    'pc:v-just-items-start',
-    'pc:v-just-items-end',
-    'pc:v-just-items-center',
-    'pc:v-just-items-flex-end',
-    'pc:v-just-items-flex-start'
+    'pc_v-just-items-auto',
+    'pc_v-just-items-start',
+    'pc_v-just-items-end',
+    'pc_v-just-items-center',
+    'pc_v-just-items-flex-end',
+    'pc_v-just-items-flex-start'
 ]
 let valuesItems4 = [
     'justify-items: auto',

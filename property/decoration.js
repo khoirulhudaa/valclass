@@ -29,14 +29,14 @@ for (var i = 0; i <= propertiesDirections.length; i++) {
 }
 
 let propertiesDirections2 = [
-    'mb:v-decoration-none',
-    'mb:v-decoration-dashed',
-    'mb:v-decoration-double',
-    'mb:v-decoration-through',
-    'mb:v-decoration-overline',
-    'mb:v-decoration-solid',
-    'mb:v-decoration-underline',
-    'mb:v-decoration-wavy'
+    'mb_v-decoration-none',
+    'mb_v-decoration-dashed',
+    'mb_v-decoration-double',
+    'mb_v-decoration-through',
+    'mb_v-decoration-overline',
+    'mb_v-decoration-solid',
+    'mb_v-decoration-underline',
+    'mb_v-decoration-wavy'
 ]
 let valuesDirections2 = [
     'text-decoration: none',
@@ -60,14 +60,14 @@ for (var i = 0; i <= propertiesDirections2.length; i++) {
     }
 }
 let propertiesDirections3 = [
-    'tb:v-decoration-none',
-    'tb:v-decoration-dashed',
-    'tb:v-decoration-double',
-    'tb:v-decoration-through',
-    'tb:v-decoration-overline',
-    'tb:v-decoration-solid',
-    'tb:v-decoration-underline',
-    'tb:v-decoration-wavy'
+    'tb_v-decoration-none',
+    'tb_v-decoration-dashed',
+    'tb_v-decoration-double',
+    'tb_v-decoration-through',
+    'tb_v-decoration-overline',
+    'tb_v-decoration-solid',
+    'tb_v-decoration-underline',
+    'tb_v-decoration-wavy'
 ]
 let valuesDirections3 = [
     'text-decoration: none',
@@ -91,14 +91,14 @@ for (var i = 0; i <= propertiesDirections3.length; i++) {
     }
 }
 let propertiesDirections4 = [
-    'pc:v-decoration-none',
-    'pc:v-decoration-dashed',
-    'pc:v-decoration-double',
-    'pc:v-decoration-through',
-    'pc:v-decoration-overline',
-    'pc:v-decoration-solid',
-    'pc:v-decoration-underline',
-    'pc:v-decoration-wavy'
+    'pc_v-decoration-none',
+    'pc_v-decoration-dashed',
+    'pc_v-decoration-double',
+    'pc_v-decoration-through',
+    'pc_v-decoration-overline',
+    'pc_v-decoration-solid',
+    'pc_v-decoration-underline',
+    'pc_v-decoration-wavy'
 ]
 let valuesDirections4 = [
     'text-decoration: none',

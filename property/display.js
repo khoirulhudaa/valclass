@@ -49,25 +49,174 @@ for (var i = 0; i <= propertiesDisplay.length; i++) {
         document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
     }
 }
+
+let propertiesDisplayX = [
+    'v-d-show-mobile',
+    'v-d-show-tablet',
+    'v-d-show-normal',
+    'v-d-show-pc',
+    'v-d-hidden-mobile',
+    'v-d-hidden-tablet',
+    'v-d-hidden-normal',
+    'v-d-hidden-pc',
+]
+let valuesDisplayX = [
+    `
+   @media screen and (max-width: 600px) {
+      .v-d-show-mobile {
+          display: inline;
+      }
+    }
+   @media screen and (min-width: 601px) {
+        .v-d-show-mobile {
+          display: none;
+        } 
+    }
+    `,
+    `
+   @media screen and (min-width: 320px) and (max-width: 600px) {
+      .v-d-show-tablet {
+          display: none;
+      }
+    };
+   @media screen and (min-width: 601px) and (max-width: 901px) {
+      .v-d-show-tablet {
+          display: inline;
+      }
+    }
+   @media screen and (min-width: 902px) {
+        .v-d-show-tablet {
+          display: none;
+        } 
+    }
+    `,
+    `
+   @media screen and (min-width: 320px) and (max-width: 600px) {
+      .v-d-show-normal {
+          display: none;
+      }
+    }
+   @media screen and (min-width: 601px) and (max-width: 901px) {
+      .v-d-show-normal {
+          display: none;
+      }
+    }
+   @media screen and (min-width: 902px) and (max-width: 1921px) {
+        .v-d-show-normal {
+          display: inline;
+        } 
+    }
+   @media screen and (min-width: 1922px) {
+        .v-d-show-normal {
+          display: none;
+        } 
+    }`
+    ,
+    `
+   @media screen and (min-width: 320px) and (max-width: 1918px) {
+      .v-d-show-pc {
+          display: none;
+      }
+    }
+   @media screen and (min-width: 1920px) {
+        .v-d-show-pc {
+          display: inline;
+        } 
+    }
+    `,
+    `
+   @media screen and (max-width: 600px) {
+      .v-d-show-mobile {
+          display: none;
+      }
+    }
+   @media screen and (min-width: 601px) {
+        .v-d-show-mobile {
+          display: inline;
+        } 
+    }
+    `,
+    `
+   @media screen and (min-width: 320px) and (max-width: 600px) {
+      .v-d-show-tablet {
+          display: inline;
+      }
+    }
+   @media screen and (min-width: 601px) and (max-width: 901px) {
+      .v-d-show-tablet {
+          display: none;
+      }
+    }
+   @media screen and (min-width: 902px) {
+        .v-d-show-tablet {
+          display: inline;
+        } 
+    }
+    `,
+    `
+   @media screen and (min-width: 320px) and (max-width: 600px) {
+      .v-d-show-normal {
+          display: inline;
+      }
+    }
+   @media screen and (min-width: 601px) and (max-width: 901px) {
+      .v-d-show-normal {
+          display: inline;
+      }
+    }
+   @media screen and (min-width: 902px) and (max-width: 1921px) {
+        .v-d-show-normal {
+          display: none;
+        } 
+    }
+   @media screen and (min-width: 1922px) {
+        .v-d-show-normal {
+          display: inline;
+        } 
+    }`
+    ,
+    `
+   @media screen and (min-width: 320px) and (max-width: 1918px) {
+      .v-d-show-pc {
+          display: inline;
+      }
+    }
+   @media screen and (min-width: 1920px) {
+        .v-d-show-pc {
+          display: none;
+        } 
+    }
+    `,
+]
+
+for (var i = 0; i <= propertiesDisplayX.length; i++) {
+    if (document.querySelector(`.${propertiesDisplayX[i]}`) && !document.querySelector('style').innerText.includes(propertiesDisplayX[i])) {
+        let styles = ` 
+                ${valuesDisplayX[i]}
+                `
+        document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+    }
+}
+
 let propertiesDisplay2 = [
-    'mb:v-d-flex',
-    'mb:v-d-block',
-    'mb:v-d-flexbox',
-    'mb:v-d-inline',
-    'mb:v-d-table',
-    'mb:v-d-inline-flex',
-    'mb:v-d-inline-block',
-    'mb:v-d-inline-flexbox',
-    'mb:v-d-inline-table',
-    'mb:v-d-grid',
-    'mb:v-d-table-column-group',
-    'mb:v-d-table-footer-group',
-    'mb:v-d-table-header-group',
-    'mb:v-d-table-row',
-    'mb:v-d-table-cell',
-    'mb:v-d-table-column',
-    'mb:v-d-none',
-    'mb:v-d-flow-root'
+    'mb_v-d-flex',
+    'mb_v-d-block',
+    'mb_v-d-flexbox',
+    'mb_v-d-inline',
+    'mb_v-d-table',
+    'mb_v-d-inline-flex',
+    'mb_v-d-inline-block',
+    'mb_v-d-inline-flexbox',
+    'mb_v-d-inline-table',
+    'mb_v-d-grid',
+    'mb_v-d-table-column-group',
+    'mb_v-d-table-footer-group',
+    'mb_v-d-table-header-group',
+    'mb_v-d-table-row',
+    'mb_v-d-table-cell',
+    'mb_v-d-table-column',
+    'mb_v-d-none',
+    'mb_v-d-flow-root'
 ]
 let valuesDisplay2 = [
     'display: flex',
@@ -101,24 +250,24 @@ for (var i = 0; i <= propertiesDisplay2.length; i++) {
     }
 }
 let propertiesDisplay3 = [
-    'tb:v-d-flex',
-    'tb:v-d-block',
-    'tb:v-d-flexbox',
-    'tb:v-d-inline',
-    'tb:v-d-table',
-    'tb:v-d-inline-flex',
-    'tb:v-d-inline-block',
-    'tb:v-d-inline-flexbox',
-    'tb:v-d-inline-table',
-    'tb:v-d-grid',
-    'tb:v-d-table-column-group',
-    'tb:v-d-table-footer-group',
-    'tb:v-d-table-header-group',
-    'tb:v-d-table-row',
-    'tb:v-d-table-cell',
-    'tb:v-d-table-column',
-    'tb:v-d-none',
-    'tb:v-d-flow-root'
+    'tb_v-d-flex',
+    'tb_v-d-block',
+    'tb_v-d-flexbox',
+    'tb_v-d-inline',
+    'tb_v-d-table',
+    'tb_v-d-inline-flex',
+    'tb_v-d-inline-block',
+    'tb_v-d-inline-flexbox',
+    'tb_v-d-inline-table',
+    'tb_v-d-grid',
+    'tb_v-d-table-column-group',
+    'tb_v-d-table-footer-group',
+    'tb_v-d-table-header-group',
+    'tb_v-d-table-row',
+    'tb_v-d-table-cell',
+    'tb_v-d-table-column',
+    'tb_v-d-none',
+    'tb_v-d-flow-root'
 ]
 let valuesDisplay3 = [
     'display: flex',
@@ -152,24 +301,24 @@ for (var i = 0; i <= propertiesDisplay3.length; i++) {
     }
 }
 let propertiesDisplay4 = [
-    'pc:v-d-flex',
-    'pc:v-d-block',
-    'pc:v-d-flexbox',
-    'pc:v-d-inline',
-    'pc:v-d-table',
-    'pc:v-d-inline-flex',
-    'pc:v-d-inline-block',
-    'pc:v-d-inline-flexbox',
-    'pc:v-d-inline-table',
-    'pc:v-d-grid',
-    'pc:v-d-table-column-group',
-    'pc:v-d-table-footer-group',
-    'pc:v-d-table-header-group',
-    'pc:v-d-table-row',
-    'pc:v-d-table-cell',
-    'pc:v-d-table-column',
-    'pc:v-d-none',
-    'pc:v-d-flow-root'
+    'pc_v-d-flex',
+    'pc_v-d-block',
+    'pc_v-d-flexbox',
+    'pc_v-d-inline',
+    'pc_v-d-table',
+    'pc_v-d-inline-flex',
+    'pc_v-d-inline-block',
+    'pc_v-d-inline-flexbox',
+    'pc_v-d-inline-table',
+    'pc_v-d-grid',
+    'pc_v-d-table-column-group',
+    'pc_v-d-table-footer-group',
+    'pc_v-d-table-header-group',
+    'pc_v-d-table-row',
+    'pc_v-d-table-cell',
+    'pc_v-d-table-column',
+    'pc_v-d-none',
+    'pc_v-d-flow-root'
 ]
 let valuesDisplay4 = [
     'display: flex',

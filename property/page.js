@@ -38,18 +38,18 @@ for (var i = 0; i <= propertiesPages.length; i++) {
     }
 }
 let propertiesPages2 = [
-    'mb:v-pg-after-always',
-    'mb:v-pg-after-auto',
-    'mb:v-pg-after-avoid',
-    'mb:v-pg-after-left',
-    'mb:v-pg-after-right',
-    'mb:v-pg-inside-auto',
-    'mb:v-pg-inside-avoid',
-    'mb:v-pg-before-always',
-    'mb:v-pg-before-auto',
-    'mb:v-pg-before-avoid',
-    'mb:v-pg-before-left',
-    'mb:v-pg-before-right',
+    'mb_v-pg-after-always',
+    'mb_v-pg-after-auto',
+    'mb_v-pg-after-avoid',
+    'mb_v-pg-after-left',
+    'mb_v-pg-after-right',
+    'mb_v-pg-inside-auto',
+    'mb_v-pg-inside-avoid',
+    'mb_v-pg-before-always',
+    'mb_v-pg-before-auto',
+    'mb_v-pg-before-avoid',
+    'mb_v-pg-before-left',
+    'mb_v-pg-before-right',
 ]
 let valuesPages2 = [
     'page-break-after: always;',
@@ -77,18 +77,18 @@ for (var i = 0; i <= propertiesPages2.length; i++) {
     }
 }
 let propertiesPages3 = [
-    'tb:v-pg-after-always',
-    'tb:v-pg-after-auto',
-    'tb:v-pg-after-avoid',
-    'tb:v-pg-after-left',
-    'tb:v-pg-after-right',
-    'tb:v-pg-inside-auto',
-    'tb:v-pg-inside-avoid',
-    'tb:v-pg-before-always',
-    'tb:v-pg-before-auto',
-    'tb:v-pg-before-avoid',
-    'tb:v-pg-before-left',
-    'tb:v-pg-before-right',
+    'tb_v-pg-after-always',
+    'tb_v-pg-after-auto',
+    'tb_v-pg-after-avoid',
+    'tb_v-pg-after-left',
+    'tb_v-pg-after-right',
+    'tb_v-pg-inside-auto',
+    'tb_v-pg-inside-avoid',
+    'tb_v-pg-before-always',
+    'tb_v-pg-before-auto',
+    'tb_v-pg-before-avoid',
+    'tb_v-pg-before-left',
+    'tb_v-pg-before-right',
 ]
 let valuesPages3 = [
     'page-break-after: always;',
@@ -116,18 +116,18 @@ for (var i = 0; i <= propertiesPages3.length; i++) {
     }
 }
 let propertiesPages4 = [
-    'pc:v-pg-after-always',
-    'pc:v-pg-after-auto',
-    'pc:v-pg-after-avoid',
-    'pc:v-pg-after-left',
-    'pc:v-pg-after-right',
-    'pc:v-pg-inside-auto',
-    'pc:v-pg-inside-avoid',
-    'pc:v-pg-before-always',
-    'pc:v-pg-before-auto',
-    'pc:v-pg-before-avoid',
-    'pc:v-pg-before-left',
-    'pc:v-pg-before-right',
+    'pc_v-pg-after-always',
+    'pc_v-pg-after-auto',
+    'pc_v-pg-after-avoid',
+    'pc_v-pg-after-left',
+    'pc_v-pg-after-right',
+    'pc_v-pg-inside-auto',
+    'pc_v-pg-inside-avoid',
+    'pc_v-pg-before-always',
+    'pc_v-pg-before-auto',
+    'pc_v-pg-before-avoid',
+    'pc_v-pg-before-left',
+    'pc_v-pg-before-right',
 ]
 let valuesPages4 = [
     'page-break-after: always;',

@@ -25,11 +25,11 @@ for (var i = 0; i <= propertiesAlignItems.length; i++) {
 }
 
 let propertiesAlignItems2 = [
-    'mb:v-items-center',
-    'mb:v-items-flex-end',
-    'mb:v-items-flex-start',
-    'mb:v-items-stretch',
-    'mb:v-items-baseline'
+    'mb_v-items-center',
+    'mb_v-items-flex-end',
+    'mb_v-items-flex-start',
+    'mb_v-items-stretch',
+    'mb_v-items-baseline'
 ]
 let valuesAlignItems2 = [
     'align-items: center;',
@@ -51,11 +51,11 @@ for (var i = 0; i <= propertiesAlignItems2.length; i++) {
 }
 
 let propertiesAlignItems3 = [
-    'tb:v-items-center',
-    'tb:v-items-flex-end',
-    'tb:v-items-flex-start',
-    'tb:v-items-stretch',
-    'tb:v-items-baseline'
+    'tb_v-items-center',
+    'tb_v-items-flex-end',
+    'tb_v-items-flex-start',
+    'tb_v-items-stretch',
+    'tb_v-items-baseline'
 ]
 let valuesAlignItems3 = [
     'align-items: center;',
@@ -77,11 +77,11 @@ for (var i = 0; i <= propertiesAlignItems3.length; i++) {
 }
 
 let propertiesAlignItems4 = [
-    'pc:v-items-center',
-    'pc:v-items-flex-end',
-    'pc:v-items-flex-start',
-    'pc:v-items-stretch',
-    'pc:v-items-baseline'
+    'pc_v-items-center',
+    'pc_v-items-flex-end',
+    'pc_v-items-flex-start',
+    'pc_v-items-stretch',
+    'pc_v-items-baseline'
 ]
 let valuesAlignItems4 = [
     'align-items: center;',

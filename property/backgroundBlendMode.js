@@ -27,12 +27,12 @@ for (var i = 0; i <= propertiesBackgroundBlend.length; i++) {
 }
 
 let propertiesBackgroundBlend2 = [
-    'mb:v-bg-blend-color',
-    'mb:v-bg-blend-multiply',
-    'mb:v-bg-blend-screen',
-    'mb:v-bg-blend-normal',
-    'mb:v-bg-blend-darken',
-    'mb:v-bg-blend-lighten'
+    'mb_v-bg-blend-color',
+    'mb_v-bg-blend-multiply',
+    'mb_v-bg-blend-screen',
+    'mb_v-bg-blend-normal',
+    'mb_v-bg-blend-darken',
+    'mb_v-bg-blend-lighten'
 ]
 let valuesBackgroundBlend2 = [
     'background-blend-mode: color',
@@ -55,12 +55,12 @@ for (var i = 0; i <= propertiesBackgroundBlend2.length; i++) {
 }
 
 let propertiesBackgroundBlend3 = [
-    'tb:v-bg-blend-color',
-    'tb:v-bg-blend-multiply',
-    'tb:v-bg-blend-screen',
-    'tb:v-bg-blend-normal',
-    'tb:v-bg-blend-darken',
-    'tb:v-bg-blend-lighten'
+    'tb_v-bg-blend-color',
+    'tb_v-bg-blend-multiply',
+    'tb_v-bg-blend-screen',
+    'tb_v-bg-blend-normal',
+    'tb_v-bg-blend-darken',
+    'tb_v-bg-blend-lighten'
 ]
 let valuesBackgroundBlend3 = [
     'background-blend-mode: color',
@@ -83,12 +83,12 @@ for (var i = 0; i <= propertiesBackgroundBlend3.length; i++) {
 }
 
 let propertiesBackgroundBlend4 = [
-    'pc:v-bg-blend-color',
-    'pc:v-bg-blend-multiply',
-    'pc:v-bg-blend-screen',
-    'pc:v-bg-blend-normal',
-    'pc:v-bg-blend-darken',
-    'pc:v-bg-blend-lighten'
+    'pc_v-bg-blend-color',
+    'pc_v-bg-blend-multiply',
+    'pc_v-bg-blend-screen',
+    'pc_v-bg-blend-normal',
+    'pc_v-bg-blend-darken',
+    'pc_v-bg-blend-lighten'
 ]
 let valuesBackgroundBlend4 = [
     'background-blend-mode: color',

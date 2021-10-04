@@ -19,8 +19,8 @@ for (var i = 0; i <= propertiesBoxSizing.length; i++) {
 }
 
 let propertiesBoxSizing2 = [
-    'mb:v-box-border',
-    'mb:v-box-content'
+    'mb_v-box-border',
+    'mb_v-box-content'
 ]
 let valuesBoxSizing2 = [
     'box-sizing: border-box;',
@@ -39,8 +39,8 @@ for (var i = 0; i <= propertiesBoxSizing2.length; i++) {
 }
 
 let propertiesBoxSizing3 = [
-    'tb:v-box-border',
-    'tb:v-box-content'
+    'tb_v-box-border',
+    'tb_v-box-content'
 ]
 let valuesBoxSizing3 = [
     'box-sizing: border-box;',
@@ -59,8 +59,8 @@ for (var i = 0; i <= propertiesBoxSizing3.length; i++) {
 }
 
 let propertiesBoxSizing4 = [
-    'pc:v-box-border',
-    'pc:v-box-content'
+    'pc_v-box-border',
+    'pc_v-box-content'
 ]
 let valuesBoxSizing4 = [
     'box-sizing: border-box;',

@@ -23,10 +23,10 @@ for (var i = 0; i <= propertiesBoxShadow.length; i++) {
 }
 
 let propertiesBoxShadow2 = [
-    'mb:v-box-shadow-sm',
-    'mb:v-box-shadow-md',
-    'mb:v-box-shadow-lg',
-    'mb:v-box-shadow-xl'
+    'mb_v-box-shadow-sm',
+    'mb_v-box-shadow-md',
+    'mb_v-box-shadow-lg',
+    'mb_v-box-shadow-xl'
 ]
 let valuesBoxShadow2 = [
     "box-shadow: 2px 2px 2px rgb(199, 199, 199);",
@@ -47,10 +47,10 @@ for (var i = 0; i <= propertiesBoxShadow2.length; i++) {
 }
 
 let propertiesBoxShadow3 = [
-    'tb:v-box-shadow-sm',
-    'tb:v-box-shadow-md',
-    'tb:v-box-shadow-lg',
-    'tb:v-box-shadow-xl'
+    'tb_v-box-shadow-sm',
+    'tb_v-box-shadow-md',
+    'tb_v-box-shadow-lg',
+    'tb_v-box-shadow-xl'
 ]
 let valuesBoxShadow3 = [
     "box-shadow: 2px 2px 2px rgb(199, 199, 199);",
@@ -71,10 +71,10 @@ for (var i = 0; i <= propertiesBoxShadow3.length; i++) {
 }
 
 let propertiesBoxShadow4 = [
-    'pc:v-box-shadow-sm',
-    'pc:v-box-shadow-md',
-    'pc:v-box-shadow-lg',
-    'pc:v-box-shadow-xl'
+    'pc_v-box-shadow-sm',
+    'pc_v-box-shadow-md',
+    'pc_v-box-shadow-lg',
+    'pc_v-box-shadow-xl'
 ]
 let valuesBoxShadow4 = [
     "box-shadow: 2px 2px 2px rgb(199, 199, 199);",

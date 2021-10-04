@@ -24,11 +24,11 @@ for (var i = 0; i <= propertiesSelf.length; i++) {
     }
 }
 let propertiesSelf2 = [
-    'mb:v-just-self-auto',
-    'mb:v-just-self-start',
-    'mb:v-just-self-end',
-    'mb:v-just-self-center',
-    'mb:v-just-self-stretch'
+    'mb_v-just-self-auto',
+    'mb_v-just-self-start',
+    'mb_v-just-self-end',
+    'mb_v-just-self-center',
+    'mb_v-just-self-stretch'
 ]
 let valuesSelf2 = [
     'justify-self: auto',
@@ -49,11 +49,11 @@ for (var i = 0; i <= propertiesSelf2.length; i++) {
     }
 }
 let propertiesSelf3 = [
-    'tb:v-just-self-auto',
-    'tb:v-just-self-start',
-    'tb:v-just-self-end',
-    'tb:v-just-self-center',
-    'tb:v-just-self-stretch'
+    'tb_v-just-self-auto',
+    'tb_v-just-self-start',
+    'tb_v-just-self-end',
+    'tb_v-just-self-center',
+    'tb_v-just-self-stretch'
 ]
 let valuesSelf3 = [
     'justify-self: auto',
@@ -74,11 +74,11 @@ for (var i = 0; i <= propertiesSelf3.length; i++) {
     }
 }
 let propertiesSelf4 = [
-    'pc:v-just-self-auto',
-    'pc:v-just-self-start',
-    'pc:v-just-self-end',
-    'pc:v-just-self-center',
-    'pc:v-just-self-stretch'
+    'pc_v-just-self-auto',
+    'pc_v-just-self-start',
+    'pc_v-just-self-end',
+    'pc_v-just-self-center',
+    'pc_v-just-self-stretch'
 ]
 let valuesSelf4 = [
     'justify-self: auto',

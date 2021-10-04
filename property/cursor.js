@@ -30,15 +30,15 @@ for (var i = 0; i <= propertiesCursors.length; i++) {
     }
 }
 let propertiesCursors2 = [
-    'mb:v-cursor-pointer',
-    'mb:v-cursor-col-resize',
-    'mb:v-cursor-context-menu ',
-    'mb:v-cursor-all-scroll',
-    'mb:v-cursor-cell',
-    'mb:v-cursor-alias',
-    'mb:v-cursor-default',
-    'mb:v-cursor-none',
-    'mb:v-cursor-progress'
+    'mb_v-cursor-pointer',
+    'mb_v-cursor-col-resize',
+    'mb_v-cursor-context-menu ',
+    'mb_v-cursor-all-scroll',
+    'mb_v-cursor-cell',
+    'mb_v-cursor-alias',
+    'mb_v-cursor-default',
+    'mb_v-cursor-none',
+    'mb_v-cursor-progress'
 ]
 let valuesCursors2 = [
     'cursor: pointer;',
@@ -63,15 +63,15 @@ for (var i = 0; i <= propertiesCursors2.length; i++) {
     }
 }
 let propertiesCursors3 = [
-    'tb:v-cursor-pointer',
-    'tb:v-cursor-col-resize',
-    'tb:v-cursor-context-menu ',
-    'tb:v-cursor-all-scroll',
-    'tb:v-cursor-cell',
-    'tb:v-cursor-alias',
-    'tb:v-cursor-default',
-    'tb:v-cursor-none',
-    'tb:v-cursor-progress'
+    'tb_v-cursor-pointer',
+    'tb_v-cursor-col-resize',
+    'tb_v-cursor-context-menu ',
+    'tb_v-cursor-all-scroll',
+    'tb_v-cursor-cell',
+    'tb_v-cursor-alias',
+    'tb_v-cursor-default',
+    'tb_v-cursor-none',
+    'tb_v-cursor-progress'
 ]
 let valuesCursors3 = [
     'cursor: pointer;',
@@ -96,15 +96,15 @@ for (var i = 0; i <= propertiesCursors3.length; i++) {
     }
 }
 let propertiesCursors4 = [
-    'pc:v-cursor-pointer',
-    'pc:v-cursor-col-resize',
-    'pc:v-cursor-context-menu ',
-    'pc:v-cursor-all-scroll',
-    'pc:v-cursor-cell',
-    'pc:v-cursor-alias',
-    'pc:v-cursor-default',
-    'pc:v-cursor-none',
-    'pc:v-cursor-progress'
+    'pc_v-cursor-pointer',
+    'pc_v-cursor-col-resize',
+    'pc_v-cursor-context-menu ',
+    'pc_v-cursor-all-scroll',
+    'pc_v-cursor-cell',
+    'pc_v-cursor-alias',
+    'pc_v-cursor-default',
+    'pc_v-cursor-none',
+    'pc_v-cursor-progress'
 ]
 let valuesCursors4 = [
     'cursor: pointer;',
