@@ -1,9 +1,9 @@
 let propertiesPosition = [
-    'v-relative',
-    'v-absolute',
-    'v-fixed',
-    'v-sticky',
-    'v-static'
+    'v-pst-relative',
+    'v-pst-absolute',
+    'v-pst-fixed',
+    'v-pst-sticky',
+    'v-pst-static'
 ]
 
 let valuesPosition = [
@@ -25,11 +25,11 @@ for (var i = 0; i <= propertiesPosition.length; i++) {
     }
 }
 let propertiesPosition2 = [
-    'mb_v-relative',
-    'mb_v-absolute',
-    'mb_v-fixed',
-    'mb_v-sticky',
-    'mb_v-static'
+    'mb_v-pst-relative',
+    'mb_v-pst-absolute',
+    'mb_v-pst-fixed',
+    'mb_v-pst-sticky',
+    'mb_v-pst-static'
 ]
 
 let valuesPosition2 = [
@@ -51,11 +51,11 @@ for (var i = 0; i <= propertiesPosition2.length; i++) {
     }
 }
 let propertiesPosition3 = [
-    'tb_v-relative',
-    'tb_v-absolute',
-    'tb_v-fixed',
-    'tb_v-sticky',
-    'tb_v-static'
+    'tb_v-pst-relative',
+    'tb_v-pst-absolute',
+    'tb_v-pst-fixed',
+    'tb_v-pst-sticky',
+    'tb_v-pst-static'
 ]
 
 let valuesPosition3 = [
@@ -77,11 +77,11 @@ for (var i = 0; i <= propertiesPosition3.length; i++) {
     }
 }
 let propertiesPosition4 = [
-    'pc_v-relative',
-    'pc_v-absolute',
-    'pc_v-fixed',
-    'pc_v-sticky',
-    'pc_v-static'
+    'pc_v-pst-relative',
+    'pc_v-pst-absolute',
+    'pc_v-pst-fixed',
+    'pc_v-pst-sticky',
+    'pc_v-pst-static'
 ]
 
 let valuesPosition4 = [
