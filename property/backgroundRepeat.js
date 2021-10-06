@@ -1,6 +1,6 @@
 let propertiesBackgroundRepeat = [
-    'v-bg-repeat',
-    'v-bg-norepeat'
+    'v-bg-rpt-repeat',
+    'v-bg-rpt-norepeat'
 ]
 let valuesBackgroundRepeat = [
     'background-repeat: repeat',
@@ -19,8 +19,8 @@ for (var i = 0; i <= propertiesBackgroundRepeat.length; i++) {
 }
 
 let propertiesBackgroundRepeat2 = [
-    'mb_v-bg-repeat',
-    'mb_v-bg-norepeat'
+    'mb_v-bg-rpt-repeat',
+    'mb_v-bg-rpt-norepeat'
 ]
 let valuesBackgroundRepeat2 = [
     'background-repeat: repeat',
@@ -39,8 +39,8 @@ for (var i = 0; i <= propertiesBackgroundRepeat2.length; i++) {
 }
 
 let propertiesBackgroundRepeat3 = [
-    'tb_v-bg-repeat',
-    'tb_v-bg-norepeat'
+    'tb_v-bg-rpt-repeat',
+    'tb_v-bg-rpt-norepeat'
 ]
 let valuesBackgroundRepeat3 = [
     'background-repeat: repeat',
@@ -59,8 +59,8 @@ for (var i = 0; i <= propertiesBackgroundRepeat3.length; i++) {
 }
 
 let propertiesBackgroundRepeat4 = [
-    'pc_v-bg-repeat',
-    'pc_v-bg-norepeat'
+    'pc_v-bg-rpt-repeat',
+    'pc_v-bg-rpt-norepeat'
 ]
 let valuesBackgroundRepeat4 = [
     'background-repeat: repeat',

@@ -1,8 +1,8 @@
 let propertiesTextTransform = [
-    'v-text-uppercase',
-    'v-text-lowercase',
-    'v-text-capitalize',
-    'v-text-none'
+    'v-text-transform-upper',
+    'v-text-transform-lower',
+    'v-text-transform-capital',
+    'v-text-transform-none'
 ]
 let valuesTextTransform = [
     'text-transform: uppercase;',
@@ -22,10 +22,10 @@ for (var i = 0; i <= propertiesTextTransform.length; i++) {
     }
 }
 let propertiesTextTransform2 = [
-    'mb_v-text-uppercase',
-    'mb_v-text-lowercase',
-    'mb_v-text-capitalize',
-    'mb_v-text-none'
+    'mb_v-text-transform-upper',
+    'mb_v-text-transform-lower',
+    'mb_v-text-transform-capital',
+    'mb_v-text-transform-none'
 ]
 let valuesTextTransform2 = [
     'text-transform: uppercase;',
@@ -45,10 +45,10 @@ for (var i = 0; i <= propertiesTextTransform2.length; i++) {
     }
 }
 let propertiesTextTransform3 = [
-    'tb_v-text-uppercase',
-    'tb_v-text-lowercase',
-    'tb_v-text-capitalize',
-    'tb_v-text-none'
+    'tb_v-text-transform-upper',
+    'tb_v-text-transform-lower',
+    'tb_v-text-transform-capital',
+    'tb_v-text-transform-none'
 ]
 let valuesTextTransform3 = [
     'text-transform: uppercase;',
@@ -68,10 +68,10 @@ for (var i = 0; i <= propertiesTextTransform3.length; i++) {
     }
 }
 let propertiesTextTransform4 = [
-    'pc_v-text-uppercase',
-    'pc_v-text-lowercase',
-    'pc_v-text-capitalize',
-    'pc_v-text-none'
+    'pc_v-text-transform-upper',
+    'pc_v-text-transform-lower',
+    'pc_v-text-transform-capital',
+    'pc_v-text-transform-none'
 ]
 let valuesTextTransform4 = [
     'text-transform: uppercase;',

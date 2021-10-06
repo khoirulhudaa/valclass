@@ -1,8 +1,8 @@
 let propertiesColumnCustom = [
-    'v-col',
-    'v-cols-2',
-    'v-cols-3',
-    'v-cols-4'
+    'v-col-1',
+    'v-col-2',
+    'v-col-3',
+    'v-col-4'
 ]
 let valueColumnCustom = [
     `column-count: 1; 
@@ -26,10 +26,10 @@ for (var i = 0; i <= propertiesColumnCustom.length; i++) {
     }
 }
 let propertiesColumnCustom2 = [
-    'mb_v-col',
-    'mb_v-cols-2',
-    'mb_v-cols-3',
-    'mb_v-cols-4'
+    'mb_v-col-1',
+    'mb_v-col-2',
+    'mb_v-col-3',
+    'mb_v-col-4'
 ]
 let valueColumnCustom2 = [
     `column-count: 1; 
@@ -53,10 +53,10 @@ for (var i = 0; i <= propertiesColumnCustom2.length; i++) {
     }
 }
 let propertiesColumnCustom3 = [
-    'tb_v-col',
-    'tb_v-cols-2',
-    'tb_v-cols-3',
-    'tb_v-cols-4'
+    'tb_v-col-1',
+    'tb_v-col-2',
+    'tb_v-col-3',
+    'tb_v-col-4'
 ]
 let valueColumnCustom3 = [
     `column-count: 1; 
@@ -80,10 +80,10 @@ for (var i = 0; i <= propertiesColumnCustom3.length; i++) {
     }
 }
 let propertiesColumnCustom4 = [
-    'pc_v-col',
-    'pc_v-cols-2',
-    'pc_v-cols-3',
-    'pc_v-cols-4'
+    'pc_v-col-1',
+    'pc_v-col-2',
+    'pc_v-col-3',
+    'pc_v-col-4'
 ]
 let valueColumnCustom4 = [
     `column-count: 1; 

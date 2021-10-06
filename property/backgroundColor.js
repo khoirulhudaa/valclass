@@ -1,15 +1,15 @@
 let propertiesBgColors = [
-    'v-dark',
-    'v-light',
-    'v-danger',
-    'v-info',
-    'v-primary',
-    'v-smooth',
-    'v-transparent',
-    'v-secondary',
-    'v-warning',
-    'v-green',
-    'v-white'
+    'v-bg-dark',
+    'v-bg-light',
+    'v-bg-danger',
+    'v-bg-info',
+    'v-bg-primary',
+    'v-bg-smooth',
+    'v-bg-transparent',
+    'v-bg-secondary',
+    'v-bg-warning',
+    'v-bg-green',
+    'v-bg-white'
 ]
 let valuesBgColors = [
     'background-color: rgb(70, 70, 70);',
@@ -35,17 +35,17 @@ for (var i = 0; i <= propertiesBgColors.length; i++) {
 }
 
 let propertiesBgColors2 = [
-    'mb_v-dark',
-    'mb_v-light',
-    'mb_v-danger',
-    'mb_v-info',
-    'mb_v-primary',
-    'mb_v-smooth',
-    'mb_v-transparent',
-    'mb_v-secondary',
-    'mb_v-warning',
-    'mb_v-green',
-    'mb_v-white'
+    'mb_v-bg-dark',
+    'mb_v-bg-light',
+    'mb_v-bg-danger',
+    'mb_v-bg-info',
+    'mb_v-bg-primary',
+    'mb_v-bg-smooth',
+    'mb_v-bg-transparent',
+    'mb_v-bg-secondary',
+    'mb_v-bg-warning',
+    'mb_v-bg-green',
+    'mb_v-bg-white'
 ]
 let valuesBgColors2 = [
     'background-color: rgb(70, 70, 70);',
@@ -73,17 +73,17 @@ for (var i = 0; i <= propertiesBgColors2.length; i++) {
 }
 
 let propertiesBgColors3 = [
-    'tb_v-dark',
-    'tb_v-light',
-    'tb_v-danger',
-    'tb_v-info',
-    'tb_v-primary',
-    'tb_v-smooth',
-    'tb_v-transparent',
-    'tb_v-secondary',
-    'tb_v-warning',
-    'tb_v-green',
-    'tb_v-white'
+    'tb_v-bg-dark',
+    'tb_v-bg-light',
+    'tb_v-bg-danger',
+    'tb_v-bg-info',
+    'tb_v-bg-primary',
+    'tb_v-bg-smooth',
+    'tb_v-bg-transparent',
+    'tb_v-bg-secondary',
+    'tb_v-bg-warning',
+    'tb_v-bg-green',
+    'tb_v-bg-white'
 ]
 let valuesBgColors3 = [
     'background-color: rgb(70, 70, 70);',
@@ -111,17 +111,17 @@ for (var i = 0; i <= propertiesBgColors3.length; i++) {
 }
 
 let propertiesBgColors4 = [
-    'pc_v-dark',
-    'pc_v-light',
-    'pc_v-danger',
-    'pc_v-info',
-    'pc_v-primary',
-    'pc_v-smooth',
-    'pc_v-transparent',
-    'pc_v-secondary',
-    'pc_v-warning',
-    'pc_v-green',
-    'pc_v-white'
+    'pc_v-bg-dark',
+    'pc_v-bg-light',
+    'pc_v-bg-danger',
+    'pc_v-bg-info',
+    'pc_v-bg-primary',
+    'pc_v-bg-smooth',
+    'pc_v-bg-transparent',
+    'pc_v-bg-secondary',
+    'pc_v-bg-warning',
+    'pc_v-bg-green',
+    'pc_v-bg-white'
 ]
 let valuesBgColors4 = [
     'background-color: rgb(70, 70, 70);',

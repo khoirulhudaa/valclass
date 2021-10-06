@@ -1,9 +1,9 @@
 
 let propertiesGrid = [
-    'v-row',
-    'v-rows-2',
-    'v-rows-3',
-    'v-rows-4',
+    'v-row-1',
+    'v-row-2',
+    'v-row-3',
+    'v-row-4',
     'v-grid-gap-1',
     'v-grid-gap-2',
     'v-grid-gap-3',
@@ -34,10 +34,10 @@ for (var i = 0; i <= propertiesGrid.length; i++) {
     }
 }
 let propertiesGrid2 = [
-    'mb_v-row',
-    'mb_v-rows-2',
-    'mb_v-rows-3',
-    'mb_v-rows-4',
+    'mb_v-row-1',
+    'mb_v-row-2',
+    'mb_v-row-3',
+    'mb_v-row-4',
     'mb_v-grid-gap-1',
     'mb_v-grid-gap-2',
     'mb_v-grid-gap-3',
@@ -68,10 +68,10 @@ for (var i = 0; i <= propertiesGrid2.length; i++) {
     }
 }
 let propertiesGrid3 = [
-    'tb_v-row',
-    'tb_v-rows-2',
-    'tb_v-rows-3',
-    'tb_v-rows-4',
+    'tb_v-row-1',
+    'tb_v-row-2',
+    'tb_v-row-3',
+    'tb_v-row-4',
     'tb_v-grid-gap-1',
     'tb_v-grid-gap-2',
     'tb_v-grid-gap-3',
@@ -102,10 +102,10 @@ for (var i = 0; i <= propertiesGrid3.length; i++) {
     }
 }
 let propertiesGrid4 = [
-    'pc_v-row',
-    'pc_v-rows-2',
-    'pc_v-rows-3',
-    'pc_v-rows-4',
+    'pc_v-row-1',
+    'pc_v-row-2',
+    'pc_v-row-3',
+    'pc_v-row-4',
     'pc_v-grid-gap-1',
     'pc_v-grid-gap-2',
     'pc_v-grid-gap-3',
