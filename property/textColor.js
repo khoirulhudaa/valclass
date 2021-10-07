@@ -1,15 +1,15 @@
 let propertiesTextColors = [
-    'v-text-dark',
-    'v-text-light',
-    'v-text-danger',
-    'v-text-info',
-    'v-text-primary',
-    'v-text-smooth',
-    'v-text-transparent',
-    'v-text-secondary',
-    'v-text-warning',
-    'v-text-green',
-    'v-text-white'
+    'v-color-dark',
+    'v-color-light',
+    'v-color-danger',
+    'v-color-info',
+    'v-color-primary',
+    'v-color-smooth',
+    'v-color-transparent',
+    'v-color-secondary',
+    'v-color-warning',
+    'v-color-green',
+    'v-color-white'
 ]
 let valuesTextColors = [
     'color: black;',
@@ -36,17 +36,17 @@ for (var i = 0; i <= propertiesTextColors.length; i++) {
     }
 }
 let propertiesTextColors2 = [
-    'mb_v-text-dark',
-    'mb_v-text-light',
-    'mb_v-text-danger',
-    'mb_v-text-info',
-    'mb_v-text-primary',
-    'mb_v-text-smooth',
-    'mb_v-text-transparent',
-    'mb_v-text-secondary',
-    'mb_v-text-warning',
-    'mb_v-text-green',
-    'mb_v-text-white'
+    'mb_v-color-dark',
+    'mb_v-color-light',
+    'mb_v-color-danger',
+    'mb_v-color-info',
+    'mb_v-color-primary',
+    'mb_v-color-smooth',
+    'mb_v-color-transparent',
+    'mb_v-color-secondary',
+    'mb_v-color-warning',
+    'mb_v-color-green',
+    'mb_v-color-white'
 ]
 let valuesTextColors2 = [
     'color: black;',
@@ -73,17 +73,17 @@ for (var i = 0; i <= propertiesTextColors2.length; i++) {
     }
 }
 let propertiesTextColors3 = [
-    'tb_v-text-dark',
-    'tb_v-text-light',
-    'tb_v-text-danger',
-    'tb_v-text-info',
-    'tb_v-text-primary',
-    'tb_v-text-smooth',
-    'tb_v-text-transparent',
-    'tb_v-text-secondary',
-    'tb_v-text-warning',
-    'tb_v-text-green',
-    'tb_v-text-white'
+    'tb_v-color-dark',
+    'tb_v-color-light',
+    'tb_v-color-danger',
+    'tb_v-color-info',
+    'tb_v-color-primary',
+    'tb_v-color-smooth',
+    'tb_v-color-transparent',
+    'tb_v-color-secondary',
+    'tb_v-color-warning',
+    'tb_v-color-green',
+    'tb_v-color-white'
 ]
 let valuesTextColors3 = [
     'color: black;',
@@ -110,17 +110,17 @@ for (var i = 0; i <= propertiesTextColors3.length; i++) {
     }
 }
 let propertiesTextColors4 = [
-    'pc_v-text-dark',
-    'pc_v-text-light',
-    'pc_v-text-danger',
-    'pc_v-text-info',
-    'pc_v-text-primary',
-    'pc_v-text-smooth',
-    'pc_v-text-transparent',
-    'pc_v-text-secondary',
-    'pc_v-text-warning',
-    'pc_v-text-green',
-    'pc_v-text-white'
+    'pc_v-color-dark',
+    'pc_v-color-light',
+    'pc_v-color-danger',
+    'pc_v-color-info',
+    'pc_v-color-primary',
+    'pc_v-color-smooth',
+    'pc_v-color-transparent',
+    'pc_v-color-secondary',
+    'pc_v-color-warning',
+    'pc_v-color-green',
+    'pc_v-color-white'
 ]
 let valuesTextColors4 = [
     'color: black;',
