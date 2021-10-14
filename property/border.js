@@ -93,6 +93,9 @@ let valuesBorders = [
 for (var i = 0; i <= propertiesBorders.length; i++) {
     if (document.querySelector(`.${propertiesBorders[i]}`) && !document.querySelector('style').innerText.includes(propertiesBorders[i])) {
         let styles = ` 
+            .${propertiesBorders[i]} { 
+                ${valuesBorders[i]}
+            }
             @media screen and (min-width: 900px) and (max-width: 1920px) {
                 .${propertiesBorders[i]} { 
                     ${valuesBorders[i]}
