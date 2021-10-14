@@ -1,1 +1,18 @@
-let propertiesIcons=["v-user","v-instagram"],valuesIcons=["fas fa-user","fab fa-instagram"];setTimeout(()=>{if(document.querySelector("i"))for(var e=0;e<propertiesIcons.length;e++)for(var o=0;o<document.querySelectorAll("i").length;o++)document.querySelectorAll("i")[o].classList.contains(propertiesIcons[e])&&document.querySelectorAll("i")[o].classList.add(valuesIcons[e]);if(document.querySelector("a"))for(e=0;e<propertiesIcons.length;e++)for(o=0;o<document.querySelectorAll("a").length;o++)document.querySelectorAll("a")[o].classList.contains(propertiesIcons[e])&&document.querySelectorAll("a")[o].classList.add(valuesIcons[e])},300);
+
+let nameIcons = [
+    'v-facebook-icon',
+    'v-car-icon'
+]
+let valueIcons = [
+    'fab fa-facebook',
+    'fas fa-car',
+]
+
+for (let i = 0; i <= nameIcons.length - 1; i++) {
+    
+    if (document.querySelector(`.${nameIcons[i]}`)) {
+        console.log(`${valueIcons[i]}`)
+        console.log(`${nameIcons[i]}`)
+        document.querySelector(`.${nameIcons[i]}`).className = document.querySelector(`.${nameIcons[i]}`).className.replace(`${nameIcons[i]}`, `${valueIcons[i]}`);
+    }
+}
