@@ -1,32 +1,26 @@
 // agar dibuatkan sebuat style di tag head secara otomatis ketika browser di load
 // to make a style in the head tag automatically when the browser is loaded
 
-if (document.querySelector('body')) {
-    let css = document.createElement('style');
+let style_ = document.getElementsByTagName("head")[0]
+let css = document.createElement('style');
+
+if (style_) {
     css.type = 'text/css';
 
     let styles = ` 
-        body { 
-            padding: 0;
-            margin: 0;
-        }`;
+            body { 
+                padding: 0;
+                margin: 0;
+            }
+            `;
     if (css.styleSheet) {
-        css.styleSheet.cssText = styles;
+        css.stext = styles;
     }
     else {
         css.appendChild(document.createTextNode(styles));
     }
     document.getElementsByTagName("head")[0].appendChild(css);
 }
-
-//============================//==============================//
-
-// Memanggil file property sesuai nama kelas yang tertera pada tag body
-// #developerValclass - Muhammad Khoirul Huda -> developervalclass@gmail.com
-
-// Call the property file according to the class name listed in the body tag
-// #developerValclass - Muhammad Khoirul Huda -> developervalclass@gmail.com
-
 
 if(document.querySelector("body").classList.contains("active")) {
     js = "./property/active.js";
@@ -734,37 +728,17 @@ if(document.querySelector("body").classList.contains("scroll")) {
 }
 
 let uniteValclass = {
-  "@button@": [
-    "vc-radius-400px", 
-    "vc-bg-blue", 
-    "vc-text-center", 
-    "vc-p-12px",
-    "vc-color-white",
-    "vc-weight-bold",
-    "vc-font-sz-160px",
-  ],
-  "@section@": [
-    "vc-pst-relative",
-    ],
-  "@title@": [
-    "vc-font-sz-64px", 
-    "vc-weight-bold",
-    "vc-color-green"
-  ],
-  "@paragraph@": [
-    "vc-font-sz-300px", 
-    "vc-weight-bold",
-    "vc-color-green"
-  ],
-  "@text@": [
-    "vc-font-sz-100px", 
-    "mb_vc-weight-normal",
-    "vc-color-brown"
-  ],
+  
+}
+
+let makerUtilitiesName = {
+  
 }
 
 let group_ = {};
 let groupClass = {};
+let utilitiesName_ = {};
+let groupUtilitiesName = {};
 
 // daftar nama items
 let vallclass = {
@@ -1463,6 +1437,22 @@ function createGrupStyle(group){
 
 }
 
+function createUtilitiesName(group){
+
+  for(let unity in group){
+
+    groupUtilitiesName[unity] = `${unity}_group`;
+
+  }
+
+  for(let x in groupUtilitiesName){
+
+    utilitiesName_[groupUtilitiesName[x]] = makerUtilitiesName[x]; 
+
+  }
+
+}
+
 // =========================================
 //  valclass core adalah file yang berisi
 //  berbagai macam fungsi yang dapat
@@ -1490,6 +1480,7 @@ function uuidv4() {
 function Core(element){
 
   createGrupStyle(uniteValclass)
+  createUtilitiesName(makerUtilitiesName)
 
   let allClass = element?.className?.split(" ") || [];
 
@@ -1606,15 +1597,7 @@ function Core(element){
 Core(document.body);
 // custom style sheet template (CUSTOM)
 // jika tidak di perlukan cukup biarkan menjadi string kosong (``)
-let style_sheet = `
-  
-  html,body{
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
-    height: 100%;
-  }
-`;
+let style_sheet = ``;
 
 function valclass_initalization(){
 
@@ -2730,10 +2713,7 @@ function valclass_initalization(){
             }
             if(className === "MBdisplay"){
                 style_sheet +=`
-                .mb_vc-d-${_class}{
-                    display: ${_class};
-                }
-                @media s    creen and (min-width: 320px) and (max-width: 600px){
+                @media screen and (min-width: 320px) and (max-width: 600px){
                         .mb_vc-d-${_class}{
                         display: ${_class};
                     }
@@ -2743,9 +2723,6 @@ function valclass_initalization(){
             }
             if(className === "MBalignItems"){
                 style_sheet +=`
-                .mb_vc-items-${_class}{
-                        align-items: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-items-${_class}{
                         align-items: ${_class};
@@ -2756,9 +2733,6 @@ function valclass_initalization(){
             }
             if(className === "MBboxSizing"){
                 style_sheet +=`
-                .mb_vc-box-${_class}{
-                        box-sizing: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-box-${_class}{
                         box-sizing: ${_class};
@@ -2769,9 +2743,6 @@ function valclass_initalization(){
             }
             if(className === "MBfloats"){
                 style_sheet +=`
-                .mb_vc-float-${_class}{
-                        float: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-float-${_class}{
                         float: ${_class};
@@ -2782,9 +2753,6 @@ function valclass_initalization(){
             }
             if(className === "MBoverflow"){
                 style_sheet +=`
-                .mb_vc-overflow-${_class}{
-                        overflow: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-overflow-${_class}{
                         overflow: ${_class};
@@ -2795,9 +2763,6 @@ function valclass_initalization(){
             }
             if(className === "MBoverflowX"){
                 style_sheet +=`
-                .mb_vc-overflowX-${_class}{
-                        overflow-x: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-overflowX-${_class}{
                         overflow-x: ${_class};
@@ -2808,9 +2773,6 @@ function valclass_initalization(){
             }
             if(className === "MBoverflowY"){
                 style_sheet +=`
-                .mb_vc-overflowY-${_class}{
-                        overflow-y: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-overflowY-${_class}{
                         overflow-y: ${_class};
@@ -2821,9 +2783,6 @@ function valclass_initalization(){
             }
             if(className === "MBposition"){
                 style_sheet +=`
-                .mb_vc-pst-${_class}{
-                        position: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-pst-${_class}{
                         position: ${_class};
@@ -2834,9 +2793,6 @@ function valclass_initalization(){
             }
             if(className === "MBtop"){
                 style_sheet +=`
-                .mb_vc-t-${_class}{
-                        top: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-t-${_class}{
                         top: ${_class};
@@ -2847,9 +2803,6 @@ function valclass_initalization(){
             }
             if(className === "MBleft"){
                 style_sheet +=`
-                .mb_vc-l-${_class}{
-                        left: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-l-${_class}{
                         left: ${_class};
@@ -2860,9 +2813,6 @@ function valclass_initalization(){
             }
             if(className === "MBright"){
                 style_sheet +=`
-                .mb_vc-r-${_class}{
-                        right: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-r-${_class}{
                         right: ${_class};
@@ -2873,9 +2823,6 @@ function valclass_initalization(){
             }
             if(className === "MBbottom"){
                 style_sheet +=`
-                .mb_vc-b-${_class}{
-                        bottom: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-b-${_class}{
                         bottom: ${_class};
@@ -2886,9 +2833,6 @@ function valclass_initalization(){
             }
             if(className === "MBindex"){
                 style_sheet +=`
-                .mb_vc-index-${_class}{
-                        z-index: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-index-${_class}{
                         z-index: ${_class};
@@ -2899,9 +2843,6 @@ function valclass_initalization(){
             }
             if(className === "MBvisibility"){
                 style_sheet +=`
-                .mb_vc-visibility-${_class}{
-                        visibility: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-visibility-${_class}{
                         visibility: ${_class};
@@ -2912,9 +2853,6 @@ function valclass_initalization(){
             }
             if(className === "MBflex"){
                 style_sheet +=`
-                .mb_vc-flex-${_class}{
-                        flex: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-flex-${_class}{
                         flex: ${_class};
@@ -2925,9 +2863,6 @@ function valclass_initalization(){
             }
             if(className === "MBdirection"){
                 style_sheet +=`
-                .mb_vc-direction-${_class}{
-                        flex-direction: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-direction-${_class}{
                         flex-direction: ${_class};
@@ -2938,9 +2873,6 @@ function valclass_initalization(){
             }
             if(className === "MBwrap"){
                 style_sheet +=`
-                .mb_vc-wrap-${_class}{
-                        flex-wrap: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-wrap-${_class}{
                         flex-wrap: ${_class};
@@ -2951,9 +2883,6 @@ function valclass_initalization(){
             }
             if(className === "MBshrink"){
                 style_sheet +=`
-                .mb_vc-shrink-${_class}{
-                        flex-shrink: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-shrink-${_class}{
                         flex-shrink: ${_class};
@@ -2964,9 +2893,6 @@ function valclass_initalization(){
             }
             if(className === "MBbasis"){
                 style_sheet +=`
-                .mb_vc-basis-${_class}{
-                        flex-basis: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-basis-${_class}{
                         flex-basis: ${_class};
@@ -2977,9 +2903,6 @@ function valclass_initalization(){
             }
             if(className === "MBjustify"){
                 style_sheet +=`
-                .mb_vc-justify-${_class}{
-                        justify-content: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-justify-${_class}{
                         justify-content: ${_class};
@@ -2990,9 +2913,6 @@ function valclass_initalization(){
             }
             if(className === "MBjustItems"){
                 style_sheet +=`
-                .mb_vc-just-items-${_class}{
-                        justify-items: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-just-items-${_class}{
                         justify-items: ${_class};
@@ -3003,9 +2923,6 @@ function valclass_initalization(){
             }
             if(className === "MBjustSelf"){
                 style_sheet +=`
-                .mb_vc-just-self-${_class}{
-                        justify-self: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-just-self-${_class}{
                         justify-self: ${_class};
@@ -3016,9 +2933,6 @@ function valclass_initalization(){
             }
             if(className === "MBalignContent"){
                 style_sheet +=`
-                .mb_vc-content-${_class}{
-                        align-content: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-content-${_class}{
                         align-content: ${_class};
@@ -3029,9 +2943,6 @@ function valclass_initalization(){
             }
             if(className === "MBalignItems"){
                 style_sheet +=`
-                .mb_vc-items-${_class}{
-                        align-items: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-items-${_class}{
                         align-items: ${_class};
@@ -3042,9 +2953,6 @@ function valclass_initalization(){
             }
             if(className === "MBalignSelf"){
                 style_sheet +=`
-                .mb_vc-self-${_class}{
-                        align-self: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-self-${_class}{
                         align-self: ${_class};
@@ -3055,9 +2963,6 @@ function valclass_initalization(){
             }
             if(className === "MBpadding"){
                 style_sheet +=`
-                .mb_vc-p-${_class}{
-                        padding: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-p-${_class}{
                         padding: ${_class};
@@ -3068,9 +2973,6 @@ function valclass_initalization(){
             }
             if(className === "MBpaddingTop"){
                 style_sheet +=`
-                .mb_vc-pt-${_class}{
-                        padding-top: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-pt-${_class}{
                         padding-top: ${_class};
@@ -3081,9 +2983,6 @@ function valclass_initalization(){
             }
             if(className === "MBpaddingLeft"){
                 style_sheet +=`
-                .mb_vc-pl-${_class}{
-                        padding-left: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-pl-${_class}{
                         padding-left: ${_class};
@@ -3094,9 +2993,6 @@ function valclass_initalization(){
             }
             if(className === "MBpaddingRight"){
                 style_sheet +=`
-                .mb_vc-pr-${_class}{
-                        padding-right: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-pr-${_class}{
                         padding-right: ${_class};
@@ -3107,9 +3003,6 @@ function valclass_initalization(){
             }
             if(className === "MBpaddingBottom"){
                 style_sheet +=`
-                .mb_vc-pb-${_class}{
-                        padding-bottom: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-pb-${_class}{
                         padding-bottom: ${_class};
@@ -3120,9 +3013,6 @@ function valclass_initalization(){
             }
             if(className === "MBmargin"){
                 style_sheet +=`
-                .mb_vc-m-${_class}{
-                        margin: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-m-${_class}{
                         margin: ${_class};
@@ -3133,9 +3023,6 @@ function valclass_initalization(){
             }
             if(className === "MBmarginTop"){
                 style_sheet +=`
-                .mb_vc-mt-${_class}{
-                        margin-top: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-mt-${_class}{
                         margin-top: ${_class};
@@ -3146,9 +3033,6 @@ function valclass_initalization(){
             }
             if(className === "MBmarginLeft"){
                 style_sheet +=`
-                .mb_vc-ml-${_class}{
-                        margin-left: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-ml-${_class}{
                         margin-left: ${_class};
@@ -3159,9 +3043,6 @@ function valclass_initalization(){
             }
             if(className === "MBmarginRight"){
                 style_sheet +=`
-                .mb_vc-mr-${_class}{
-                        margin-right: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-mr-${_class}{
                         margin-right: ${_class};
@@ -3172,9 +3053,6 @@ function valclass_initalization(){
             }
             if(className === "MBmarginBottom"){
                 style_sheet +=`
-                .mb_vc-mb-${_class}{
-                        margin-bottom: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-mb-${_class}{
                         margin-bottom: ${_class};
@@ -3185,9 +3063,6 @@ function valclass_initalization(){
             }
             if(className === "MBwidth"){
                 style_sheet +=`
-                .mb_vc-w-${_class}{
-                        width: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-w-${_class}{
                         width: ${_class};
@@ -3198,9 +3073,6 @@ function valclass_initalization(){
             }
             if(className === "MBheight"){
                 style_sheet +=`
-                .mb_vc-h-${_class}{
-                        height: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-h-${_class}{
                         height: ${_class};
@@ -3211,9 +3083,6 @@ function valclass_initalization(){
             }
             if(className === "MBfontSize"){
                 style_sheet +=`
-                .mb_vc-font-sz-${_class}{
-                        font-size: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-font-sz-${_class}{
                         font-size: ${_class};
@@ -3224,9 +3093,6 @@ function valclass_initalization(){
             }
             if(className === "MBfontStyle"){
                 style_sheet +=`
-                .mb_vc-font-style-${_class}{
-                        font-style: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-font-style-${_class}{
                         font-style: ${_class};
@@ -3237,9 +3103,6 @@ function valclass_initalization(){
             }
             if(className === "MBfontWeight"){
                 style_sheet +=`
-                .mb_vc-weight-${_class}{
-                        font-weight: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-weight-${_class}{
                         font-weight: ${_class};
@@ -3250,9 +3113,6 @@ function valclass_initalization(){
             }
             if(className === "MBletterSpacing"){
                 style_sheet +=`
-                .mb_vc-let-spacing-${_class}{
-                        letter-spacing: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-let-spacing-${_class}{
                         letter-spacing: ${_class};
@@ -3263,9 +3123,6 @@ function valclass_initalization(){
             }
             if(className === "MBlineHeight"){
                 style_sheet +=`
-                .mb_vc-leading-${_class}{
-                        line-height: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-leading-${_class}{
                         line-height: ${_class};
@@ -3276,9 +3133,6 @@ function valclass_initalization(){
             }
             if(className === "MBtextAlign"){
                 style_sheet +=`
-                .mb_vc-text-${_class}{
-                        text-align: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-text-${_class}{
                         text-align: ${_class};
@@ -3289,9 +3143,6 @@ function valclass_initalization(){
             }
             if(className === "MBtextColor"){
                 style_sheet +=`
-                .mb_vc-color-${_class}{
-                        color: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-color-${_class}{
                         color: ${_class};
@@ -3302,9 +3153,6 @@ function valclass_initalization(){
             }
             if(className === "MBdecoration"){
                 style_sheet +=`
-                .mb_vc-decoration-${_class}{
-                        text-decoration: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-decoration-${_class}{
                         text-decoration: ${_class};
@@ -3315,9 +3163,6 @@ function valclass_initalization(){
             }
             if(className === "MBtextTransform"){
                 style_sheet +=`
-                .mb_vc-text-transform-${_class}{
-                        text-transform: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-text-transform-${_class}{
                         text-transform: ${_class};
@@ -3328,10 +3173,6 @@ function valclass_initalization(){
             }
             if(className === "MBwordBreak"){
                 style_sheet +=`
-                .mb_vc-break-${_class}{
-                    word-break: ${_class};
-                    overflow-wrap: break-word;
-                }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-break-${_class}{
                         word-break: ${_class};
@@ -3343,9 +3184,6 @@ function valclass_initalization(){
             }
             if(className === "MBbgAttachment"){
                 style_sheet +=`
-                .mb_vc-attachment-${_class}{
-                        background-attachment: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-attachment-${_class}{
                         background-attachment: ${_class};
@@ -3356,9 +3194,6 @@ function valclass_initalization(){
             }
             if(className === "MBbgClip"){
                 style_sheet +=`
-                .mb_vc-bg-clip-${_class}{
-                        background-clip: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-bg-clip-${_class}{
                         background-clip: ${_class};
@@ -3369,9 +3204,6 @@ function valclass_initalization(){
             }
             if(className === "MBbgColor"){
                 style_sheet +=`
-                .mb_vc-bg-${_class}{
-                        background-color: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-bg-${_class}{
                         background-color: ${_class};
@@ -3382,9 +3214,6 @@ function valclass_initalization(){
             }
             if(className === "MBbgPosition"){
                 style_sheet +=`
-                .mb_vc-bg-post-${_class}{
-                        background-position: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-bg-post-${_class}{
                         background-position: ${_class};
@@ -3395,9 +3224,6 @@ function valclass_initalization(){
             }
             if(className === "MBbgRepeat"){
                 style_sheet +=`
-                .mb_vc-bg-rpt-${_class}{
-                        background-repeat: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-bg-rpt-${_class}{
                         background-repeat: ${_class};
@@ -3408,9 +3234,6 @@ function valclass_initalization(){
             }
             if(className === "MBbgSize"){
                 style_sheet +=`
-                .mb_vc-bg-sz-${_class}{
-                        background-size: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-bg-sz-${_class}{
                         background-size: ${_class};
@@ -3421,9 +3244,6 @@ function valclass_initalization(){
             }
             if(className === "MBborder"){
                 style_sheet +=`
-                .mb_vc-border-${_class}{
-                        border: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-border-${_class}{
                         border: ${_class};
@@ -3434,9 +3254,6 @@ function valclass_initalization(){
             }
             if(className === "MBborderTop"){
                 style_sheet +=`
-                .mb_vc-border-top-${_class}{
-                        border-top: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-border-top-${_class}{
                         border-top: ${_class};
@@ -3447,9 +3264,6 @@ function valclass_initalization(){
             }
             if(className === "MBborderLeft"){
                 style_sheet +=`
-                .mb_vc-border-l-${_class}{
-                        border-left: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-border-l-${_class}{
                         border-left: ${_class};
@@ -3460,9 +3274,6 @@ function valclass_initalization(){
             }
             if(className === "MBborderRight"){
                 style_sheet +=`
-                .mb_vc-border-r-${_class}{
-                        border-right: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-border-r-${_class}{
                         border-right: ${_class};
@@ -3473,9 +3284,6 @@ function valclass_initalization(){
             }
             if(className === "MBborderBottom"){
                 style_sheet +=`
-                .mb_vc-border-b-${_class}{
-                        border-bottom: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-border-b-${_class}{
                         border-bottom: ${_class};
@@ -3486,9 +3294,6 @@ function valclass_initalization(){
             }
             if(className === "MBborderRadius"){
                 style_sheet +=`
-                .mb_vc-radius-${_class}{
-                        border-radius: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-radius-${_class}{
                         border-radius: ${_class};
@@ -3499,9 +3304,6 @@ function valclass_initalization(){
             }
             if(className === "MBborderStyle"){
                 style_sheet +=`
-                .mb_vc-style-${_class}{
-                        border-style: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-style-${_class}{
                         border-style: ${_class};
@@ -3512,9 +3314,6 @@ function valclass_initalization(){
             }
             if(className === "MBborderColor"){
                 style_sheet +=`
-                .mb_vc-border-clr-${_class}{
-                        border-color: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-border-clr-${_class}{
                         border-color: ${_class};
@@ -3525,9 +3324,6 @@ function valclass_initalization(){
             }
             if(className === "MBborderType"){
                 style_sheet +=`
-                .mb_vc-border-type-${_class}{
-                        border-collapse: ${_class};
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-border-type-${_class}{
                         border-collapse: ${_class};
@@ -3538,9 +3334,6 @@ function valclass_initalization(){
             }
             if(className === "MBrotate"){
                 style_sheet +=`
-                .mb_vc-rotate-${_class}{
-                        transform: rotate(${_class});
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-rotate-${_class}{
                         transform: rotate(${_class});
@@ -3551,9 +3344,6 @@ function valclass_initalization(){
             }
             if(className === "MBskew"){
                 style_sheet +=`
-                .mb_vc-skew-${_class}{
-                        transform: skew(${_class});
-                    }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-skew-${_class}{
                         transform: skew(${_class});
@@ -3564,9 +3354,6 @@ function valclass_initalization(){
             }
             if(className === "MBscale"){
                 style_sheet +=`
-                .mb_vc-scale-${_class}{
-                    transform: scale(${_class});
-                }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-scale-${_class}{
                         transform: scale(${_class});
@@ -3577,9 +3364,6 @@ function valclass_initalization(){
             }
             if(className === "MBtranslate"){
                 style_sheet +=`
-                .mb_vc-translate-${_class}{
-                    transform: translate(${_class});
-                }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-translate-${_class}{
                         transform: translate(${_class});
@@ -3590,9 +3374,6 @@ function valclass_initalization(){
             }
             if(className === "MBtranslateX"){
                 style_sheet +=`
-                .mb_vc-translateX-${_class}{
-                    transform: translateX(${_class});
-                }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-translateX-${_class}{
                         transform: translateX(${_class});
@@ -3603,9 +3384,6 @@ function valclass_initalization(){
             }
             if(className === "MBtranslateY"){
                 style_sheet +=`
-                .mb_vc-translateY-${_class}{
-                    transform: translateY(${_class});
-                }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-translateY-${_class}{
                         transform: translateY(${_class});
@@ -3616,9 +3394,6 @@ function valclass_initalization(){
             }
             if(className === "MBtranslateZ"){
                 style_sheet +=`
-                .mb_vc-translateZ-${_class}{
-                    transform: translateZ(${_class});
-                }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-translateZ-${_class}{
                         transform: translateZ(${_class});
@@ -3629,9 +3404,6 @@ function valclass_initalization(){
             }
             if(className === "MBcursor"){
                 style_sheet +=`
-                .mb_vc-cursor-${_class}{
-                    cursor: ${_class};
-                }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-cursor-${_class}{
                         cursor: ${_class};
@@ -3642,9 +3414,6 @@ function valclass_initalization(){
             }
             if(className === "MBtransition"){
                 style_sheet +=`
-                .mb_vc-transition-${_class}{
-                    transition: ${_class};
-                }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-transition-${_class}{
                         transition: ${_class};
@@ -3655,9 +3424,6 @@ function valclass_initalization(){
             }
             if(className === "MBoutline"){
                 style_sheet +=`
-                .mb_vc-o-${_class}{
-                    outline: ${_class};
-                }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-o-${_class}{
                         outline: ${_class};
@@ -3668,9 +3434,6 @@ function valclass_initalization(){
             }
             if(className === "MBoTop"){
                 style_sheet +=`
-                .mb_vc-o-top-${_class}{
-                    outline-top: ${_class};
-                }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-o-top-${_class}{
                         outline-top: ${_class};
@@ -3681,9 +3444,6 @@ function valclass_initalization(){
             }
             if(className === "MBoLeft"){
                 style_sheet +=`
-                .mb_vc-o-left-${_class}{
-                    outline-left: ${_class};
-                }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-o-left-${_class}{
                         outline-left: ${_class};
@@ -3694,9 +3454,6 @@ function valclass_initalization(){
             }
             if(className === "MBoRight"){
                 style_sheet +=`
-                .mb_vc-o-right-${_class}{
-                    outline-right: ${_class};
-                }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-o-right-${_class}{
                         outline-right: ${_class};
@@ -3707,9 +3464,6 @@ function valclass_initalization(){
             }
             if(className === "MBoBottom"){
                 style_sheet +=`
-                .mb_vc-o-bottom-${_class}{
-                    outline-bottom: ${_class};
-                }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-o-bottom-${_class}{
                         outline-bottom: ${_class};
@@ -3720,9 +3474,6 @@ function valclass_initalization(){
             }
             if(className === "MBoColor"){
                 style_sheet +=`
-                .mb_vc-o-color-${_class}{
-                    outline-color: ${_class};
-                }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-o-color-${_class}{
                         outline-color: ${_class};
@@ -3733,9 +3484,6 @@ function valclass_initalization(){
             }
             if(className === "MBoStyle"){
                 style_sheet +=`
-                .mb_vc-o-style-${_class}{
-                    outline-style: ${_class};
-                }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-o-style-${_class}{
                         outline-style: ${_class};
@@ -3746,9 +3494,6 @@ function valclass_initalization(){
             }
             if(className === "MBopacity"){
                 style_sheet +=`
-                .mb_vc-opacity-${_class}{
-                    opacity: ${_class};
-                }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-opacity-${_class}{
                         opacity: ${_class};
@@ -3759,9 +3504,6 @@ function valclass_initalization(){
             }
             if(className === "MBblur"){
                 style_sheet +=`
-                .mb_vc-blur-${_class}{
-                    filter: blur(${_class});
-                }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-blur-${_class}{
                         filter: blur(${_class});
@@ -3772,9 +3514,6 @@ function valclass_initalization(){
             }
             if(className === "MBgrayscale"){
                 style_sheet +=`
-                .mb_vc-grayscale-${_class}{
-                    filter: grayscale(${_class});
-                }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-grayscale-${_class}{
                         filter: grayscale(${_class});
@@ -3785,9 +3524,6 @@ function valclass_initalization(){
             }
             if(className === "MBsaturate"){
                 style_sheet +=`
-                .mb_vc-saturate-${_class}{
-                    filter: saturate(${_class});
-                }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-saturate-${_class}{
                         filter: saturate(${_class});
@@ -3798,9 +3534,6 @@ function valclass_initalization(){
             }
             if(className === "MBbrightness"){
                 style_sheet +=`
-                .mb_vc-brightness-${_class}{
-                    filter: brightness(${_class});
-                }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-brightness-${_class}{
                         filter: brightness(${_class});
@@ -3811,9 +3544,6 @@ function valclass_initalization(){
             }
             if(className === "MBcontrast"){
                 style_sheet +=`
-                .mb_vc-contrast-${_class}{
-                    filter: contrast(${_class});
-                }
                 @media screen and (min-width: 320px) and (max-width: 600px){
                     .mb_vc-contrast-${_class}{
                         filter: contrast(${_class});
@@ -3824,9 +3554,6 @@ function valclass_initalization(){
             }
             if(className === "TBdisplay"){
                 style_sheet +=`
-                .tb_vc-d-${_class}{
-                    display: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-d-${_class}{
                         display: ${_class};
@@ -3837,9 +3564,6 @@ function valclass_initalization(){
             }
             if(className === "TBalignItems"){
                 style_sheet +=`
-                .tb_vc-items-${_class}{
-                    align-items: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-items-${_class}{
                         align-items: ${_class};
@@ -3850,9 +3574,6 @@ function valclass_initalization(){
             }
             if(className === "TBboxSizing"){
                 style_sheet +=`
-                .tb_vc-box-${_class}{
-                    box-sizing: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-box-${_class}{
                         box-sizing: ${_class};
@@ -3863,9 +3584,6 @@ function valclass_initalization(){
             }
             if(className === "TBfloats"){
                 style_sheet +=`
-                .tb_vc-float-${_class}{
-                    float: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-float-${_class}{
                         float: ${_class};
@@ -3876,9 +3594,6 @@ function valclass_initalization(){
             }
             if(className === "TBoverflow"){
                 style_sheet +=`
-                .tb_vc-overflow-${_class}{
-                    overflow: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-overflow-${_class}{
                         overflow: ${_class};
@@ -3889,9 +3604,6 @@ function valclass_initalization(){
             }
             if(className === "TBoverflowX"){
                 style_sheet +=`
-                .tb_vc-overflowX-${_class}{
-                    overflow-x: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-overflowX-${_class}{
                         overflow-x: ${_class};
@@ -3902,9 +3614,6 @@ function valclass_initalization(){
             }
             if(className === "TBoverflowY"){
                 style_sheet +=`
-                .tb_vc-overflowY-${_class}{
-                    overflow-y: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-overflowY-${_class}{
                         overflow-y: ${_class};
@@ -3915,9 +3624,6 @@ function valclass_initalization(){
             }
             if(className === "TBposition"){
                 style_sheet +=`
-                .tb_vc-pst-${_class}{
-                    position: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-pst-${_class}{
                         position: ${_class};
@@ -3928,9 +3634,6 @@ function valclass_initalization(){
             }
             if(className === "TBtop"){
                 style_sheet +=`
-                .tb_vc-t-${_class}{
-                    top: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-t-${_class}{
                         top: ${_class};
@@ -3941,9 +3644,6 @@ function valclass_initalization(){
             }
             if(className === "TBleft"){
                 style_sheet +=`
-                .tb_vc-l-${_class}{
-                    left: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-l-${_class}{
                         left: ${_class};
@@ -3954,9 +3654,6 @@ function valclass_initalization(){
             }
             if(className === "TBright"){
                 style_sheet +=`
-                .tb_vc-r-${_class}{
-                    right: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-r-${_class}{
                         right: ${_class};
@@ -3967,9 +3664,6 @@ function valclass_initalization(){
             }
             if(className === "TBbottom"){
                 style_sheet +=`
-                .tb_vc-b-${_class}{
-                    bottom: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-b-${_class}{
                         bottom: ${_class};
@@ -3980,9 +3674,6 @@ function valclass_initalization(){
             }
             if(className === "TBindex"){
                 style_sheet +=`
-                .tb_vc-index-${_class}{
-                    z-index: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-index-${_class}{
                         z-index: ${_class};
@@ -3993,9 +3684,6 @@ function valclass_initalization(){
             }
             if(className === "TBvisibility"){
                 style_sheet +=`
-                .tb_vc-visibility-${_class}{
-                    visibility: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-visibility-${_class}{
                         visibility: ${_class};
@@ -4006,9 +3694,6 @@ function valclass_initalization(){
             }
             if(className === "TBflex"){
                 style_sheet +=`
-                .tb_vc-flex-${_class}{
-                    flex: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-flex-${_class}{
                         flex: ${_class};
@@ -4019,9 +3704,6 @@ function valclass_initalization(){
             }
             if(className === "TBdirection"){
                 style_sheet +=`
-                .tb_vc-direction-${_class}{
-                    flex-direction: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-direction-${_class}{
                         flex-direction: ${_class};
@@ -4032,9 +3714,6 @@ function valclass_initalization(){
             }
             if(className === "TBwrap"){
                 style_sheet +=`
-                .tb_vc-wrap-${_class}{
-                    flex-wrap: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-wrap-${_class}{
                         flex-wrap: ${_class};
@@ -4045,9 +3724,6 @@ function valclass_initalization(){
             }
             if(className === "TBshrink"){
                 style_sheet +=`
-                .tb_vc-shrink-${_class}{
-                    flex-shrink: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-shrink-${_class}{
                         flex-shrink: ${_class};
@@ -4058,9 +3734,6 @@ function valclass_initalization(){
             }
             if(className === "TBbasis"){
                 style_sheet +=`
-                .tb_vc-basis-${_class}{
-                    flex-basis: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-basis-${_class}{
                         flex-basis: ${_class};
@@ -4071,9 +3744,6 @@ function valclass_initalization(){
             }
             if(className === "TBjustify"){
                 style_sheet +=`
-                .tb_vc-justify-${_class}{
-                    justify-content: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-justify-${_class}{
                         justify-content: ${_class};
@@ -4084,9 +3754,6 @@ function valclass_initalization(){
             }
             if(className === "TBjustItems"){
                 style_sheet +=`
-                .tb_vc-just-items-${_class}{
-                    justify-items: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-just-items-${_class}{
                         justify-items: ${_class};
@@ -4097,9 +3764,6 @@ function valclass_initalization(){
             }
             if(className === "TBjustSelf"){
                 style_sheet +=`
-                .tb_vc-just-self-${_class}{
-                    justify-self: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-just-self-${_class}{
                         justify-self: ${_class};
@@ -4110,9 +3774,6 @@ function valclass_initalization(){
             }
             if(className === "TBalignContent"){
                 style_sheet +=`
-                .tb_vc-content-${_class}{
-                    align-content: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-content-${_class}{
                         align-content: ${_class};
@@ -4123,9 +3784,6 @@ function valclass_initalization(){
             }
             if(className === "TBalignItems"){
                 style_sheet +=`
-                .tb_vc-items-${_class}{
-                    align-items: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-items-${_class}{
                         align-items: ${_class};
@@ -4136,9 +3794,6 @@ function valclass_initalization(){
             }
             if(className === "TBalignSelf"){
                 style_sheet +=`
-                .tb_vc-self-${_class}{
-                    align-self: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-self-${_class}{
                         align-self: ${_class};
@@ -4149,9 +3804,6 @@ function valclass_initalization(){
             }
             if(className === "TBpadding"){
                 style_sheet +=`
-                .tb_vc-p-${_class}{
-                    padding: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-p-${_class}{
                         padding: ${_class};
@@ -4162,9 +3814,6 @@ function valclass_initalization(){
             }
             if(className === "TBpaddingTop"){
                 style_sheet +=`
-                .tb_vc-pt-${_class}{
-                    padding-top: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-pt-${_class}{
                         padding-top: ${_class};
@@ -4175,9 +3824,6 @@ function valclass_initalization(){
             }
             if(className === "TBpaddingLeft"){
                 style_sheet +=`
-                .tb_vc-pl-${_class}{
-                    padding-left: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-pl-${_class}{
                         padding-left: ${_class};
@@ -4188,9 +3834,6 @@ function valclass_initalization(){
             }
             if(className === "TBpaddingRight"){
                 style_sheet +=`
-                .tb_vc-pr-${_class}{
-                    padding-right: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-pr-${_class}{
                         padding-right: ${_class};
@@ -4201,9 +3844,6 @@ function valclass_initalization(){
             }
             if(className === "TBpaddingBottom"){
                 style_sheet +=`
-                .tb_vc-pb-${_class}{
-                    padding-bottom: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-pb-${_class}{
                         padding-bottom: ${_class};
@@ -4214,9 +3854,6 @@ function valclass_initalization(){
             }
             if(className === "TBmargin"){
                 style_sheet +=`
-                .tb_vc-m-${_class}{
-                    margin: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-m-${_class}{
                         margin: ${_class};
@@ -4227,9 +3864,6 @@ function valclass_initalization(){
             }
             if(className === "TBmarginTop"){
                 style_sheet +=`
-                .tb_vc-mt-${_class}{
-                    margin-top: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-mt-${_class}{
                         margin-top: ${_class};
@@ -4240,9 +3874,6 @@ function valclass_initalization(){
             }
             if(className === "TBmarginLeft"){
                 style_sheet +=`
-                .tb_vc-ml-${_class}{
-                    margin-left: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-ml-${_class}{
                         margin-left: ${_class};
@@ -4253,9 +3884,6 @@ function valclass_initalization(){
             }
             if(className === "TBmarginRight"){
                 style_sheet +=`
-                .tb_vc-mr-${_class}{
-                    margin-right: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-mr-${_class}{
                         margin-right: ${_class};
@@ -4266,9 +3894,6 @@ function valclass_initalization(){
             }
             if(className === "TBmarginBottom"){
                 style_sheet +=`
-                .tb_vc-mb-${_class}{
-                    margin-bottom: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-mb-${_class}{
                         margin-bottom: ${_class};
@@ -4279,9 +3904,6 @@ function valclass_initalization(){
             }
             if(className === "TBwidth"){
                 style_sheet +=`
-                .tb_vc-w-${_class}{
-                    width: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-w-${_class}{
                         width: ${_class};
@@ -4292,9 +3914,6 @@ function valclass_initalization(){
             }
             if(className === "TBheight"){
                 style_sheet +=`
-                .tb_vc-h-${_class}{
-                    height: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-h-${_class}{
                         height: ${_class};
@@ -4305,9 +3924,6 @@ function valclass_initalization(){
             }
             if(className === "TBfontSize"){
                 style_sheet +=`
-                .tb_vc-font-sz-${_class}{
-                    font-size: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-font-sz-${_class}{
                         font-size: ${_class};
@@ -4318,9 +3934,6 @@ function valclass_initalization(){
             }
             if(className === "TBfontStyle"){
                 style_sheet +=`
-                .tb_vc-font-style-${_class}{
-                    font-style: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-font-style-${_class}{
                         font-style: ${_class};
@@ -4331,9 +3944,6 @@ function valclass_initalization(){
             }
             if(className === "TBfontWeight"){
                 style_sheet +=`
-                .tb_vc-weight-${_class}{
-                    font-weight: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-weight-${_class}{
                         font-weight: ${_class};
@@ -4344,9 +3954,6 @@ function valclass_initalization(){
             }
             if(className === "TBletterSpacing"){
                 style_sheet +=`
-                .tb_vc-let-spacing-${_class}{
-                    letter-spacing: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-let-spacing-${_class}{
                         letter-spacing: ${_class};
@@ -4357,9 +3964,6 @@ function valclass_initalization(){
             }
             if(className === "TBlineHeight"){
                 style_sheet +=`
-                .tb_vc-leading-${_class}{
-                    line-height: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-leading-${_class}{
                         line-height: ${_class};
@@ -4370,9 +3974,6 @@ function valclass_initalization(){
             }
             if(className === "TBtextAlign"){
                 style_sheet +=`
-                .tb_vc-text-${_class}{
-                    text-align: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-text-${_class}{
                         text-align: ${_class};
@@ -4383,9 +3984,6 @@ function valclass_initalization(){
             }
             if(className === "TBtextColor"){
                 style_sheet +=`
-                .tb_vc-color-${_class}{
-                    color: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-color-${_class}{
                         color: ${_class};
@@ -4396,9 +3994,6 @@ function valclass_initalization(){
             }
             if(className === "TBdecoration"){
                 style_sheet +=`
-                .tb_vc-decoration-${_class}{
-                    text-decoration: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-decoration-${_class}{
                         text-decoration: ${_class};
@@ -4409,9 +4004,6 @@ function valclass_initalization(){
             }
             if(className === "TBtextTransform"){
                 style_sheet +=`
-                .tb_vc-text-transform-${_class}{
-                    text-transform: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-text-transform-${_class}{
                         text-transform: ${_class};
@@ -4422,10 +4014,6 @@ function valclass_initalization(){
             }
             if(className === "TBwordBreak"){
                 style_sheet +=`
-                .tb_vc-break-${_class}{
-                    word-break: ${_class};
-                    overflow-wrap: break-word;
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-break-${_class}{
                         word-break: ${_class};
@@ -4437,9 +4025,6 @@ function valclass_initalization(){
             }
             if(className === "TBbgAttachment"){
                 style_sheet +=`
-                .tb_vc-attachment-${_class}{
-                    background-attachment: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-attachment-${_class}{
                         background-attachment: ${_class};
@@ -4450,9 +4035,6 @@ function valclass_initalization(){
             }
             if(className === "TBbgClip"){
                 style_sheet +=`
-                .tb_vc-bg-clip-${_class}{
-                    background-clip: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-bg-clip-${_class}{
                         background-clip: ${_class};
@@ -4463,9 +4045,6 @@ function valclass_initalization(){
             }
             if(className === "TBbgColor"){
                 style_sheet +=`
-                .tb_vc-bg-${_class}{
-                    background-color: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-bg-${_class}{
                         background-color: ${_class};
@@ -4476,9 +4055,6 @@ function valclass_initalization(){
             }
             if(className === "TBbgPosition"){
                 style_sheet +=`
-                .tb_vc-bg-post-${_class}{
-                    background-position: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-bg-post-${_class}{
                         background-position: ${_class};
@@ -4489,9 +4065,6 @@ function valclass_initalization(){
             }
             if(className === "TBbgRepeat"){
                 style_sheet +=`
-                .tb_vc-bg-rpt-${_class}{
-                    background-repeat: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-bg-rpt-${_class}{
                         background-repeat: ${_class};
@@ -4502,9 +4075,6 @@ function valclass_initalization(){
             }
             if(className === "TBbgSize"){
                 style_sheet +=`
-                .tb_vc-bg-sz-${_class}{
-                    background-size: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-bg-sz-${_class}{
                         background-size: ${_class};
@@ -4515,9 +4085,6 @@ function valclass_initalization(){
             }
             if(className === "TBborder"){
                 style_sheet +=`
-                .tb_vc-border-${_class}{
-                    border: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-border-${_class}{
                         border: ${_class};
@@ -4528,9 +4095,6 @@ function valclass_initalization(){
             }
             if(className === "TBborderTop"){
                 style_sheet +=`
-                .tb_vc-border-top-${_class}{
-                    border-top: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-border-top-${_class}{
                         border-top: ${_class};
@@ -4541,9 +4105,6 @@ function valclass_initalization(){
             }
             if(className === "TBborderLeft"){
                 style_sheet +=`
-                .tb_vc-border-l-${_class}{
-                    border-left: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-border-l-${_class}{
                         border-left: ${_class};
@@ -4554,9 +4115,6 @@ function valclass_initalization(){
             }
             if(className === "TBborderRight"){
                 style_sheet +=`
-                .tb_vc-border-r-${_class}{
-                    border-right: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-border-r-${_class}{
                         border-right: ${_class};
@@ -4567,9 +4125,6 @@ function valclass_initalization(){
             }
             if(className === "TBborderBottom"){
                 style_sheet +=`
-                .tb_vc-border-b-${_class}{
-                    border-bottom: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-border-b-${_class}{
                         border-bottom: ${_class};
@@ -4580,9 +4135,6 @@ function valclass_initalization(){
             }
             if(className === "TBborderRadius"){
                 style_sheet +=`
-                .tb_vc-radius-${_class}{
-                    border-radius: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-radius-${_class}{
                         border-radius: ${_class};
@@ -4593,9 +4145,6 @@ function valclass_initalization(){
             }
             if(className === "TBborderStyle"){
                 style_sheet +=`
-                .tb_vc-style-${_class}{
-                    border-style: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-style-${_class}{
                         border-style: ${_class};
@@ -4606,9 +4155,6 @@ function valclass_initalization(){
             }
             if(className === "TBborderColor"){
                 style_sheet +=`
-                .tb_vc-border-clr-${_class}{
-                    border-color: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-border-clr-${_class}{
                         border-color: ${_class};
@@ -4619,9 +4165,6 @@ function valclass_initalization(){
             }
             if(className === "TBborderType"){
                 style_sheet +=`
-                .tb_vc-border-type-${_class}{
-                    border-collapse: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-border-type-${_class}{
                         border-collapse: ${_class};
@@ -4632,9 +4175,6 @@ function valclass_initalization(){
             }
             if(className === "TBrotate"){
                 style_sheet +=`
-                .tb_vc-rotate-${_class}{
-                    transform: rotate(${_class});
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-rotate-${_class}{
                         transform: rotate(${_class});
@@ -4645,9 +4185,6 @@ function valclass_initalization(){
             }
             if(className === "TBskew"){
                 style_sheet +=`
-                .tb_vc-skew-${_class}{
-                    transform: skew(${_class});
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-skew-${_class}{
                         transform: skew(${_class});
@@ -4658,9 +4195,6 @@ function valclass_initalization(){
             }
             if(className === "TBscale"){
                 style_sheet +=`
-                .tb_vc-scale-${_class}{
-                    transform: scale(${_class});
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-scale-${_class}{
                         transform: scale(${_class});
@@ -4671,9 +4205,6 @@ function valclass_initalization(){
             }
             if(className === "TBtranslate"){
                 style_sheet +=`
-                .tb_vc-translate-${_class}{
-                    transform: translate(${_class});
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-translate-${_class}{
                         transform: translate(${_class});
@@ -4684,9 +4215,6 @@ function valclass_initalization(){
             }
             if(className === "TBtranslateX"){
                 style_sheet +=`
-                .tb_vc-translateX-${_class}{
-                    transform: translateX(${_class});
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-translateX-${_class}{
                         transform: translateX(${_class});
@@ -4697,9 +4225,6 @@ function valclass_initalization(){
             }
             if(className === "TBtranslateY"){
                 style_sheet +=`
-                .tb_vc-translateY-${_class}{
-                    transform: translateY(${_class});
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-translateY-${_class}{
                         transform: translateY(${_class});
@@ -4710,9 +4235,6 @@ function valclass_initalization(){
             }
             if(className === "TBtranslateZ"){
                 style_sheet +=`
-                .tb_vc-translateZ-${_class}{
-                    transform: translateZ(${_class});
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-translateZ-${_class}{
                         transform: translateZ(${_class});
@@ -4723,9 +4245,6 @@ function valclass_initalization(){
             }
             if(className === "TBcursor"){
                 style_sheet +=`
-                .tb_vc-cursor-${_class}{
-                    cursor: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-cursor-${_class}{
                         cursor: ${_class};
@@ -4736,9 +4255,6 @@ function valclass_initalization(){
             }
             if(className === "TBtransition"){
                 style_sheet +=`
-                .tb_vc-transition-${_class}{
-                    transition: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-transition-${_class}{
                         transition: ${_class};
@@ -4749,9 +4265,6 @@ function valclass_initalization(){
             }
             if(className === "TBoutline"){
                 style_sheet +=`
-                .tb_vc-o-${_class}{
-                    outline: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-o-${_class}{
                         outline: ${_class};
@@ -4762,9 +4275,6 @@ function valclass_initalization(){
             }
             if(className === "TBoTop"){
                 style_sheet +=`
-                .tb_vc-o-top-${_class}{
-                    outline-top: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-o-top-${_class}{
                         outline-top: ${_class};
@@ -4775,9 +4285,6 @@ function valclass_initalization(){
             }
             if(className === "TBoLeft"){
                 style_sheet +=`
-                .tb_vc-o-left-${_class}{
-                    outline-left: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-o-left-${_class}{
                         outline-left: ${_class};
@@ -4788,9 +4295,6 @@ function valclass_initalization(){
             }
             if(className === "TBoRight"){
                 style_sheet +=`
-                .tb_vc-o-right-${_class}{
-                    outline-right: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-o-right-${_class}{
                         outline-right: ${_class};
@@ -4801,9 +4305,6 @@ function valclass_initalization(){
             }
             if(className === "TBoBottom"){
                 style_sheet +=`
-                .tb_vc-o-bottom-${_class}{
-                    outline-bottom: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-o-bottom-${_class}{
                         outline-bottom: ${_class};
@@ -4814,9 +4315,6 @@ function valclass_initalization(){
             }
             if(className === "TBoColor"){
                 style_sheet +=`
-                .tb_vc-o-color-${_class}{
-                    outline-color: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-o-color-${_class}{
                         outline-color: ${_class};
@@ -4827,9 +4325,6 @@ function valclass_initalization(){
             }
             if(className === "TBoStyle"){
                 style_sheet +=`
-                .tb_vc-o-style-${_class}{
-                    outline-style: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-o-style-${_class}{
                         outline-style: ${_class};
@@ -4840,9 +4335,6 @@ function valclass_initalization(){
             }
             if(className === "TBopacity"){
                 style_sheet +=`
-                .tb_vc-opacity-${_class}{
-                    opacity: ${_class};
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-opacity-${_class}{
                         opacity: ${_class};
@@ -4853,9 +4345,6 @@ function valclass_initalization(){
             }
             if(className === "TBblur"){
                 style_sheet +=`
-                .tb_vc-blur-${_class}{
-                    filter: blur(${_class});
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-blur-${_class}{
                         filter: blur(${_class});
@@ -4866,9 +4355,6 @@ function valclass_initalization(){
             }
             if(className === "TBgrayscale"){
                 style_sheet +=`
-                .tb_vc-grayscale-${_class}{
-                    filter: grayscale(${_class});
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-grayscale-${_class}{
                         filter: grayscale(${_class});
@@ -4879,9 +4365,6 @@ function valclass_initalization(){
             }
             if(className === "TBsaturate"){
                 style_sheet +=`
-                .tb_vc-saturate-${_class}{
-                    filter: saturate(${_class});
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-saturate-${_class}{
                         filter: saturate(${_class});
@@ -4892,9 +4375,6 @@ function valclass_initalization(){
             }
             if(className === "TBbrightness"){
                 style_sheet +=`
-                .tb_vc-brightness-${_class}{
-                    filter: brightness(${_class});
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-brightness-${_class}{
                         filter: brightness(${_class});
@@ -4905,9 +4385,6 @@ function valclass_initalization(){
             }
             if(className === "TBcontrast"){
                 style_sheet +=`
-                .tb_vc-contrast-${_class}{
-                    filter: contrast(${_class});
-                }
                 @media screen and (min-width: 600px) and (max-width: 900px){
                     .tb_vc-contrast-${_class}{
                         filter: contrast(${_class});
@@ -4918,9 +4395,6 @@ function valclass_initalization(){
             }
             if(className === "PCdisplay"){
                 style_sheet +=`
-                .pc_vc-d-${_class}{
-                    display: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-d-${_class}{
                         display: ${_class};
@@ -4931,9 +4405,6 @@ function valclass_initalization(){
             }
             if(className === "PCalignItems"){
                 style_sheet +=`
-                .pc_vc-items-${_class}{
-                    align-items: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-items-${_class}{
                         align-items: ${_class};
@@ -4944,9 +4415,6 @@ function valclass_initalization(){
             }
             if(className === "PCboxSizing"){
                 style_sheet +=`
-                .pc_vc-box-${_class}{
-                    box-sizing: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-box-${_class}{
                         box-sizing: ${_class};
@@ -4957,9 +4425,6 @@ function valclass_initalization(){
             }
             if(className === "PCfloats"){
                 style_sheet +=`
-                .pc_vc-float-${_class}{
-                    float: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-float-${_class}{
                         float: ${_class};
@@ -4970,9 +4435,6 @@ function valclass_initalization(){
             }
             if(className === "PCoverflow"){
                 style_sheet +=`
-                .pc_vc-overflow-${_class}{
-                    overflow: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-overflow-${_class}{
                         overflow: ${_class};
@@ -4983,9 +4445,6 @@ function valclass_initalization(){
             }
             if(className === "PCoverflowX"){
                 style_sheet +=`
-                .pc_vc-overflowX-${_class}{
-                    overflow-x: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-overflowX-${_class}{
                         overflow-x: ${_class};
@@ -4996,9 +4455,6 @@ function valclass_initalization(){
             }
             if(className === "PCoverflowY"){
                 style_sheet +=`
-                .pc_vc-overflowY-${_class}{
-                    overflow-y: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-overflowY-${_class}{
                         overflow-y: ${_class};
@@ -5009,9 +4465,6 @@ function valclass_initalization(){
             }
             if(className === "PCposition"){
                 style_sheet +=`
-                .pc_vc-pst-${_class}{
-                    position: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-pst-${_class}{
                         position: ${_class};
@@ -5022,9 +4475,6 @@ function valclass_initalization(){
             }
             if(className === "PCtop"){
                 style_sheet +=`
-                .pc_vc-t-${_class}{
-                    top: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-t-${_class}{
                         top: ${_class};
@@ -5035,9 +4485,6 @@ function valclass_initalization(){
             }
             if(className === "PCleft"){
                 style_sheet +=`
-                .pc_vc-l-${_class}{
-                    left: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-l-${_class}{
                         left: ${_class};
@@ -5048,9 +4495,6 @@ function valclass_initalization(){
             }
             if(className === "PCright"){
                 style_sheet +=`
-                .pc_vc-r-${_class}{
-                    right: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-r-${_class}{
                         right: ${_class};
@@ -5061,9 +4505,6 @@ function valclass_initalization(){
             }
             if(className === "PCbottom"){
                 style_sheet +=`
-                .pc_vc-b-${_class}{
-                    bottom: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-b-${_class}{
                         bottom: ${_class};
@@ -5074,9 +4515,6 @@ function valclass_initalization(){
             }
             if(className === "PCindex"){
                 style_sheet +=`
-                .pc_vc-index-${_class}{
-                    z-index: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-index-${_class}{
                         z-index: ${_class};
@@ -5087,9 +4525,6 @@ function valclass_initalization(){
             }
             if(className === "PCvisibility"){
                 style_sheet +=`
-                .pc_vc-visibility-${_class}{
-                    visibility: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-visibility-${_class}{
                         visibility: ${_class};
@@ -5100,9 +4535,6 @@ function valclass_initalization(){
             }
             if(className === "PCflex"){
                 style_sheet +=`
-                .pc_vc-flex-${_class}{
-                    flex: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-flex-${_class}{
                         flex: ${_class};
@@ -5113,9 +4545,6 @@ function valclass_initalization(){
             }
             if(className === "PCdirection"){
                 style_sheet +=`
-                .pc_vc-direction-${_class}{
-                    flex-direction: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-direction-${_class}{
                         flex-direction: ${_class};
@@ -5126,9 +4555,6 @@ function valclass_initalization(){
             }
             if(className === "PCwrap"){
                 style_sheet +=`
-                .pc_vc-wrap-${_class}{
-                    flex-wrap: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-wrap-${_class}{
                         flex-wrap: ${_class};
@@ -5139,9 +4565,6 @@ function valclass_initalization(){
             }
             if(className === "PCshrink"){
                 style_sheet +=`
-                .pc_vc-shrink-${_class}{
-                    flex-shrink: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-shrink-${_class}{
                         flex-shrink: ${_class};
@@ -5152,9 +4575,6 @@ function valclass_initalization(){
             }
             if(className === "PCbasis"){
                 style_sheet +=`
-                .pc_vc-basis-${_class}{
-                    flex-basis: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-basis-${_class}{
                         flex-basis: ${_class};
@@ -5165,9 +4585,6 @@ function valclass_initalization(){
             }
             if(className === "PCjustify"){
                 style_sheet +=`
-                .pc_vc-justify-${_class}{
-                    justify-content: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-justify-${_class}{
                         justify-content: ${_class};
@@ -5178,9 +4595,6 @@ function valclass_initalization(){
             }
             if(className === "PCjustItems"){
                 style_sheet +=`
-                .pc_vc-just-items-${_class}{
-                    justify-items: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-just-items-${_class}{
                         justify-items: ${_class};
@@ -5191,9 +4605,6 @@ function valclass_initalization(){
             }
             if(className === "PCjustSelf"){
                 style_sheet +=`
-                .pc_vc-just-self-${_class}{
-                    justify-self: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-just-self-${_class}{
                         justify-self: ${_class};
@@ -5204,9 +4615,6 @@ function valclass_initalization(){
             }
             if(className === "PCalignContent"){
                 style_sheet +=`
-                .pc_vc-content-${_class}{
-                    align-content: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-content-${_class}{
                         align-content: ${_class};
@@ -5217,9 +4625,6 @@ function valclass_initalization(){
             }
             if(className === "PCalignItems"){
                 style_sheet +=`
-                .pc_vc-items-${_class}{
-                    align-items: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-items-${_class}{
                         align-items: ${_class};
@@ -5230,9 +4635,6 @@ function valclass_initalization(){
             }
             if(className === "PCalignSelf"){
                 style_sheet +=`
-                .pc_vc-self-${_class}{
-                    align-self: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-self-${_class}{
                         align-self: ${_class};
@@ -5243,9 +4645,6 @@ function valclass_initalization(){
             }
             if(className === "PCpadding"){
                 style_sheet +=`
-                .pc_vc-p-${_class}{
-                    padding: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-p-${_class}{
                         padding: ${_class};
@@ -5256,9 +4655,6 @@ function valclass_initalization(){
             }
             if(className === "PCpaddingTop"){
                 style_sheet +=`
-                .pc_vc-pt-${_class}{
-                    padding-top: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-pt-${_class}{
                         padding-top: ${_class};
@@ -5269,9 +4665,6 @@ function valclass_initalization(){
             }
             if(className === "PCpaddingLeft"){
                 style_sheet +=`
-                .pc_vc-pl-${_class}{
-                    padding-left: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-pl-${_class}{
                         padding-left: ${_class};
@@ -5282,9 +4675,6 @@ function valclass_initalization(){
             }
             if(className === "PCpaddingRight"){
                 style_sheet +=`
-                .pc_vc-pr-${_class}{
-                    padding-right: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-pr-${_class}{
                         padding-right: ${_class};
@@ -5295,9 +4685,6 @@ function valclass_initalization(){
             }
             if(className === "PCpaddingBottom"){
                 style_sheet +=`
-                .pc_vc-pb-${_class}{
-                    padding-bottom: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-pb-${_class}{
                         padding-bottom: ${_class};
@@ -5308,9 +4695,6 @@ function valclass_initalization(){
             }
             if(className === "PCmargin"){
                 style_sheet +=`
-                .pc_vc-m-${_class}{
-                    margin: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-m-${_class}{
                         margin: ${_class};
@@ -5321,9 +4705,6 @@ function valclass_initalization(){
             }
             if(className === "PCmarginTop"){
                 style_sheet +=`
-                .pc_vc-mt-${_class}{
-                    margin-top: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-mt-${_class}{
                         margin-top: ${_class};
@@ -5334,9 +4715,6 @@ function valclass_initalization(){
             }
             if(className === "PCmarginLeft"){
                 style_sheet +=`
-                .pc_vc-ml-${_class}{
-                    margin-left: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-ml-${_class}{
                         margin-left: ${_class};
@@ -5347,9 +4725,6 @@ function valclass_initalization(){
             }
             if(className === "PCmarginRight"){
                 style_sheet +=`
-                .pc_vc-mr-${_class}{
-                    margin-right: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-mr-${_class}{
                         margin-right: ${_class};
@@ -5360,9 +4735,6 @@ function valclass_initalization(){
             }
             if(className === "PCmarginBottom"){
                 style_sheet +=`
-                .pc_vc-mb-${_class}{
-                    margin-bottom: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-mb-${_class}{
                         margin-bottom: ${_class};
@@ -5373,9 +4745,6 @@ function valclass_initalization(){
             }
             if(className === "PCwidth"){
                 style_sheet +=`
-                .pc_vc-w-${_class}{
-                    width: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-w-${_class}{
                         width: ${_class};
@@ -5386,9 +4755,6 @@ function valclass_initalization(){
             }
             if(className === "PCheight"){
                 style_sheet +=`
-                .pc_vc-h-${_class}{
-                    height: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-h-${_class}{
                         height: ${_class};
@@ -5399,9 +4765,6 @@ function valclass_initalization(){
             }
             if(className === "PCfontSize"){
                 style_sheet +=`
-                .pc_vc-font-sz-${_class}{
-                    font-size: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-font-sz-${_class}{
                         font-size: ${_class};
@@ -5412,9 +4775,6 @@ function valclass_initalization(){
             }
             if(className === "PCfontStyle"){
                 style_sheet +=`
-                .pc_vc-font-style-${_class}{
-                    font-style: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-font-style-${_class}{
                         font-style: ${_class};
@@ -5425,9 +4785,6 @@ function valclass_initalization(){
             }
             if(className === "PCfontWeight"){
                 style_sheet +=`
-                .pc_vc-weight-${_class}{
-                    font-weight: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-weight-${_class}{
                         font-weight: ${_class};
@@ -5438,9 +4795,6 @@ function valclass_initalization(){
             }
             if(className === "PCletterSpacing"){
                 style_sheet +=`
-                .pc_vc-let-spacing-${_class}{
-                    letter-spacing: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-let-spacing-${_class}{
                         letter-spacing: ${_class};
@@ -5451,9 +4805,6 @@ function valclass_initalization(){
             }
             if(className === "PClineHeight"){
                 style_sheet +=`
-                .pc_vc-leading-${_class}{
-                    line-height: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-leading-${_class}{
                         line-height: ${_class};
@@ -5464,9 +4815,6 @@ function valclass_initalization(){
             }
             if(className === "PCtextAlign"){
                 style_sheet +=`
-                .pc_vc-text-${_class}{
-                    text-align: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-text-${_class}{
                         text-align: ${_class};
@@ -5477,9 +4825,6 @@ function valclass_initalization(){
             }
             if(className === "PCtextColor"){
                 style_sheet +=`
-                .pc_vc-color-${_class}{
-                    color: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-color-${_class}{
                         color: ${_class};
@@ -5490,9 +4835,6 @@ function valclass_initalization(){
             }
             if(className === "PCdecoration"){
                 style_sheet +=`
-                .pc_vc-decoration-${_class}{
-                    text-decoration: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-decoration-${_class}{
                         text-decoration: ${_class};
@@ -5503,9 +4845,6 @@ function valclass_initalization(){
             }
             if(className === "PCtextTransform"){
                 style_sheet +=`
-                .pc_vc-text-transform-${_class}{
-                    text-transform: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-text-transform-${_class}{
                         text-transform: ${_class};
@@ -5516,10 +4855,6 @@ function valclass_initalization(){
             }
             if(className === "PCwordBreak"){
                 style_sheet +=`
-                .pc_vc-break-${_class}{
-                    word-break: ${_class};
-                    overflow-wrap: break-word;
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-break-${_class}{
                         word-break: ${_class};
@@ -5531,9 +4866,6 @@ function valclass_initalization(){
             }
             if(className === "PCbgAttachment"){
                 style_sheet +=`
-                .pc_vc-attachment-${_class}{
-                    background-attachment: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-attachment-${_class}{
                         background-attachment: ${_class};
@@ -5544,9 +4876,6 @@ function valclass_initalization(){
             }
             if(className === "PCbgClip"){
                 style_sheet +=`
-                .pc_vc-bg-clip-${_class}{
-                    background-clip: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-bg-clip-${_class}{
                         background-clip: ${_class};
@@ -5557,9 +4886,6 @@ function valclass_initalization(){
             }
             if(className === "PCbgColor"){
                 style_sheet +=`
-                .pc_vc-bg-${_class}{
-                    background-color: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-bg-${_class}{
                         background-color: ${_class};
@@ -5570,9 +4896,6 @@ function valclass_initalization(){
             }
             if(className === "PCbgPosition"){
                 style_sheet +=`
-                .pc_vc-bg-post-${_class}{
-                    background-position: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-bg-post-${_class}{
                         background-position: ${_class};
@@ -5583,9 +4906,6 @@ function valclass_initalization(){
             }
             if(className === "PCbgRepeat"){
                 style_sheet +=`
-                .pc_vc-bg-rpt-${_class}{
-                    background-repeat: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-bg-rpt-${_class}{
                         background-repeat: ${_class};
@@ -5596,9 +4916,6 @@ function valclass_initalization(){
             }
             if(className === "PCbgSize"){
                 style_sheet +=`
-                .pc_vc-bg-sz-${_class}{
-                    background-size: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-bg-sz-${_class}{
                         background-size: ${_class};
@@ -5609,9 +4926,6 @@ function valclass_initalization(){
             }
             if(className === "PCborder"){
                 style_sheet +=`
-                .pc_vc-border-${_class}{
-                    border: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-border-${_class}{
                         border: ${_class};
@@ -5622,9 +4936,6 @@ function valclass_initalization(){
             }
             if(className === "PCborderTop"){
                 style_sheet +=`
-                .pc_vc-border-top-${_class}{
-                    border-top: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-border-top-${_class}{
                         border-top: ${_class};
@@ -5635,9 +4946,6 @@ function valclass_initalization(){
             }
             if(className === "PCborderLeft"){
                 style_sheet +=`
-                .pc_vc-border-l-${_class}{
-                    border-left: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-border-l-${_class}{
                         border-left: ${_class};
@@ -5648,9 +4956,6 @@ function valclass_initalization(){
             }
             if(className === "PCborderRight"){
                 style_sheet +=`
-                .pc_vc-border-r-${_class}{
-                    border-right: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-border-r-${_class}{
                         border-right: ${_class};
@@ -5661,9 +4966,6 @@ function valclass_initalization(){
             }
             if(className === "PCborderBottom"){
                 style_sheet +=`
-                .pc_vc-border-b-${_class}{
-                    border-bottom: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-border-b-${_class}{
                         border-bottom: ${_class};
@@ -5674,9 +4976,6 @@ function valclass_initalization(){
             }
             if(className === "PCborderRadius"){
                 style_sheet +=`
-                .pc_vc-radius-${_class}{
-                    border-radius: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-radius-${_class}{
                         border-radius: ${_class};
@@ -5687,9 +4986,6 @@ function valclass_initalization(){
             }
             if(className === "PCborderStyle"){
                 style_sheet +=`
-                .pc_vc-style-${_class}{
-                    border-style: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-style-${_class}{
                         border-style: ${_class};
@@ -5700,9 +4996,6 @@ function valclass_initalization(){
             }
             if(className === "PCborderColor"){
                 style_sheet +=`
-                .pc_vc-border-clr-${_class}{
-                    border-color: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-border-clr-${_class}{
                         border-color: ${_class};
@@ -5713,9 +5006,6 @@ function valclass_initalization(){
             }
             if(className === "PCborderType"){
                 style_sheet +=`
-                .pc_vc-border-type-${_class}{
-                    border-collapse: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-border-type-${_class}{
                         border-collapse: ${_class};
@@ -5726,9 +5016,6 @@ function valclass_initalization(){
             }
             if(className === "PCrotate"){
                 style_sheet +=`
-                .pc_vc-rotate-${_class}{
-                    transform: rotate(${_class});
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-rotate-${_class}{
                         transform: rotate(${_class});
@@ -5739,9 +5026,6 @@ function valclass_initalization(){
             }
             if(className === "PCskew"){
                 style_sheet +=`
-                .pc_vc-skew-${_class}{
-                    transform: skew(${_class});
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-skew-${_class}{
                         transform: skew(${_class});
@@ -5752,9 +5036,6 @@ function valclass_initalization(){
             }
             if(className === "PCscale"){
                 style_sheet +=`
-                .pc_vc-scale-${_class}{
-                    transform: scale(${_class});
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-scale-${_class}{
                         transform: scale(${_class});
@@ -5765,9 +5046,6 @@ function valclass_initalization(){
             }
             if(className === "PCtranslate"){
                 style_sheet +=`
-                .pc_vc-translate-${_class}{
-                    transform: translate(${_class});
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-translate-${_class}{
                         transform: translate(${_class});
@@ -5778,9 +5056,6 @@ function valclass_initalization(){
             }
             if(className === "PCtranslateX"){
                 style_sheet +=`
-                .pc_vc-translateX-${_class}{
-                    transform: translateX(${_class});
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-translateX-${_class}{
                         transform: translateX(${_class});
@@ -5791,9 +5066,6 @@ function valclass_initalization(){
             }
             if(className === "PCtranslateY"){
                 style_sheet +=`
-                .pc_vc-translateY-${_class}{
-                    transform: translateY(${_class});
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-translateY-${_class}{
                         transform: translateY(${_class});
@@ -5804,9 +5076,6 @@ function valclass_initalization(){
             }
             if(className === "PCtranslateZ"){
                 style_sheet +=`
-                .pc_vc-translateZ-${_class}{
-                    transform: translateZ(${_class});
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-translateZ-${_class}{
                         transform: translateZ(${_class});
@@ -5817,9 +5086,6 @@ function valclass_initalization(){
             }
             if(className === "PCcursor"){
                 style_sheet +=`
-                .pc_vc-cursor-${_class}{
-                    cursor: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-cursor-${_class}{
                         cursor: ${_class};
@@ -5830,9 +5096,6 @@ function valclass_initalization(){
             }
             if(className === "PCtransition"){
                 style_sheet +=`
-                .pc_vc-transition-${_class}{
-                    transition: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-transition-${_class}{
                         transition: ${_class};
@@ -5844,9 +5107,6 @@ function valclass_initalization(){
             }
             if(className === "PCoutline"){
                 style_sheet +=`
-                .pc_vc-o-${_class}{
-                    outline: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-o-${_class}{
                         outline: ${_class};
@@ -5857,9 +5117,6 @@ function valclass_initalization(){
             }
             if(className === "PCoTop"){
                 style_sheet +=`
-                .pc_vc-o-top-${_class}{
-                    outline-top: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-o-top-${_class}{
                         outline-top: ${_class};
@@ -5870,9 +5127,6 @@ function valclass_initalization(){
             }
             if(className === "PCoLeft"){
                 style_sheet +=`
-                .pc_vc-o-left-${_class}{
-                    outline-left: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-o-left-${_class}{
                         outline-left: ${_class};
@@ -5883,9 +5137,6 @@ function valclass_initalization(){
             }
             if(className === "PCoRight"){
                 style_sheet +=`
-                .pc_vc-o-right-${_class}{
-                    outline-right: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-o-right-${_class}{
                         outline-right: ${_class};
@@ -5896,9 +5147,6 @@ function valclass_initalization(){
             }
             if(className === "PCoBottom"){
                 style_sheet +=`
-                .pc_vc-o-bottom-${_class}{
-                    outline-bottom: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-o-bottom-${_class}{
                         outline-bottom: ${_class};
@@ -5909,9 +5157,6 @@ function valclass_initalization(){
             }
             if(className === "PCoColor"){
                 style_sheet +=`
-                .pc_vc-o-color-${_class}{
-                    outline-color: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-o-color-${_class}{
                         outline-color: ${_class};
@@ -5922,9 +5167,6 @@ function valclass_initalization(){
             }
             if(className === "PCoStyle"){
                 style_sheet +=`
-                .pc_vc-o-style-${_class}{
-                    outline-style: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-o-style-${_class}{
                         outline-style: ${_class};
@@ -5935,9 +5177,6 @@ function valclass_initalization(){
             }
             if(className === "PCopacity"){
                 style_sheet +=`
-                .pc_vc-opacity-${_class}{
-                    opacity: ${_class};
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-opacity-${_class}{
                         opacity: ${_class};
@@ -5948,9 +5187,6 @@ function valclass_initalization(){
             }
             if(className === "PCblur"){
                 style_sheet +=`
-                .pc_vc-blur-${_class}{
-                    filter: blur(${_class});
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-blur-${_class}{
                         filter: blur(${_class});
@@ -5961,9 +5197,6 @@ function valclass_initalization(){
             }
             if(className === "PCgrayscale"){
                 style_sheet +=`
-                .pc_vc-grayscale-${_class}{
-                    filter: grayscale(${_class});
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-grayscale-${_class}{
                         filter: grayscale(${_class});
@@ -5974,9 +5207,6 @@ function valclass_initalization(){
             }
             if(className === "PCsaturate"){
                 style_sheet +=`
-                .pc_vc-saturate-${_class}{
-                    filter: saturate(${_class});
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-saturate-${_class}{
                         filter: saturate(${_class});
@@ -5987,9 +5217,6 @@ function valclass_initalization(){
             }
             if(className === "PCbrightness"){
                 style_sheet +=`
-                .pc_vc-brightness-${_class}{
-                    filter: brightness(${_class});
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-brightness-${_class}{
                         filter: brightness(${_class});
@@ -6000,9 +5227,6 @@ function valclass_initalization(){
             }
             if(className === "PCcontrast"){
                 style_sheet +=`
-                .pc_vc-contrast-${_class}{
-                    filter: contrast(${_class});
-                }
                 @media screen and (min-width: 1920px){
                     .pc_vc-contrast-${_class}{
                         filter: contrast(${_class});
@@ -6075,10 +5299,52 @@ function createComponentClass(card){
     }
 }
 
-//============================//==============================//
+function createGroupUtilitiesName(name,array){
 
-// akhir dari pengkondisian untuk pemanggilan file property
-// #developerValclass - Muhammad Khoirul Huda -> developervalclass@gmail.com
+  makerUtilitiesName[name] = array;
+  Core(document.body)
+  
+}
+
+function createMakerUtilitiesName(card){
+  
+  for(let x in card){
+    createGroupUtilitiesName(x,card[x]);
+    }
+    // console.log('makerUtilitiesName: ', makerUtilitiesName.createValueUtilities)
+    // console.log('makerUtilitiesNameLength: ', makerUtilitiesName.createValueUtilities.length)
+
+    for (var i = 0; i <= makerUtilitiesName.createUtilities.length; i++) {
+        if (document.querySelector(`.${makerUtilitiesName.createUtilities[i]}`) && !document.querySelector('style').innerText.includes(makerUtilitiesName.createUtilities[i])) {
+            let breakpoints = '';
+            if(makerUtilitiesName.createBreakPointsUtilities[i] === 'mb'){
+                breakpoints = '@media screen and (min-width: 320px) and (max-width: 600px) {'
+            }else if(makerUtilitiesName.createBreakPointsUtilities[i] === 'tb') {
+                breakpoints = '@media screen and (min-width: 601px) and (max-width: 900px) {'
+            }else if(makerUtilitiesName.createBreakPointsUtilities[i] === 'df') {
+                breakpoints = '@media screen and (min-width: 901px) and (max-width: 1920px) {'
+            }else if(makerUtilitiesName.createBreakPointsUtilities[i] === 'pc') {
+                breakpoints = '@media screen and (min-width: 1921px) {'
+            }
+
+            let styles = `
+                ${breakpoints}
+                    .${makerUtilitiesName.createUtilities[i]} { 
+                        ${makerUtilitiesName.createValueUtilities[i]}
+                    }
+                }
+                `;
+            document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+
+        }
+    }
+}
+
+// console.log('unitevalclass: ', uniteValclass)
+
+
+
+//============================//==============================//
 
 // end of the conditions for calling the file property
 // #developerValclass - Muhammad Khoirul Huda -> developervalclass@gmail.com
