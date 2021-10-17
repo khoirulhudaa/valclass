@@ -9,6 +9,9 @@ let valuesBackgroundRepeat = [
 for (var i = 0; i <= propertiesBackgroundRepeat.length; i++) {
     if (document.querySelector(`.${propertiesBackgroundRepeat[i]}`) && !document.querySelector('style').innerText.includes(propertiesBackgroundRepeat[i])) {
         let styles = ` 
+            .${propertiesBackgroundRepeat[i]} { 
+                ${valuesBackgroundRepeat[i]}
+            }
             @media screen and (min-width: 900px) and (max-width: 1920px) {
                 .${propertiesBackgroundRepeat[i]} { 
                     ${valuesBackgroundRepeat[i]}
@@ -29,6 +32,9 @@ let valuesBackgroundRepeat2 = [
 for (var i = 0; i <= propertiesBackgroundRepeat2.length; i++) {
     if (document.querySelector(`.${propertiesBackgroundRepeat2[i]}`) && !document.querySelector('style').innerText.includes(propertiesBackgroundRepeat2[i])) {
         let styles = ` 
+            .${propertiesBackgroundRepeat2[i]} { 
+                ${valuesBackgroundRepeat2[i]}
+            }
             @media screen and (min-width: 320px) and (max-width: 600px){
                 .${propertiesBackgroundRepeat2[i]} { 
                     ${valuesBackgroundRepeat2[i]}
@@ -49,6 +55,9 @@ let valuesBackgroundRepeat3 = [
 for (var i = 0; i <= propertiesBackgroundRepeat3.length; i++) {
     if (document.querySelector(`.${propertiesBackgroundRepeat3[i]}`) && !document.querySelector('style').innerText.includes(propertiesBackgroundRepeat3[i])) {
         let styles = ` 
+            .${propertiesBackgroundRepeat3[i]} { 
+                ${valuesBackgroundRepeat3[i]}
+            }
             @media screen and (min-width: 600px) and (max-width: 900px){
                 .${propertiesBackgroundRepeat3[i]} { 
                     ${valuesBackgroundRepeat3[i]}
@@ -69,6 +78,9 @@ let valuesBackgroundRepeat4 = [
 for (var i = 0; i <= propertiesBackgroundRepeat4.length; i++) {
     if (document.querySelector(`.${propertiesBackgroundRepeat4[i]}`) && !document.querySelector('style').innerText.includes(propertiesBackgroundRepeat4[i])) {
         let styles = ` 
+            .${propertiesBackgroundRepeat4[i]} { 
+                ${valuesBackgroundRepeat4[i]}
+            }
             @media screen and (min-width: 1920px){
                 .${propertiesBackgroundRepeat4[i]} { 
                     ${valuesBackgroundRepeat4[i]}

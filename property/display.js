@@ -41,6 +41,9 @@ let valuesDisplay = [
 for (var i = 0; i <= propertiesDisplay.length; i++) {
     if (document.querySelector(`.${propertiesDisplay[i]}`) && !document.querySelector('style').innerText.includes(propertiesDisplay[i])) {
         let styles = ` 
+            .${propertiesDisplay[i]} { 
+                ${valuesDisplay[i]}
+            }
             @media screen and (min-width: 900px) and (max-width: 1920px) {
                 .${propertiesDisplay[i]} { 
                     ${valuesDisplay[i]}
@@ -241,6 +244,9 @@ let valuesDisplay2 = [
 for (var i = 0; i <= propertiesDisplay2.length; i++) {
     if (document.querySelector(`.${propertiesDisplay2[i]}`) && !document.querySelector('style').innerText.includes(propertiesDisplay2[i])) {
         let styles = ` 
+            .${propertiesDisplay2[i]} { 
+                ${valuesDisplay2[i]}
+            }
             @media screen and (min-width: 320px) and (max-width: 600px){
                 .${propertiesDisplay2[i]} { 
                     ${valuesDisplay2[i]}
@@ -292,6 +298,9 @@ let valuesDisplay3 = [
 for (var i = 0; i <= propertiesDisplay3.length; i++) {
     if (document.querySelector(`.${propertiesDisplay3[i]}`) && !document.querySelector('style').innerText.includes(propertiesDisplay3[i])) {
         let styles = ` 
+            .${propertiesDisplay3[i]} { 
+                ${valuesDisplay3[i]}
+            }
             @media screen and (min-width: 600px) and (max-width: 900px){
                 .${propertiesDisplay3[i]} { 
                     ${valuesDisplay3[i]}
@@ -343,6 +352,9 @@ let valuesDisplay4 = [
 for (var i = 0; i <= propertiesDisplay4.length; i++) {
     if (document.querySelector(`.${propertiesDisplay4[i]}`) && !document.querySelector('style').innerText.includes(propertiesDisplay4[i])) {
         let styles = ` 
+            .${propertiesDisplay4[i]} { 
+                ${valuesDisplay4[i]}
+            }
             @media screen and (min-width: 1920px){
                 .${propertiesDisplay4[i]} { 
                     ${valuesDisplay4[i]}

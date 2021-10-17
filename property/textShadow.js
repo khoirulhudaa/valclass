@@ -13,6 +13,9 @@ let valuesTextShadow = [
 for (var i = 0; i <= propertiesTextShadow.length; i++) {
     if (document.querySelector(`.${propertiesTextShadow[i]}`) && !document.querySelector('style').innerText.includes(propertiesTextShadow[i])) {
         let styles = ` 
+            .${propertiesTextShadow[i]} { 
+                ${valuesTextShadow[i]}
+            }
             @media screen and (min-width: 900px) and (max-width: 1920px) {
                 .${propertiesTextShadow[i]} { 
                     ${valuesTextShadow[i]}
@@ -36,6 +39,9 @@ let valuesTextShadow2 = [
 for (var i = 0; i <= propertiesTextShadow2.length; i++) {
     if (document.querySelector(`.${propertiesTextShadow2[i]}`) && !document.querySelector('style').innerText.includes(propertiesTextShadow2[i])) {
         let styles = ` 
+            .${propertiesTextShadow2[i]} { 
+                ${valuesTextShadow2[i]}
+            }
             @media screen and (min-width: 320px) and (max-width: 600px){
                 .${propertiesTextShadow2[i]} { 
                     ${valuesTextShadow2[i]}
@@ -59,6 +65,9 @@ let valuesTextShadow3 = [
 for (var i = 0; i <= propertiesTextShadow3.length; i++) {
     if (document.querySelector(`.${propertiesTextShadow3[i]}`) && !document.querySelector('style').innerText.includes(propertiesTextShadow3[i])) {
         let styles = ` 
+            .${propertiesTextShadow3[i]} { 
+                ${valuesTextShadow3[i]}
+            }
             @media screen and (min-width: 600px) and (max-width: 900px){
                 .${propertiesTextShadow3[i]} { 
                     ${valuesTextShadow3[i]}
@@ -82,6 +91,9 @@ let valuesTextShadow4 = [
 for (var i = 0; i <= propertiesTextShadow4.length; i++) {
     if (document.querySelector(`.${propertiesTextShadow4[i]}`) && !document.querySelector('style').innerText.includes(propertiesTextShadow4[i])) {
         let styles = ` 
+            .${propertiesTextShadow4[i]} { 
+                ${valuesTextShadow4[i]}
+            }
             @media screen and (min-width: 1920px){
                 .${propertiesTextShadow4[i]} { 
                     ${valuesTextShadow4[i]}

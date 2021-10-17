@@ -295,6 +295,9 @@ let valuesPadding = [
 for (var i = 0; i <= propertiesPadding.length; i++) {
     if (document.querySelector(`.${propertiesPadding[i]}`) && !document.querySelector('style').innerText.includes(propertiesPadding[i])) {
         let styles = `  
+        .${propertiesPadding[i]} { 
+            ${valuesPadding[i]}
+        }
         @media screen and (min-width: 900px) and (max-width: 1920px) {
             .${propertiesPadding[i]} { 
                 ${valuesPadding[i]}
@@ -600,6 +603,9 @@ let valuesPadding2 = [
 for (var i = 0; i <= propertiesPadding2.length; i++) {
     if (document.querySelector(`.${propertiesPadding2[i]}`) && !document.querySelector('style').innerText.includes(propertiesPadding2[i])) {
         let styles = `  
+        .${propertiesPadding2[i]} { 
+            ${valuesPadding2[i]}
+        }
         @media screen and (min-width: 320px) and (max-width: 600px){
             .${propertiesPadding2[i]} { 
                 ${valuesPadding2[i]}
@@ -905,6 +911,9 @@ let valuesPadding3 = [
 for (var i = 0; i <= propertiesPadding3.length; i++) {
     if (document.querySelector(`.${propertiesPadding3[i]}`) && !document.querySelector('style').innerText.includes(propertiesPadding3[i])) {
         let styles = `  
+        .${propertiesPadding3[i]} { 
+            ${valuesPadding3[i]}
+        }
         @media screen and (min-width: 600px) and (max-width: 900px){
             .${propertiesPadding3[i]} { 
                 ${valuesPadding3[i]}
@@ -1210,6 +1219,9 @@ let valuesPadding4 = [
 for (var i = 0; i <= propertiesPadding4.length; i++) {
     if (document.querySelector(`.${propertiesPadding4[i]}`) && !document.querySelector('style').innerText.includes(propertiesPadding4[i])) {
         let styles = `  
+        .${propertiesPadding4[i]} { 
+            ${valuesPadding4[i]}
+        }
         @media screen and (min-width: 1920px){
             .${propertiesPadding4[i]} { 
                 ${valuesPadding4[i]}

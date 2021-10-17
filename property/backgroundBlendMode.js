@@ -17,6 +17,9 @@ let valuesBackgroundBlend = [
 for (var i = 0; i <= propertiesBackgroundBlend.length; i++) {
     if (document.querySelector(`.${propertiesBackgroundBlend[i]}`) && !document.querySelector('style').innerText.includes(propertiesBackgroundBlend[i])) {
         let styles = ` 
+            .${propertiesBackgroundBlend[i]} { 
+                ${valuesBackgroundBlend[i]}
+            }
             @media screen and (min-width: 900px) and (max-width: 1920px) {
                 .${propertiesBackgroundBlend[i]} { 
                     ${valuesBackgroundBlend[i]}
@@ -45,6 +48,9 @@ let valuesBackgroundBlend2 = [
 for (var i = 0; i <= propertiesBackgroundBlend2.length; i++) {
     if (document.querySelector(`.${propertiesBackgroundBlend2[i]}`) && !document.querySelector('style').innerText.includes(propertiesBackgroundBlend2[i])) {
         let styles = ` 
+            .${propertiesBackgroundBlend2[i]} { 
+                ${valuesBackgroundBlend2[i]}
+            }
             @media screen and (min-width: 320px) and (max-width: 600px){
                 .${propertiesBackgroundBlend2[i]} { 
                     ${valuesBackgroundBlend2[i]}
@@ -73,6 +79,9 @@ let valuesBackgroundBlend3 = [
 for (var i = 0; i <= propertiesBackgroundBlend3.length; i++) {
     if (document.querySelector(`.${propertiesBackgroundBlend3[i]}`) && !document.querySelector('style').innerText.includes(propertiesBackgroundBlend3[i])) {
         let styles = ` 
+            .${propertiesBackgroundBlend3[i]} { 
+                ${valuesBackgroundBlend3[i]}
+            }
             @media screen and (min-width: 320px) and (max-width: 600px){
                 .${propertiesBackgroundBlend3[i]} { 
                     ${valuesBackgroundBlend3[i]}
@@ -101,6 +110,9 @@ let valuesBackgroundBlend4 = [
 for (var i = 0; i <= propertiesBackgroundBlend4.length; i++) {
     if (document.querySelector(`.${propertiesBackgroundBlend4[i]}`) && !document.querySelector('style').innerText.includes(propertiesBackgroundBlend4[i])) {
         let styles = ` 
+            .${propertiesBackgroundBlend4[i]} { 
+                ${valuesBackgroundBlend4[i]}
+            }
             @media screen and (min-width: 320px) and (max-width: 600px){
                 .${propertiesBackgroundBlend4[i]} { 
                     ${valuesBackgroundBlend4[i]}

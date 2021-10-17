@@ -13,6 +13,9 @@ let valuesBoxShadow = [
 for (var i = 0; i <= propertiesBoxShadow.length; i++) {
     if (document.querySelector(`.${propertiesBoxShadow[i]}`) && !document.querySelector('style').innerText.includes(propertiesBoxShadow[i])) {
         let styles = ` 
+            .${propertiesBoxShadow[i]} { 
+                ${valuesBoxShadow[i]}
+            }
             @media screen and (min-width: 900px) and (max-width: 1920px) {
                 .${propertiesBoxShadow[i]} { 
                     ${valuesBoxShadow[i]}
@@ -37,6 +40,9 @@ let valuesBoxShadow2 = [
 for (var i = 0; i <= propertiesBoxShadow2.length; i++) {
     if (document.querySelector(`.${propertiesBoxShadow2[i]}`) && !document.querySelector('style').innerText.includes(propertiesBoxShadow2[i])) {
         let styles = ` 
+            .${propertiesBoxShadow2[i]} { 
+                ${valuesBoxShadow2[i]}
+            }
             @media screen and (min-width: 320px) and (max-width: 600px){
                 .${propertiesBoxShadow2[i]} { 
                     ${valuesBoxShadow2[i]}
@@ -61,6 +67,9 @@ let valuesBoxShadow3 = [
 for (var i = 0; i <= propertiesBoxShadow3.length; i++) {
     if (document.querySelector(`.${propertiesBoxShadow3[i]}`) && !document.querySelector('style').innerText.includes(propertiesBoxShadow3[i])) {
         let styles = ` 
+            .${propertiesBoxShadow3[i]} { 
+                ${valuesBoxShadow3[i]}
+            }
             @media screen and (min-width: 600px) and (max-width: 900px){
                 .${propertiesBoxShadow3[i]} { 
                     ${valuesBoxShadow3[i]}
@@ -85,6 +94,9 @@ let valuesBoxShadow4 = [
 for (var i = 0; i <= propertiesBoxShadow4.length; i++) {
     if (document.querySelector(`.${propertiesBoxShadow4[i]}`) && !document.querySelector('style').innerText.includes(propertiesBoxShadow4[i])) {
         let styles = ` 
+            .${propertiesBoxShadow4[i]} { 
+                ${valuesBoxShadow4[i]}
+            }
             @media screen and (min-width: 1920px){
                 .${propertiesBoxShadow4[i]} { 
                     ${valuesBoxShadow4[i]}

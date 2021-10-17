@@ -15,6 +15,9 @@ let valuesWordSpacing = [
 for (var i = 0; i <= propertiesWordSpacing.length; i++) {
     if (document.querySelector(`.${propertiesWordSpacing[i]}`) && !document.querySelector('style').innerText.includes(propertiesWordSpacing[i])) {
         let styles = ` 
+        .${propertiesWordSpacing[i]} { 
+            ${valuesWordSpacing[i]}
+        }
         @media screen and (min-width: 900px) and (max-width: 1920px) {
             .${propertiesWordSpacing[i]} { 
                 ${valuesWordSpacing[i]}
@@ -40,6 +43,9 @@ let valuesWordSpacing2 = [
 for (var i = 0; i <= propertiesWordSpacing2.length; i++) {
     if (document.querySelector(`.${propertiesWordSpacing2[i]}`) && !document.querySelector('style').innerText.includes(propertiesWordSpacing2[i])) {
         let styles = ` 
+        .${propertiesWordSpacing2[i]} { 
+            ${valuesWordSpacing2[i]}
+        }
         @media screen and (min-width: 320px) and (max-width: 600px){
             .${propertiesWordSpacing2[i]} { 
                 ${valuesWordSpacing2[i]}
@@ -65,6 +71,9 @@ let valuesWordSpacing3 = [
 for (var i = 0; i <= propertiesWordSpacing3.length; i++) {
     if (document.querySelector(`.${propertiesWordSpacing3[i]}`) && !document.querySelector('style').innerText.includes(propertiesWordSpacing3[i])) {
         let styles = ` 
+        .${propertiesWordSpacing3[i]} { 
+            ${valuesWordSpacing3[i]}
+        }
         @media screen and (min-width: 600px) and (max-width: 900px){
             .${propertiesWordSpacing3[i]} { 
                 ${valuesWordSpacing3[i]}
@@ -90,6 +99,9 @@ let valuesWordSpacing4 = [
 for (var i = 0; i <= propertiesWordSpacing4.length; i++) {
     if (document.querySelector(`.${propertiesWordSpacing4[i]}`) && !document.querySelector('style').innerText.includes(propertiesWordSpacing4[i])) {
         let styles = ` 
+        .${propertiesWordSpacing4[i]} { 
+            ${valuesWordSpacing4[i]}
+        }
         @media screen and (min-width: 1920px){
             .${propertiesWordSpacing4[i]} { 
                 ${valuesWordSpacing4[i]}

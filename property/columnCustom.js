@@ -17,6 +17,9 @@ let valueColumnCustom = [
 for (var i = 0; i <= propertiesColumnCustom.length; i++) {
     if (document.querySelector(`.${propertiesColumnCustom[i]}`) && !document.querySelector('style').innerText.includes(propertiesColumnCustom[i])) {
         let styles = `
+            .${propertiesColumnCustom[i]} { 
+                ${valueColumnCustom[i]}
+            }
             @media screen and (min-width: 900px) and (max-width: 1920px) { 
                 .${propertiesColumnCustom[i]} { 
                     ${valueColumnCustom[i]}
@@ -44,6 +47,9 @@ let valueColumnCustom2 = [
 for (var i = 0; i <= propertiesColumnCustom2.length; i++) {
     if (document.querySelector(`.${propertiesColumnCustom2[i]}`) && !document.querySelector('style').innerText.includes(propertiesColumnCustom2[i])) {
         let styles = `
+            .${propertiesColumnCustom2[i]} { 
+                ${valueColumnCustom2[i]}
+            }
             @media screen and (min-width: 320px) and (max-width: 600px){ 
                 .${propertiesColumnCustom2[i]} { 
                     ${valueColumnCustom2[i]}
@@ -71,6 +77,9 @@ let valueColumnCustom3 = [
 for (var i = 0; i <= propertiesColumnCustom3.length; i++) {
     if (document.querySelector(`.${propertiesColumnCustom3[i]}`) && !document.querySelector('style').innerText.includes(propertiesColumnCustom3[i])) {
         let styles = `
+            .${propertiesColumnCustom3[i]} { 
+                ${valueColumnCustom3[i]}
+            }
             @media screen and (min-width: 600px) and (max-width: 900px){ 
                 .${propertiesColumnCustom3[i]} { 
                     ${valueColumnCustom3[i]}
@@ -98,6 +107,9 @@ let valueColumnCustom4 = [
 for (var i = 0; i <= propertiesColumnCustom4.length; i++) {
     if (document.querySelector(`.${propertiesColumnCustom4[i]}`) && !document.querySelector('style').innerText.includes(propertiesColumnCustom4[i])) {
         let styles = `
+            .${propertiesColumnCustom4[i]} { 
+                ${valueColumnCustom4[i]}
+            }
             @media screen and (min-width: 1920px){ 
                 .${propertiesColumnCustom4[i]} { 
                     ${valueColumnCustom4[i]}

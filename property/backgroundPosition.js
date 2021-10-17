@@ -37,6 +37,9 @@ let valuesBackgroundPosition = [
 for (var i = 0; i <= propertiesBackgroundPosition.length; i++) {
     if (document.querySelector(`.${propertiesBackgroundPosition[i]}`) && !document.querySelector('style').innerText.includes(propertiesBackgroundPosition[i])) {
         let styles = ` 
+            .${propertiesBackgroundPosition[i]} { 
+                ${valuesBackgroundPosition[i]}
+            }
             @media screen and (min-width: 900px){
                 .${propertiesBackgroundPosition[i]} { 
                     ${valuesBackgroundPosition[i]}
@@ -85,6 +88,9 @@ let valuesBackgroundPosition2 = [
 for (var i = 0; i <= propertiesBackgroundPosition2.length; i++) {
     if (document.querySelector(`.${propertiesBackgroundPosition2[i]}`) && !document.querySelector('style').innerText.includes(propertiesBackgroundPosition2[i])) {
         let styles = ` 
+            .${propertiesBackgroundPosition2[i]} { 
+                ${valuesBackgroundPosition2[i]}
+            }
             @media screen and (min-width: 320px) and (max-width: 600px){
                 .${propertiesBackgroundPosition2[i]} { 
                     ${valuesBackgroundPosition2[i]}
@@ -133,6 +139,9 @@ let valuesBackgroundPosition3 = [
 for (var i = 0; i <= propertiesBackgroundPosition3.length; i++) {
     if (document.querySelector(`.${propertiesBackgroundPosition3[i]}`) && !document.querySelector('style').innerText.includes(propertiesBackgroundPosition3[i])) {
         let styles = ` 
+            .${propertiesBackgroundPosition3[i]} { 
+                ${valuesBackgroundPosition3[i]}
+            }
             @media screen and (min-width: 600px) and (max-width: 900px){
                 .${propertiesBackgroundPosition3[i]} { 
                     ${valuesBackgroundPosition3[i]}
@@ -181,6 +190,9 @@ let valuesBackgroundPosition4 = [
 for (var i = 0; i <= propertiesBackgroundPosition4.length; i++) {
     if (document.querySelector(`.${propertiesBackgroundPosition4[i]}`) && !document.querySelector('style').innerText.includes(propertiesBackgroundPosition4[i])) {
         let styles = ` 
+            .${propertiesBackgroundPosition4[i]} { 
+                ${valuesBackgroundPosition4[i]}
+            }
             @media screen and (min-width: 1920px){
                 .${propertiesBackgroundPosition4[i]} { 
                     ${valuesBackgroundPosition4[i]}

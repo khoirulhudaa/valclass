@@ -15,6 +15,9 @@ let valuesAlignItems = [
 for (var i = 0; i <= propertiesAlignItems.length; i++) {
     if (document.querySelector(`.${propertiesAlignItems[i]}`) && !document.querySelector('style').innerText.includes(propertiesAlignItems[i])) {
         let styles = ` 
+            .${propertiesAlignItems[i]} { 
+                ${valuesAlignItems[i]}
+            }
             @media screen and (min-width: 900px) and (max-width: 1920px) {
                 .${propertiesAlignItems[i]} { 
                     ${valuesAlignItems[i]}
@@ -41,6 +44,9 @@ let valuesAlignItems2 = [
 for (var i = 0; i <= propertiesAlignItems2.length; i++) {
     if (document.querySelector(`.${propertiesAlignItems2[i]}`) && !document.querySelector('style').innerText.includes(propertiesAlignItems2[i])) {
         let styles = ` 
+            .${propertiesAlignItems2[i]} { 
+                ${valuesAlignItems2[i]}
+            }
             @media screen and (min-width: 320px) and (max-width: 600px){
                 .${propertiesAlignItems2[i]} { 
                     ${valuesAlignItems2[i]}
@@ -67,6 +73,9 @@ let valuesAlignItems3 = [
 for (var i = 0; i <= propertiesAlignItems3.length; i++) {
     if (document.querySelector(`.${propertiesAlignItems3[i]}`) && !document.querySelector('style').innerText.includes(propertiesAlignItems3[i])) {
         let styles = ` 
+            .${propertiesAlignItems3[i]} { 
+                ${valuesAlignItems3[i]}
+            }
             @media screen and (min-width: 600px) and (max-width: 900px){
                 .${propertiesAlignItems3[i]} { 
                     ${valuesAlignItems3[i]}
@@ -93,6 +102,9 @@ let valuesAlignItems4 = [
 for (var i = 0; i <= propertiesAlignItems4.length; i++) {
     if (document.querySelector(`.${propertiesAlignItems4[i]}`) && !document.querySelector('style').innerText.includes(propertiesAlignItems4[i])) {
         let styles = ` 
+            .${propertiesAlignItems4[i]} { 
+                ${valuesAlignItems4[i]}
+            }
             @media screen and (min-width: 1920px){
                 .${propertiesAlignItems4[i]} { 
                     ${valuesAlignItems4[i]}

@@ -29,6 +29,11 @@ for (var i = 0; i <= propertiesBgColors.length; i++) {
         let styles = ` 
             .${propertiesBgColors[i]} { 
                 ${valuesBgColors[i]}
+            }
+            @media screen and (min-width: 90px) and (max-width: 1920px){
+                .${propertiesBgColors[i]} { 
+                    ${valuesBgColors[i]}
+                }
             }`;
         document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
     }
@@ -63,6 +68,9 @@ let valuesBgColors2 = [
 for (var i = 0; i <= propertiesBgColors2.length; i++) {
     if (document.querySelector(`.${propertiesBgColors2[i]}`) && !document.querySelector('style').innerText.includes(propertiesBgColors2[i])) {
         let styles = ` 
+            .${propertiesBgColors2[i]} { 
+                ${valuesBgColors2[i]}
+            }
             @media screen and (min-width: 320px) and (max-width: 600px){
                     .${propertiesBgColors2[i]} { 
                     ${valuesBgColors2[i]}
@@ -101,6 +109,9 @@ let valuesBgColors3 = [
 for (var i = 0; i <= propertiesBgColors3.length; i++) {
     if (document.querySelector(`.${propertiesBgColors3[i]}`) && !document.querySelector('style').innerText.includes(propertiesBgColors3[i])) {
         let styles = ` 
+            .${propertiesBgColors3[i]} { 
+                ${valuesBgColors3[i]}
+            }
             @media screen and (min-width: 600px) and (max-width: 900px){
                     .${propertiesBgColors3[i]} { 
                     ${valuesBgColors3[i]}
@@ -139,6 +150,9 @@ let valuesBgColors4 = [
 for (var i = 0; i <= propertiesBgColors4.length; i++) {
     if (document.querySelector(`.${propertiesBgColors4[i]}`) && !document.querySelector('style').innerText.includes(propertiesBgColors4[i])) {
         let styles = ` 
+            .${propertiesBgColors4[i]} { 
+                ${valuesBgColors4[i]}
+            }
             @media screen and (min-width: 1920px){
                     .${propertiesBgColors4[i]} { 
                     ${valuesBgColors4[i]}

@@ -201,6 +201,9 @@ let valuesBorders2 = [
 for (var i = 0; i <= propertiesBorders2.length; i++) {
     if (document.querySelector(`.${propertiesBorders2[i]}`) && !document.querySelector('style').innerText.includes(propertiesBorders2[i])) {
         let styles = ` 
+            .${propertiesBorders2[i]} { 
+                ${valuesBorders2[i]}
+            }
             @media screen and (min-width: 320px) and (max-width: 600px){
                 .${propertiesBorders2[i]} { 
                     ${valuesBorders2[i]}
@@ -306,6 +309,9 @@ let valuesBorders3 = [
 for (var i = 0; i <= propertiesBorders3.length; i++) {
     if (document.querySelector(`.${propertiesBorders3[i]}`) && !document.querySelector('style').innerText.includes(propertiesBorders3[i])) {
         let styles = ` 
+            .${propertiesBorders3[i]} { 
+                ${valuesBorders3[i]}
+            }
             @media screen and (min-width: 600px) and (max-width: 900px){
                 .${propertiesBorders3[i]} { 
                     ${valuesBorders3[i]}
@@ -411,6 +417,9 @@ let valuesBorders4 = [
 for (var i = 0; i <= propertiesBorders4.length; i++) {
     if (document.querySelector(`.${propertiesBorders4[i]}`) && !document.querySelector('style').innerText.includes(propertiesBorders4[i])) {
         let styles = ` 
+            .${propertiesBorders4[i]} { 
+                ${valuesBorders4[i]}
+            }
             @media screen and (min-width: 1920px){
                 .${propertiesBorders4[i]} { 
                     ${valuesBorders4[i]}

@@ -23,6 +23,9 @@ let valuesIndex = [
 for (var i = 0; i <= propertiesIndex.length; i++) {
     if (document.querySelector(`.${propertiesIndex[i]}`) && !document.querySelector('style').innerText.includes(propertiesIndex[i])) {
         let styles = ` 
+        .${propertiesIndex[i]} { 
+            ${valuesIndex[i]}
+        }
         @media screen and (min-width: 900px) and (max-width: 1920px) {
             .${propertiesIndex[i]} { 
                 ${valuesIndex[i]}
@@ -56,6 +59,9 @@ let valuesIndex2 = [
 for (var i = 0; i <= propertiesIndex2.length; i++) {
     if (document.querySelector(`.${propertiesIndex2[i]}`) && !document.querySelector('style').innerText.includes(propertiesIndex2[i])) {
         let styles = ` 
+        .${propertiesIndex2[i]} { 
+            ${valuesIndex2[i]}
+        }
         @media screen and (min-width: 320px) and (max-width: 600px){
             .${propertiesIndex2[i]} { 
                 ${valuesIndex2[i]}
@@ -89,6 +95,9 @@ let valuesIndex3 = [
 for (var i = 0; i <= propertiesIndex3.length; i++) {
     if (document.querySelector(`.${propertiesIndex3[i]}`) && !document.querySelector('style').innerText.includes(propertiesIndex3[i])) {
         let styles = ` 
+        .${propertiesIndex3[i]} { 
+            ${valuesIndex3[i]}
+        }
         @media screen and (min-width: 600px) and (max-width: 900px){
             .${propertiesIndex3[i]} { 
                 ${valuesIndex3[i]}
@@ -122,6 +131,9 @@ let valuesIndex4 = [
 for (var i = 0; i <= propertiesIndex4.length; i++) {
     if (document.querySelector(`.${propertiesIndex4[i]}`) && !document.querySelector('style').innerText.includes(propertiesIndex4[i])) {
         let styles = ` 
+        .${propertiesIndex4[i]} { 
+            ${valuesIndex4[i]}
+        }
         @media screen and (min-width: 1920px){
             .${propertiesIndex4[i]} { 
                 ${valuesIndex4[i]}

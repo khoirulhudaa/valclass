@@ -33,6 +33,9 @@ let valuesBackgroundSize = [
 for (var i = 0; i <= propertiesBackgroundSize.length; i++) {
     if (document.querySelector(`.${propertiesBackgroundSize[i]}`) && !document.querySelector('style').innerText.includes(propertiesBackgroundSize[i])) {
         let styles = ` 
+            .${propertiesBackgroundSize[i]} { 
+                ${valuesBackgroundSize[i]}
+            }
             @media screen and (min-width: 900px) and (max-width: 1920px) {
                 .${propertiesBackgroundSize[i]} { 
                     ${valuesBackgroundSize[i]}
@@ -77,6 +80,9 @@ let valuesBackgroundSize2 = [
 for (var i = 0; i <= propertiesBackgroundSize2.length; i++) {
     if (document.querySelector(`.${propertiesBackgroundSize2[i]}`) && !document.querySelector('style').innerText.includes(propertiesBackgroundSize2[i])) {
         let styles = ` 
+            .${propertiesBackgroundSize2[i]} { 
+                ${valuesBackgroundSize2[i]}
+            }
             @media screen and (min-width: 320px) and (max-width: 600px){
                 .${propertiesBackgroundSize2[i]} { 
                     ${valuesBackgroundSize2[i]}
@@ -121,6 +127,9 @@ let valuesBackgroundSize3 = [
 for (var i = 0; i <= propertiesBackgroundSize3.length; i++) {
     if (document.querySelector(`.${propertiesBackgroundSize3[i]}`) && !document.querySelector('style').innerText.includes(propertiesBackgroundSize3[i])) {
         let styles = ` 
+            .${propertiesBackgroundSize3[i]} { 
+                ${valuesBackgroundSize3[i]}
+            }
             @media screen and (min-width: 600px) and (max-width: 900px){
                 .${propertiesBackgroundSize3[i]} { 
                     ${valuesBackgroundSize3[i]}
@@ -165,6 +174,9 @@ let valuesBackgroundSize4 = [
 for (var i = 0; i <= propertiesBackgroundSize4.length; i++) {
     if (document.querySelector(`.${propertiesBackgroundSize4[i]}`) && !document.querySelector('style').innerText.includes(propertiesBackgroundSize4[i])) {
         let styles = ` 
+            .${propertiesBackgroundSize4[i]} { 
+                ${valuesBackgroundSize4[i]}
+            }
             @media screen and (min-width: 1920px){
                 .${propertiesBackgroundSize4[i]} { 
                     ${valuesBackgroundSize4[i]}

@@ -25,6 +25,9 @@ let valueGrids = [
 for (var i = 0; i <= propertiesGrid.length; i++) {
     if (document.querySelector(`.${propertiesGrid[i]}`) && !document.querySelector('style').innerText.includes(propertiesGrid[i])) {
         let styles = ` 
+            .${propertiesGrid[i]} { 
+                ${valueGrids[i]}
+            }
             @media screen and (min-width: 900px) and (max-width: 1920px) {
                 .${propertiesGrid[i]} { 
                     ${valueGrids[i]}
@@ -59,6 +62,9 @@ let valueGrids2 = [
 for (var i = 0; i <= propertiesGrid2.length; i++) {
     if (document.querySelector(`.${propertiesGrid2[i]}`) && !document.querySelector('style').innerText.includes(propertiesGrid2[i])) {
         let styles = ` 
+            .${propertiesGrid2[i]} { 
+                ${valueGrids2[i]}
+            }
             @media screen and (min-width: 320px) and (max-width: 600px){
                 .${propertiesGrid2[i]} { 
                     ${valueGrids2[i]}
@@ -93,6 +99,9 @@ let valueGrids3 = [
 for (var i = 0; i <= propertiesGrid3.length; i++) {
     if (document.querySelector(`.${propertiesGrid3[i]}`) && !document.querySelector('style').innerText.includes(propertiesGrid3[i])) {
         let styles = ` 
+            .${propertiesGrid3[i]} { 
+                ${valueGrids3[i]}
+            }
             @media screen and (min-width: 600px) and (max-width: 900px){
                 .${propertiesGrid3[i]} { 
                     ${valueGrids3[i]}
@@ -127,6 +136,9 @@ let valueGrids4 = [
 for (var i = 0; i <= propertiesGrid4.length; i++) {
     if (document.querySelector(`.${propertiesGrid4[i]}`) && !document.querySelector('style').innerText.includes(propertiesGrid4[i])) {
         let styles = ` 
+            .${propertiesGrid4[i]} { 
+                ${valueGrids4[i]}
+            }
             @media screen and (min-width: 1920px){
                 .${propertiesGrid4[i]} { 
                     ${valueGrids4[i]}

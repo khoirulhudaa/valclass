@@ -21,9 +21,14 @@ let valuesDirections = [
 for (var i = 0; i <= propertiesDirections.length; i++) {
     if (document.querySelector(`.${propertiesDirections[i]}`) && !document.querySelector('style').innerText.includes(propertiesDirections[i])) {
         let styles = ` 
+        .${propertiesDirections[i]} { 
+            ${valuesDirections[i]}
+        }
+        @media screen and (min-width: 900px) and (max-width: 1920px){
             .${propertiesDirections[i]} { 
                 ${valuesDirections[i]}
-            }`;
+            }
+        }`;
         document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
     }
 }
@@ -51,6 +56,9 @@ let valuesDirections2 = [
 for (var i = 0; i <= propertiesDirections2.length; i++) {
     if (document.querySelector(`.${propertiesDirections2[i]}`) && !document.querySelector('style').innerText.includes(propertiesDirections2[i])) {
         let styles = ` 
+        .${propertiesDirections2[i]} { 
+            ${valuesDirections2[i]}
+        }
             @media screen and (min-width: 320px) and (max-width: 600px){
                 .${propertiesDirections2[i]} { 
                     ${valuesDirections2[i]}
@@ -82,6 +90,9 @@ let valuesDirections3 = [
 for (var i = 0; i <= propertiesDirections3.length; i++) {
     if (document.querySelector(`.${propertiesDirections3[i]}`) && !document.querySelector('style').innerText.includes(propertiesDirections3[i])) {
         let styles = ` 
+        .${propertiesDirections3[i]} { 
+            ${valuesDirections3[i]}
+        }
             @media screen and (min-width: 600px) and (max-width: 900px){
                 .${propertiesDirections3[i]} { 
                     ${valuesDirections3[i]}
@@ -113,6 +124,9 @@ let valuesDirections4 = [
 for (var i = 0; i <= propertiesDirections4.length; i++) {
     if (document.querySelector(`.${propertiesDirections4[i]}`) && !document.querySelector('style').innerText.includes(propertiesDirections4[i])) {
         let styles = ` 
+        .${propertiesDirections4[i]} { 
+            ${valuesDirections4[i]}
+        }
             @media screen and (min-width: 1920px){
                 .${propertiesDirections4[i]} { 
                     ${valuesDirections4[i]}

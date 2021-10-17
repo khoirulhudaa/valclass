@@ -11,6 +11,9 @@ let valuesBackgroundOrigin = [
 for (var i = 0; i <= propertiesBackgroundOrigin.length; i++) {
     if (document.querySelector(`.${propertiesBackgroundOrigin[i]}`) && !document.querySelector('style').innerText.includes(propertiesBackgroundOrigin[i])) {
         let styles = ` 
+            .${propertiesBackgroundOrigin[i]} { 
+                ${valuesBackgroundOrigin[i]}
+            }
             @media screen and (min-width: 900px) and (max-width: 1920px)
                 .${propertiesBackgroundOrigin[i]} { 
                     ${valuesBackgroundOrigin[i]}
@@ -33,6 +36,9 @@ let valuesBackgroundOrigin2 = [
 for (var i = 0; i <= propertiesBackgroundOrigin2.length; i++) {
     if (document.querySelector(`.${propertiesBackgroundOrigin2[i]}`) && !document.querySelector('style').innerText.includes(propertiesBackgroundOrigin2[i])) {
         let styles = ` 
+            .${propertiesBackgroundOrigin2[i]} { 
+                ${valuesBackgroundOrigin2[i]}
+            }
             @media screen and (min-width: 320px) and (max-width: 600px){
                 .${propertiesBackgroundOrigin2[i]} { 
                     ${valuesBackgroundOrigin2[i]}
@@ -55,6 +61,9 @@ let valuesBackgroundOrigin3 = [
 for (var i = 0; i <= propertiesBackgroundOrigin3.length; i++) {
     if (document.querySelector(`.${propertiesBackgroundOrigin3[i]}`) && !document.querySelector('style').innerText.includes(propertiesBackgroundOrigin3[i])) {
         let styles = ` 
+            .${propertiesBackgroundOrigin3[i]} { 
+                ${valuesBackgroundOrigin3[i]}
+            }
             @media screen and (min-width: 600px) and (max-width: 900px){
                 .${propertiesBackgroundOrigin3[i]} { 
                     ${valuesBackgroundOrigin3[i]}
@@ -77,6 +86,9 @@ let valuesBackgroundOrigin4 = [
 for (var i = 0; i <= propertiesBackgroundOrigin4.length; i++) {
     if (document.querySelector(`.${propertiesBackgroundOrigin4[i]}`) && !document.querySelector('style').innerText.includes(propertiesBackgroundOrigin4[i])) {
         let styles = ` 
+            .${propertiesBackgroundOrigin4[i]} { 
+                ${valuesBackgroundOrigin4[i]}
+            }
             @media screen and (min-width: 1920px){
                 .${propertiesBackgroundOrigin4[i]} { 
                     ${valuesBackgroundOrigin4[i]}

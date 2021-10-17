@@ -31,6 +31,9 @@ let valuesTransition = [
 for (var i = 0; i <= propertiesTransition.length; i++) {
     if (document.querySelector(`.${propertiesTransition[i]}`) && !document.querySelector('style').innerText.includes(propertiesTransition[i])) {
         let styles = ` 
+        .${propertiesTransition[i]} { 
+            ${valuesTransition[i]}
+        }
         @media screen and (min-width: 900px) and (max-width: 1920px) {
             .${propertiesTransition[i]} { 
                 ${valuesTransition[i]}
@@ -72,6 +75,9 @@ let valuesTransition2 = [
 for (var i = 0; i <= propertiesTransition2.length; i++) {
     if (document.querySelector(`.${propertiesTransition2[i]}`) && !document.querySelector('style').innerText.includes(propertiesTransition2[i])) {
         let styles = ` 
+        .${propertiesTransition2[i]} { 
+            ${valuesTransition2[i]}
+        }
         @media screen and (min-width: 320px) and (max-width: 600px){
             .${propertiesTransition2[i]} { 
                 ${valuesTransition2[i]}
@@ -113,6 +119,9 @@ let valuesTransition3 = [
 for (var i = 0; i <= propertiesTransition3.length; i++) {
     if (document.querySelector(`.${propertiesTransition3[i]}`) && !document.querySelector('style').innerText.includes(propertiesTransition3[i])) {
         let styles = ` 
+        .${propertiesTransition3[i]} { 
+            ${valuesTransition3[i]}
+        }
         @media screen and (min-width: 600px) and (max-width: 900px){
             .${propertiesTransition3[i]} { 
                 ${valuesTransition3[i]}
@@ -154,6 +163,9 @@ let valuesTransition4 = [
 for (var i = 0; i <= propertiesTransition4.length; i++) {
     if (document.querySelector(`.${propertiesTransition4[i]}`) && !document.querySelector('style').innerText.includes(propertiesTransition4[i])) {
         let styles = ` 
+        .${propertiesTransition4[i]} { 
+            ${valuesTransition4[i]}
+        }
         @media screen and (min-width: 1920px){
             .${propertiesTransition4[i]} { 
                 ${valuesTransition4[i]}

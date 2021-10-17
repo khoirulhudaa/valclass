@@ -9,6 +9,9 @@ let valuesEmptyCells = [
 for (var i = 0; i <= propertiesEmptyCells.length; i++) {
     if (document.querySelector(`.${propertiesEmptyCells[i]}`) && !document.querySelector('style').innerText.includes(propertiesEmptyCells[i])) {
         let styles = ` 
+            .${propertiesEmptyCells[i]} { 
+                ${valuesEmptyCells[i]}
+            }
             @media screen and (min-width: 900px) and (max-width: 1920px) {
                 .${propertiesEmptyCells[i]} { 
                     ${valuesEmptyCells[i]}
@@ -28,6 +31,9 @@ let valuesEmptyCells2 = [
 for (var i = 0; i <= propertiesEmptyCells2.length; i++) {
     if (document.querySelector(`.${propertiesEmptyCells2[i]}`) && !document.querySelector('style').innerText.includes(propertiesEmptyCells2[i])) {
         let styles = ` 
+            .${propertiesEmptyCells2[i]} { 
+                ${valuesEmptyCells2[i]}
+            }
             @media screen and (min-width: 320px) and (max-width: 600px){
                 .${propertiesEmptyCells2[i]} { 
                     ${valuesEmptyCells2[i]}
@@ -47,6 +53,9 @@ let valuesEmptyCells3 = [
 for (var i = 0; i <= propertiesEmptyCells3.length; i++) {
     if (document.querySelector(`.${propertiesEmptyCells3[i]}`) && !document.querySelector('style').innerText.includes(propertiesEmptyCells3[i])) {
         let styles = ` 
+            .${propertiesEmptyCells3[i]} { 
+                ${valuesEmptyCells3[i]}
+            }
             @media screen and (min-width: 600px) and (max-width: 900px){
                 .${propertiesEmptyCells3[i]} { 
                     ${valuesEmptyCells3[i]}
@@ -66,6 +75,9 @@ let valuesEmptyCells4 = [
 for (var i = 0; i <= propertiesEmptyCells4.length; i++) {
     if (document.querySelector(`.${propertiesEmptyCells4[i]}`) && !document.querySelector('style').innerText.includes(propertiesEmptyCells4[i])) {
         let styles = ` 
+            .${propertiesEmptyCells4[i]} { 
+                ${valuesEmptyCells4[i]}
+            }
             @media screen and (min-width: 1920px){
                 .${propertiesEmptyCells4[i]} { 
                     ${valuesEmptyCells4[i]}

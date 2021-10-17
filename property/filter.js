@@ -66,6 +66,9 @@ let valuesFilter = [
 for (var i = 0; i <= propertiesFilter.length; i++) {
     if (document.querySelector(`.${propertiesFilter[i]}`) && !document.querySelector('style').innerText.includes(propertiesFilter[i])) {
         let styles = ` 
+            .${propertiesFilter[i]} { 
+                ${valuesFilter[i]}
+            }
             @media screen and (min-width: 900px) and (max-width: 1920px) {
                 .${propertiesFilter[i]} { 
                     ${valuesFilter[i]}
@@ -141,6 +144,9 @@ let valuesFilter2 = [
 for (var i = 0; i <= propertiesFilter2.length; i++) {
     if (document.querySelector(`.${propertiesFilter2[i]}`) && !document.querySelector('style').innerText.includes(propertiesFilter2[i])) {
         let styles = ` 
+            .${propertiesFilter2[i]} { 
+                ${valuesFilter2[i]}
+            }
             @media screen and (min-width: 320px) and (max-width: 600px){
                 .${propertiesFilter2[i]} { 
                     ${valuesFilter2[i]}
@@ -216,6 +222,9 @@ let valuesFilter3 = [
 for (var i = 0; i <= propertiesFilter3.length; i++) {
     if (document.querySelector(`.${propertiesFilter3[i]}`) && !document.querySelector('style').innerText.includes(propertiesFilter3[i])) {
         let styles = ` 
+            .${propertiesFilter3[i]} { 
+                ${valuesFilter3[i]}
+            }
             @media screen and (min-width: 600px) and (max-width: 900px){
                 .${propertiesFilter3[i]} { 
                     ${valuesFilter3[i]}
@@ -291,6 +300,9 @@ let valuesFilter4 = [
 for (var i = 0; i <= propertiesFilter4.length; i++) {
     if (document.querySelector(`.${propertiesFilter4[i]}`) && !document.querySelector('style').innerText.includes(propertiesFilter4[i])) {
         let styles = ` 
+            .${propertiesFilter4[i]} { 
+                ${valuesFilter4[i]}
+            }
             @media screen and (min-width: 1920px){
                 .${propertiesFilter4[i]} { 
                     ${valuesFilter4[i]}

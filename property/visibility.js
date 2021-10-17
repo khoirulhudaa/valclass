@@ -11,6 +11,9 @@ let valuesvisibility = [
 for (var i = 0; i <= propertiesvisibility.length; i++) {
     if (document.querySelector(`.${propertiesvisibility[i]}`) && !document.querySelector('style').innerText.includes(propertiesvisibility[i])) {
         let styles = ` 
+        .${propertiesvisibility[i]} { 
+            ${valuesvisibility[i]}
+        }
         @media screen and (min-width: 900px) and (max-width: 1920px) {
             .${propertiesvisibility[i]} { 
                 ${valuesvisibility[i]}
@@ -32,6 +35,9 @@ let valuesvisibility2 = [
 for (var i = 0; i <= propertiesvisibility2.length; i++) {
     if (document.querySelector(`.${propertiesvisibility2[i]}`) && !document.querySelector('style').innerText.includes(propertiesvisibility2[i])) {
         let styles = ` 
+        .${propertiesvisibility2[i]} { 
+            ${valuesvisibility2[i]}
+        }
         @media screen and (min-width: 320px) and (max-width: 600px){
             .${propertiesvisibility2[i]} { 
                 ${valuesvisibility2[i]}
@@ -53,6 +59,9 @@ let valuesvisibility3 = [
 for (var i = 0; i <= propertiesvisibility3.length; i++) {
     if (document.querySelector(`.${propertiesvisibility3[i]}`) && !document.querySelector('style').innerText.includes(propertiesvisibility3[i])) {
         let styles = ` 
+        .${propertiesvisibility3[i]} { 
+            ${valuesvisibility3[i]}
+        }
         @media screen and (min-width: 600px) and (max-width: 900px){
             .${propertiesvisibility3[i]} { 
                 ${valuesvisibility3[i]}
@@ -74,6 +83,9 @@ let valuesvisibility4 = [
 for (var i = 0; i <= propertiesvisibility4.length; i++) {
     if (document.querySelector(`.${propertiesvisibility4[i]}`) && !document.querySelector('style').innerText.includes(propertiesvisibility4[i])) {
         let styles = ` 
+        .${propertiesvisibility4[i]} { 
+            ${valuesvisibility4[i]}
+        }
         @media screen and (min-width: 1920px){
             .${propertiesvisibility4[i]} { 
                 ${valuesvisibility4[i]}

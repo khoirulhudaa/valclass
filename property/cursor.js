@@ -23,9 +23,14 @@ let valuesCursors = [
 for (var i = 0; i <= propertiesCursors.length; i++) {
     if (document.querySelector(`.${propertiesCursors[i]}`) && !document.querySelector('style').innerText.includes(propertiesCursors[i])) {
         let styles = ` 
+            .${propertiesCursors[i]} { 
+                ${valuesCursors[i]}
+            }
+            @media screen and (min-width: 900px) and (max-width: 1920px){
                 .${propertiesCursors[i]} { 
                     ${valuesCursors[i]}
-                }`;
+                }
+            }`;
         document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
     }
 }
@@ -54,6 +59,9 @@ let valuesCursors2 = [
 for (var i = 0; i <= propertiesCursors2.length; i++) {
     if (document.querySelector(`.${propertiesCursors2[i]}`) && !document.querySelector('style').innerText.includes(propertiesCursors2[i])) {
         let styles = ` 
+            .${propertiesCursors2[i]} { 
+                ${valuesCursors2[i]}
+            }
             @media screen and (min-width: 320px) and (max-width: 600px){
                 .${propertiesCursors2[i]} { 
                     ${valuesCursors2[i]}
@@ -87,6 +95,9 @@ let valuesCursors3 = [
 for (var i = 0; i <= propertiesCursors3.length; i++) {
     if (document.querySelector(`.${propertiesCursors3[i]}`) && !document.querySelector('style').innerText.includes(propertiesCursors3[i])) {
         let styles = ` 
+            .${propertiesCursors3[i]} { 
+                ${valuesCursors3[i]}
+            }
             @media screen and (min-width: 600px) and (max-width: 900px){
                 .${propertiesCursors3[i]} { 
                     ${valuesCursors3[i]}
@@ -120,6 +131,9 @@ let valuesCursors4 = [
 for (var i = 0; i <= propertiesCursors4.length; i++) {
     if (document.querySelector(`.${propertiesCursors4[i]}`) && !document.querySelector('style').innerText.includes(propertiesCursors4[i])) {
         let styles = ` 
+            .${propertiesCursors4[i]} { 
+                ${valuesCursors4[i]}
+            }
             @media screen and (min-width: 1920px){
                 .${propertiesCursors4[i]} { 
                     ${valuesCursors4[i]}

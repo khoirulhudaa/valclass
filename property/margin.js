@@ -295,6 +295,9 @@ let valuesMargins = [
 for (var i = 0; i <= propertiesMargins.length; i++) {
     if (document.querySelector(`.${propertiesMargins[i]}`) && !document.querySelector('style').innerText.includes(propertiesMargins[i])) {
         let styles = ` 
+        .${propertiesMargins[i]} { 
+            ${valuesMargins[i]}
+        }
         @media screen and (min-width: 900px) and (max-width: 1920px) {
             .${propertiesMargins[i]} { 
                 ${valuesMargins[i]}
@@ -600,6 +603,9 @@ let valuesMargins2 = [
 for (var i = 0; i <= propertiesMargins2.length; i++) {
     if (document.querySelector(`.${propertiesMargins2[i]}`) && !document.querySelector('style').innerText.includes(propertiesMargins2[i])) {
         let styles = ` 
+        .${propertiesMargins2[i]} { 
+            ${valuesMargins2[i]}
+        }
         @media screen and (min-width: 320px) and (max-width: 600px){
             .${propertiesMargins2[i]} { 
                 ${valuesMargins2[i]}
@@ -905,6 +911,9 @@ let valuesMargins3 = [
 for (var i = 0; i <= propertiesMargins3.length; i++) {
     if (document.querySelector(`.${propertiesMargins3[i]}`) && !document.querySelector('style').innerText.includes(propertiesMargins3[i])) {
         let styles = ` 
+        .${propertiesMargins3[i]} { 
+            ${valuesMargins3[i]}
+        }
         @media screen and (min-width: 600px) and (max-width: 900px){
             .${propertiesMargins3[i]} { 
                 ${valuesMargins3[i]}
@@ -1210,6 +1219,9 @@ let valuesMargins4 = [
 for (var i = 0; i <= propertiesMargins4.length; i++) {
     if (document.querySelector(`.${propertiesMargins4[i]}`) && !document.querySelector('style').innerText.includes(propertiesMargins4[i])) {
         let styles = ` 
+        .${propertiesMargins4[i]} { 
+            ${valuesMargins4[i]}
+        }
         @media screen and (min-width: 1920px){
             .${propertiesMargins4[i]} { 
                 ${valuesMargins4[i]}

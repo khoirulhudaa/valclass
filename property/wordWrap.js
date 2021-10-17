@@ -9,6 +9,9 @@ let valuesWordWrap = [
 for (var i = 0; i <= propertiesWordWrap.length; i++) {
     if (document.querySelector(`.${propertiesWordWrap[i]}`) && !document.querySelector('style').innerText.includes(propertiesWordWrap[i])) {
         let styles = ` 
+        .${propertiesWordWrap[i]} { 
+            ${valuesWordWrap[i]}
+        }
         @media screen and (min-width: 900px) and (max-width: 1920px) {
             .${propertiesWordWrap[i]} { 
                 ${valuesWordWrap[i]}
@@ -28,6 +31,9 @@ let valuesWordWrap2 = [
 for (var i = 0; i <= propertiesWordWrap2.length; i++) {
     if (document.querySelector(`.${propertiesWordWrap2[i]}`) && !document.querySelector('style').innerText.includes(propertiesWordWrap2[i])) {
         let styles = ` 
+        .${propertiesWordWrap2[i]} { 
+            ${valuesWordWrap2[i]}
+        }
         @media screen and (min-width: 320px) and (max-width: 600px){
             .${propertiesWordWrap2[i]} { 
                 ${valuesWordWrap2[i]}
@@ -47,6 +53,9 @@ let valuesWordWrap3 = [
 for (var i = 0; i <= propertiesWordWrap3.length; i++) {
     if (document.querySelector(`.${propertiesWordWrap3[i]}`) && !document.querySelector('style').innerText.includes(propertiesWordWrap3[i])) {
         let styles = ` 
+        .${propertiesWordWrap3[i]} { 
+            ${valuesWordWrap3[i]}
+        }
         @media screen and (min-width: 600px) and (max-width: 900px){
             .${propertiesWordWrap3[i]} { 
                 ${valuesWordWrap3[i]}
@@ -66,6 +75,9 @@ let valuesWordWrap4 = [
 for (var i = 0; i <= propertiesWordWrap4.length; i++) {
     if (document.querySelector(`.${propertiesWordWrap4[i]}`) && !document.querySelector('style').innerText.includes(propertiesWordWrap4[i])) {
         let styles = ` 
+        .${propertiesWordWrap4[i]} { 
+            ${valuesWordWrap4[i]}
+        }
         @media screen and (min-width: 1920px){
             .${propertiesWordWrap4[i]} { 
                 ${valuesWordWrap4[i]}

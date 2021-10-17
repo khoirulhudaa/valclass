@@ -13,6 +13,9 @@ let valuesTextTransform = [
 for (var i = 0; i <= propertiesTextTransform.length; i++) {
     if (document.querySelector(`.${propertiesTextTransform[i]}`) && !document.querySelector('style').innerText.includes(propertiesTextTransform[i])) {
         let styles = ` 
+        .${propertiesTextTransform[i]} { 
+            ${valuesTextTransform[i]}
+        }
         @media screen and (min-width: 900px) and (max-width: 1920px) {
             .${propertiesTextTransform[i]} { 
                 ${valuesTextTransform[i]}
@@ -36,6 +39,9 @@ let valuesTextTransform2 = [
 for (var i = 0; i <= propertiesTextTransform2.length; i++) {
     if (document.querySelector(`.${propertiesTextTransform2[i]}`) && !document.querySelector('style').innerText.includes(propertiesTextTransform2[i])) {
         let styles = ` 
+        .${propertiesTextTransform2[i]} { 
+            ${valuesTextTransform2[i]}
+        }
         @media screen and (min-width: 320px) and (max-width: 600px){
             .${propertiesTextTransform2[i]} { 
                 ${valuesTextTransform2[i]}
@@ -59,6 +65,9 @@ let valuesTextTransform3 = [
 for (var i = 0; i <= propertiesTextTransform3.length; i++) {
     if (document.querySelector(`.${propertiesTextTransform3[i]}`) && !document.querySelector('style').innerText.includes(propertiesTextTransform3[i])) {
         let styles = ` 
+        .${propertiesTextTransform3[i]} { 
+            ${valuesTextTransform3[i]}
+        }
         @media screen and (min-width: 600px) and (max-width: 900px){
             .${propertiesTextTransform3[i]} { 
                 ${valuesTextTransform3[i]}
@@ -82,6 +91,9 @@ let valuesTextTransform4 = [
 for (var i = 0; i <= propertiesTextTransform4.length; i++) {
     if (document.querySelector(`.${propertiesTextTransform4[i]}`) && !document.querySelector('style').innerText.includes(propertiesTextTransform4[i])) {
         let styles = ` 
+        .${propertiesTextTransform4[i]} { 
+            ${valuesTextTransform4[i]}
+        }
         @media screen and (min-width: 1920px){
             .${propertiesTextTransform4[i]} { 
                 ${valuesTextTransform4[i]}

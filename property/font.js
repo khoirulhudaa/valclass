@@ -102,6 +102,9 @@ let valuesFonts = [
 for (var i = 0; i <= propertiesFonts.length; i++) {
     if (document.querySelector(`.${propertiesFonts[i]}`) && !document.querySelector('style').innerText.includes(propertiesFonts[i])) {
         let styles = ` 
+            .${propertiesFonts[i]} { 
+                ${valuesFonts[i]}
+            }
             @media screen and (min-width: 900px) and (max-width: 1920px) {
                 .${propertiesFonts[i]} { 
                     ${valuesFonts[i]}
@@ -213,6 +216,9 @@ let valuesFonts2 = [
 for (var i = 0; i <= propertiesFonts2.length; i++) {
     if (document.querySelector(`.${propertiesFonts2[i]}`) && !document.querySelector('style').innerText.includes(propertiesFonts2[i])) {
         let styles = ` 
+            .${propertiesFonts2[i]} { 
+                ${valuesFonts2[i]}
+            }
             @media screen and (min-width: 320px) and (max-width: 600px){
                 .${propertiesFonts2[i]} { 
                     ${valuesFonts2[i]}
@@ -324,6 +330,9 @@ let valuesFonts3 = [
 for (var i = 0; i <= propertiesFonts3.length; i++) {
     if (document.querySelector(`.${propertiesFonts3[i]}`) && !document.querySelector('style').innerText.includes(propertiesFonts3[i])) {
         let styles = ` 
+            .${propertiesFonts3[i]} { 
+                ${valuesFonts3[i]}
+            }
             @media screen and (min-width: 600px) and (max-width: 900px){
                 .${propertiesFonts3[i]} { 
                     ${valuesFonts3[i]}
@@ -435,6 +444,9 @@ let valuesFonts4 = [
 for (var i = 0; i <= propertiesFonts4.length; i++) {
     if (document.querySelector(`.${propertiesFonts4[i]}`) && !document.querySelector('style').innerText.includes(propertiesFonts4[i])) {
         let styles = ` 
+            .${propertiesFonts4[i]} { 
+                ${valuesFonts4[i]}
+            }
             @media screen and (min-width: 1920px){
                 .${propertiesFonts4[i]} { 
                     ${valuesFonts4[i]}

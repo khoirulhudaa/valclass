@@ -26,6 +26,9 @@ let valuesLineHeight = [
 for (var i = 0; i <= propertiesLineHeight.length; i++) {
     if (document.querySelector(`.${propertiesLineHeight[i]}`) && !document.querySelector('style').innerText.includes(propertiesLineHeight[i])) {
         let styles = ` 
+        .${propertiesLineHeight[i]} { 
+            ${valuesLineHeight[i]}
+        }
         @media screen and (min-width: 900px) and (max-width: 1920px) {
             .${propertiesLineHeight[i]} { 
                 ${valuesLineHeight[i]}
@@ -61,6 +64,9 @@ let valuesLineHeight2 = [
 for (var i = 0; i <= propertiesLineHeight2.length; i++) {
     if (document.querySelector(`.${propertiesLineHeight2[i]}`) && !document.querySelector('style').innerText.includes(propertiesLineHeight2[i])) {
         let styles = ` 
+        .${propertiesLineHeight2[i]} { 
+            ${valuesLineHeight2[i]}
+        }
         @media screen and (min-width: 320px) and (max-width: 600px){
             .${propertiesLineHeight2[i]} { 
                 ${valuesLineHeight2[i]}
@@ -96,6 +102,9 @@ let valuesLineHeight3 = [
 for (var i = 0; i <= propertiesLineHeight3.length; i++) {
     if (document.querySelector(`.${propertiesLineHeight3[i]}`) && !document.querySelector('style').innerText.includes(propertiesLineHeight3[i])) {
         let styles = ` 
+        .${propertiesLineHeight3[i]} { 
+            ${valuesLineHeight3[i]}
+        }
         @media screen and (min-width: 600px) and (max-width: 900px){
             .${propertiesLineHeight3[i]} { 
                 ${valuesLineHeight3[i]}
@@ -131,6 +140,9 @@ let valuesLineHeight4 = [
 for (var i = 0; i <= propertiesLineHeight4.length; i++) {
     if (document.querySelector(`.${propertiesLineHeight4[i]}`) && !document.querySelector('style').innerText.includes(propertiesLineHeight4[i])) {
         let styles = ` 
+        .${propertiesLineHeight4[i]} { 
+            ${valuesLineHeight4[i]}
+        }
         @media screen and (min-width: 1920px){
             .${propertiesLineHeight4[i]} { 
                 ${valuesLineHeight4[i]}

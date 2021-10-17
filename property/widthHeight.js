@@ -207,6 +207,9 @@ let valuesWidthHeight = [
 for (var i = 0; i <= propertiesWidthHeight.length; i++) {
     if (document.querySelector(`.${propertiesWidthHeight[i]}`) && !document.querySelector('style').innerText.includes(propertiesWidthHeight[i])) {
         let styles = ` 
+        .${propertiesWidthHeight[i]} { 
+            ${valuesWidthHeight[i]}
+        }
         @media screen and (min-width: 900px) and (max-width: 1920px) {
             .${propertiesWidthHeight[i]} { 
                 ${valuesWidthHeight[i]}
@@ -425,6 +428,9 @@ let valuesWidthHeight2 = [
 for (var i = 0; i <= propertiesWidthHeight2.length; i++) {
     if (document.querySelector(`.${propertiesWidthHeight2[i]}`) && !document.querySelector('style').innerText.includes(propertiesWidthHeight2[i])) {
         let styles = ` 
+        .${propertiesWidthHeight2[i]} { 
+            ${valuesWidthHeight2[i]}
+        }
         @media screen and (min-width: 320px) and (max-width: 600px){
             .${propertiesWidthHeight2[i]} { 
                 ${valuesWidthHeight2[i]}
@@ -643,6 +649,9 @@ let valuesWidthHeight3 = [
 for (var i = 0; i <= propertiesWidthHeight3.length; i++) {
     if (document.querySelector(`.${propertiesWidthHeight3[i]}`) && !document.querySelector('style').innerText.includes(propertiesWidthHeight3[i])) {
         let styles = ` 
+        .${propertiesWidthHeight3[i]} { 
+            ${valuesWidthHeight3[i]}
+        }
         @media screen and (min-width: 600px) and (max-width: 900px){
             .${propertiesWidthHeight3[i]} { 
                 ${valuesWidthHeight3[i]}
@@ -861,6 +870,9 @@ let valuesWidthHeight4 = [
 for (var i = 0; i <= propertiesWidthHeight4.length; i++) {
     if (document.querySelector(`.${propertiesWidthHeight4[i]}`) && !document.querySelector('style').innerText.includes(propertiesWidthHeight4[i])) {
         let styles = ` 
+        .${propertiesWidthHeight4[i]} { 
+            ${valuesWidthHeight4[i]}
+        }
         @media screen and (min-width: 1920px){
             .${propertiesWidthHeight4[i]} { 
                 ${valuesWidthHeight4[i]}

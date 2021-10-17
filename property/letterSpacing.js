@@ -15,6 +15,9 @@ let valuesLetterSpacing = [
 for (var i = 0; i <= propertiesLetterSpacing.length; i++) {
     if (document.querySelector(`.${propertiesLetterSpacing[i]}`) && !document.querySelector('style').innerText.includes(propertiesLetterSpacing[i])) {
         let styles = ` 
+        .${propertiesLetterSpacing[i]} { 
+            ${valuesLetterSpacing[i]}
+        }
         @media screen and (min-width: 900px) and (max-width: 1920px) {
             .${propertiesLetterSpacing[i]} { 
                 ${valuesLetterSpacing[i]}
@@ -40,6 +43,9 @@ let valuesLetterSpacing2 = [
 for (var i = 0; i <= propertiesLetterSpacing2.length; i++) {
     if (document.querySelector(`.${propertiesLetterSpacing2[i]}`) && !document.querySelector('style').innerText.includes(propertiesLetterSpacing2[i])) {
         let styles = ` 
+        .${propertiesLetterSpacing2[i]} { 
+            ${valuesLetterSpacing2[i]}
+        }
         @media screen and (min-width: 320px) and (max-width: 600px){
             .${propertiesLetterSpacing2[i]} { 
                 ${valuesLetterSpacing2[i]}
@@ -65,6 +71,9 @@ let valuesLetterSpacing3 = [
 for (var i = 0; i <= propertiesLetterSpacing3.length; i++) {
     if (document.querySelector(`.${propertiesLetterSpacing3[i]}`) && !document.querySelector('style').innerText.includes(propertiesLetterSpacing3[i])) {
         let styles = ` 
+        .${propertiesLetterSpacing3[i]} { 
+            ${valuesLetterSpacing3[i]}
+        }
         @media screen and (min-width: 600px) and (max-width: 900px){
             .${propertiesLetterSpacing3[i]} { 
                 ${valuesLetterSpacing3[i]}
@@ -90,6 +99,9 @@ let valuesLetterSpacing4 = [
 for (var i = 0; i <= propertiesLetterSpacing4.length; i++) {
     if (document.querySelector(`.${propertiesLetterSpacing4[i]}`) && !document.querySelector('style').innerText.includes(propertiesLetterSpacing4[i])) {
         let styles = ` 
+        .${propertiesLetterSpacing4[i]} { 
+            ${valuesLetterSpacing4[i]}
+        }
         @media screen and (min-width: 1920px){
             .${propertiesLetterSpacing4[i]} { 
                 ${valuesLetterSpacing4[i]}

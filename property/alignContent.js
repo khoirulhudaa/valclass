@@ -18,6 +18,9 @@ let valueContent = [
 for (var i = 0; i <= propertiesAlignContent.length; i++) {
     if (document.querySelector(`.${propertiesAlignContent[i]}`) && !document.querySelector('style').innerText.includes(propertiesAlignContent[i])) {
         let styles = ` 
+            .${propertiesAlignContent[i]} { 
+                ${valueContent[i]}
+            }
             @media screen and (min-width: 900px) and (max-width: 1920px) {
                 .${propertiesAlignContent[i]} { 
                     ${valueContent[i]}
@@ -47,6 +50,9 @@ let valueContent2 = [
 for (var i = 0; i <= propertiesAlignContent2.length; i++) {
     if (document.querySelector(`.${propertiesAlignContent2[i]}`) && !document.querySelector('style').innerText.includes(propertiesAlignContent2[i])) {
         let styles = ` 
+            .${propertiesAlignContent2[i]} { 
+                ${valueContent2[i]}
+            }
             @media screen and (min-width: 320px) and (max-width: 600px){
                 .${propertiesAlignContent2[i]} { 
                     ${valueContent2[i]}
@@ -76,6 +82,9 @@ let valueContent3 = [
 for (var i = 0; i <= propertiesAlignContent3.length; i++) {
     if (document.querySelector(`.${propertiesAlignContent3[i]}`) && !document.querySelector('style').innerText.includes(propertiesAlignContent3[i])) {
         let styles = ` 
+            .${propertiesAlignContent3[i]} { 
+                ${valueContent3[i]}
+            }
             @media screen and (min-width: 600px) and (max-width: 900px){
                 .${propertiesAlignContent3[i]} { 
                     ${valueContent3[i]}
@@ -105,6 +114,9 @@ let valueContent4 = [
 for (var i = 0; i <= propertiesAlignContent4.length; i++) {
     if (document.querySelector(`.${propertiesAlignContent4[i]}`) && !document.querySelector('style').innerText.includes(propertiesAlignContent4[i])) {
         let styles = ` 
+            .${propertiesAlignContent4[i]} { 
+                ${valueContent4[i]}
+            }
             @media screen and (min-width: 1920px){
                 .${propertiesAlignContent4[i]} { 
                     ${valueContent4[i]}

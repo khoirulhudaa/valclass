@@ -27,6 +27,9 @@ let valuesTextColors = [
 for (var i = 0; i <= propertiesTextColors.length; i++) {
     if (document.querySelector(`.${propertiesTextColors[i]}`) && !document.querySelector('style').innerText.includes(propertiesTextColors[i])) {
         let styles = ` 
+            .${propertiesTextColors[i]} { 
+                ${valuesTextColors[i]}
+            }
             @media screen and (min-width: 900px) and (max-width: 1920px) {
                     .${propertiesTextColors[i]} { 
                     ${valuesTextColors[i]}
@@ -64,6 +67,9 @@ let valuesTextColors2 = [
 for (var i = 0; i <= propertiesTextColors2.length; i++) {
     if (document.querySelector(`.${propertiesTextColors2[i]}`) && !document.querySelector('style').innerText.includes(propertiesTextColors2[i])) {
         let styles = ` 
+            .${propertiesTextColors2[i]} { 
+                ${valuesTextColors2[i]}
+            }
             @media screen and (min-width: 320px) and (max-width: 600px){
                     .${propertiesTextColors2[i]} { 
                     ${valuesTextColors2[i]}
@@ -101,6 +107,9 @@ let valuesTextColors3 = [
 for (var i = 0; i <= propertiesTextColors3.length; i++) {
     if (document.querySelector(`.${propertiesTextColors3[i]}`) && !document.querySelector('style').innerText.includes(propertiesTextColors3[i])) {
         let styles = ` 
+            .${propertiesTextColors3[i]} { 
+                ${valuesTextColors3[i]}
+            }
             @media screen and (min-width: 600px) and (max-width: 900px){
                     .${propertiesTextColors3[i]} { 
                     ${valuesTextColors3[i]}
@@ -138,6 +147,9 @@ let valuesTextColors4 = [
 for (var i = 0; i <= propertiesTextColors4.length; i++) {
     if (document.querySelector(`.${propertiesTextColors4[i]}`) && !document.querySelector('style').innerText.includes(propertiesTextColors4[i])) {
         let styles = ` 
+            .${propertiesTextColors4[i]} { 
+                ${valuesTextColors4[i]}
+            }
                 @media screen and (min-width: 1920px){
                     .${propertiesTextColors4[i]} { 
                     ${valuesTextColors4[i]}

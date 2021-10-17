@@ -33,6 +33,9 @@ let valuesPerspective = [
 for (var i = 0; i <= propertiesPerspective.length; i++) {
     if (document.querySelector(`.${propertiesPerspective[i]}`) && !document.querySelector('style').innerText.includes(propertiesPerspective[i])) {
         let styles = `  
+        .${propertiesPerspective[i]} { 
+            ${valuesPerspective[i]}
+        }
         @media screen and (min-width: 900px) and (max-width: 1920px) {
             .${propertiesPerspective[i]} { 
                 ${valuesPerspective[i]}
@@ -76,6 +79,9 @@ let valuesPerspective2 = [
 for (var i = 0; i <= propertiesPerspective2.length; i++) {
     if (document.querySelector(`.${propertiesPerspective2[i]}`) && !document.querySelector('style').innerText.includes(propertiesPerspective2[i])) {
         let styles = `  
+        .${propertiesPerspective2[i]} { 
+            ${valuesPerspective2[i]}
+        }
         @media screen and (min-width: 320px) and (max-width: 600px){
             .${propertiesPerspective2[i]} { 
                 ${valuesPerspective2[i]}
@@ -119,6 +125,9 @@ let valuesPerspective3 = [
 for (var i = 0; i <= propertiesPerspective3.length; i++) {
     if (document.querySelector(`.${propertiesPerspective3[i]}`) && !document.querySelector('style').innerText.includes(propertiesPerspective3[i])) {
         let styles = `  
+        .${propertiesPerspective3[i]} { 
+            ${valuesPerspective3[i]}
+        }
         @media screen and (min-width: 600px) and (max-width: 900px){
             .${propertiesPerspective3[i]} { 
                 ${valuesPerspective3[i]}
@@ -162,6 +171,9 @@ let valuesPerspective4 = [
 for (var i = 0; i <= propertiesPerspective4.length; i++) {
     if (document.querySelector(`.${propertiesPerspective4[i]}`) && !document.querySelector('style').innerText.includes(propertiesPerspective4[i])) {
         let styles = `  
+        .${propertiesPerspective4[i]} { 
+            ${valuesPerspective4[i]}
+        }
         @media screen and (min-width: 1920px){
             .${propertiesPerspective4[i]} { 
                 ${valuesPerspective4[i]}

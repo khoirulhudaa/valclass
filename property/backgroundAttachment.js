@@ -11,6 +11,9 @@ let valuesBackgroundAttachment = [
 for (var i = 0; i <= propertiesBackgroundAttachment.length; i++) {
     if (document.querySelector(`.${propertiesBackgroundAttachment[i]}`) && !document.querySelector('style').innerText.includes(propertiesBackgroundAttachment[i])) {
         let styles = ` 
+            .${propertiesBackgroundAttachment[i]} { 
+                ${valuesBackgroundAttachment[i]}
+            }
             @media screen and (min-width: 900px) and (max-width: 1920px) {
                 .${propertiesBackgroundAttachment[i]} { 
                     ${valuesBackgroundAttachment[i]}
@@ -33,6 +36,9 @@ let valuesBackgroundAttachment2 = [
 for (var i = 0; i <= propertiesBackgroundAttachment2.length; i++) {
     if (document.querySelector(`.${propertiesBackgroundAttachment2[i]}`) && !document.querySelector('style').innerText.includes(propertiesBackgroundAttachment2[i])) {
         let styles = ` 
+            .${propertiesBackgroundAttachment2[i]} { 
+                ${valuesBackgroundAttachment2[i]}
+            }
             @media screen and (min-width: 320px) and (max-width: 600px){
                 .${propertiesBackgroundAttachment2[i]} { 
                     ${valuesBackgroundAttachment2[i]}
@@ -55,6 +61,9 @@ let valuesBackgroundAttachment3 = [
 for (var i = 0; i <= propertiesBackgroundAttachment3.length; i++) {
     if (document.querySelector(`.${propertiesBackgroundAttachment3[i]}`) && !document.querySelector('style').innerText.includes(propertiesBackgroundAttachment3[i])) {
         let styles = ` 
+            .${propertiesBackgroundAttachment3[i]} { 
+                ${valuesBackgroundAttachment3[i]}
+            }
             @media screen and (min-width: 600px) and (max-width: 900px){
                 .${propertiesBackgroundAttachment3[i]} { 
                     ${valuesBackgroundAttachment3[i]}
@@ -77,6 +86,9 @@ let valuesBackgroundAttachment4 = [
 for (var i = 0; i <= propertiesBackgroundAttachment4.length; i++) {
     if (document.querySelector(`.${propertiesBackgroundAttachment4[i]}`) && !document.querySelector('style').innerText.includes(propertiesBackgroundAttachment4[i])) {
         let styles = ` 
+            .${propertiesBackgroundAttachment4[i]} { 
+                ${valuesBackgroundAttachment4[i]}
+            }
             @media screen and (min-width: 1920px){
                 .${propertiesBackgroundAttachment4[i]} { 
                     ${valuesBackgroundAttachment4[i]}
