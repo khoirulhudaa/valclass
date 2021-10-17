@@ -23,7 +23,7 @@ if (style_) {
 }
 
 if(document.querySelector("body").classList.contains("active")) {
-    js = "./property/active.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/active.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -32,7 +32,7 @@ if(document.querySelector("body").classList.contains("active")) {
 }
 
 if(document.querySelector("body").classList.contains("align-content")) {
-    js = "./property/alignContent.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/alignContent.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -41,7 +41,7 @@ if(document.querySelector("body").classList.contains("align-content")) {
 }
 
 if(document.querySelector("body").classList.contains("align-items")) {
-    js = "./property/alignItems.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/alignItems.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -50,7 +50,7 @@ if(document.querySelector("body").classList.contains("align-items")) {
 }
 
 if(document.querySelector("body").classList.contains("align-self")) {
-    js = "./property/alignSelf.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/alignSelf.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -59,7 +59,7 @@ if(document.querySelector("body").classList.contains("align-self")) {
 }
 
 if(document.querySelector("body").classList.contains("animation")) {
-    js = "./property/animation.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/animation.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -68,7 +68,7 @@ if(document.querySelector("body").classList.contains("animation")) {
 }
 
 if(document.querySelector("body").classList.contains("background-attachment")) {
-    js = "./property/backgroundAttachment.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/backgroundAttachment.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -77,7 +77,7 @@ if(document.querySelector("body").classList.contains("background-attachment")) {
 }
 
 if(document.querySelector("body").classList.contains("background-blend")) {
-    js = "./property/backgroundBlendMode.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/backgroundBlendMode.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -86,7 +86,7 @@ if(document.querySelector("body").classList.contains("background-blend")) {
 }
 
 if(document.querySelector("body").classList.contains("background-clip")) {
-    js = "./property/backgroundClip.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/backgroundClip.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -95,7 +95,7 @@ if(document.querySelector("body").classList.contains("background-clip")) {
 }
 
 if(document.querySelector("body").classList.contains("background-color")) {
-    js = "./property/backgroundColor.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/backgroundColor.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -104,7 +104,7 @@ if(document.querySelector("body").classList.contains("background-color")) {
 }
 
 if(document.querySelector("body").classList.contains("background-origin")) {
-    js = "./property/backgroundOrigin.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/backgroundOrigin.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -113,7 +113,7 @@ if(document.querySelector("body").classList.contains("background-origin")) {
 }
 
 if(document.querySelector("body").classList.contains("background-position")) {
-    js = "./property/backgroundPosition.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/backgroundPosition.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -122,7 +122,7 @@ if(document.querySelector("body").classList.contains("background-position")) {
 }
 
 if(document.querySelector("body").classList.contains("background-repeat")) {
-    js = "./property/backgroundRepeat.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/backgroundRepeat.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -131,7 +131,7 @@ if(document.querySelector("body").classList.contains("background-repeat")) {
 }
 
 if(document.querySelector("body").classList.contains("background-size")) {
-    js = "./property/backgroundSize.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/backgroundSize.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -140,7 +140,7 @@ if(document.querySelector("body").classList.contains("background-size")) {
 }
 
 if(document.querySelector("body").classList.contains("back-to-top")) {
-    js = "./property/backToTop.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/backToTop.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -149,7 +149,7 @@ if(document.querySelector("body").classList.contains("back-to-top")) {
 }
 
 if(document.querySelector("body").classList.contains("border")) {
-    js = "./property/border.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/border.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -158,7 +158,7 @@ if(document.querySelector("body").classList.contains("border")) {
 }
 
 if(document.querySelector("body").classList.contains("box-shadow")) {
-    js = "./property/boxShadow.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/boxShadow.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -167,7 +167,7 @@ if(document.querySelector("body").classList.contains("box-shadow")) {
 }
 
 if(document.querySelector("body").classList.contains("box-sizing")) {
-    js = "./property/boxSizing.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/boxSizing.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -177,8 +177,8 @@ if(document.querySelector("body").classList.contains("box-sizing")) {
 
 if(document.querySelector("body").classList.contains("grid")) {
     js = [ 
-        "./property/grid.js",
-        "./property/columnCustom.js"
+        "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/grid.js",
+        "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/columnCustom.js"
     ]
     
     for(i = 0; i < js.length; i++) {
@@ -191,8 +191,8 @@ if(document.querySelector("body").classList.contains("grid")) {
 
 if(document.querySelector("body").classList.contains("component")) {
     js = [ 
-        "./property/component.js",
-        "./property/DOMnavbar.js"
+        "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/component.js",
+        "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/DOMnavbar.js"
     ]
     
     for(i = 0; i < js.length; i++) {
@@ -204,7 +204,7 @@ if(document.querySelector("body").classList.contains("component")) {
 }
 
 if(document.querySelector("body").classList.contains("connectivity")) {
-    js = "./property/connectivity.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/connectivity.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -213,7 +213,7 @@ if(document.querySelector("body").classList.contains("connectivity")) {
 }
 
 if(document.querySelector("body").classList.contains("cursor")) {
-    js = "./property/cursor.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/cursor.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -222,7 +222,7 @@ if(document.querySelector("body").classList.contains("cursor")) {
 }
 
 if(document.querySelector("body").classList.contains("mode")) {
-    js = "./property/darkMode.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/darkMode.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -231,7 +231,7 @@ if(document.querySelector("body").classList.contains("mode")) {
 }
 
 if(document.querySelector("body").classList.contains("decoration")) {
-    js = "./property/decoration.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/decoration.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -240,7 +240,7 @@ if(document.querySelector("body").classList.contains("decoration")) {
 }
 
 if(document.querySelector("body").classList.contains("display")) {
-    js = "./property/display.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/display.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -249,7 +249,7 @@ if(document.querySelector("body").classList.contains("display")) {
 }
 
 if(document.querySelector("body").classList.contains("empty-cell")) {
-    js = "./property/emptyCell.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/emptyCell.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -258,7 +258,7 @@ if(document.querySelector("body").classList.contains("empty-cell")) {
 }
 
 if(document.querySelector("body").classList.contains("filter")) {
-    js = "./property/filter.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/filter.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -267,7 +267,7 @@ if(document.querySelector("body").classList.contains("filter")) {
 }
 
 if(document.querySelector("body").classList.contains("flex")) {
-    js = "./property/flex.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/flex.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -276,7 +276,7 @@ if(document.querySelector("body").classList.contains("flex")) {
 }
 
 if(document.querySelector("body").classList.contains("float")) {
-    js = "./property/float.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/float.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -285,7 +285,7 @@ if(document.querySelector("body").classList.contains("float")) {
 }
 
 if(document.querySelector("body").classList.contains("focus")) {
-    js = "./property/focus.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/focus.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -295,8 +295,8 @@ if(document.querySelector("body").classList.contains("focus")) {
 
 if(document.querySelector("body").classList.contains("font")) {
     js = [ 
-        "./property/fontFamily.js",
-        "./property/font.js"
+        "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/fontFamily.js",
+        "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/font.js"
     ]
     
     for(i = 0; i < js.length; i++) {
@@ -308,7 +308,7 @@ if(document.querySelector("body").classList.contains("font")) {
 }
 
 if(document.querySelector("body").classList.contains("hover")) {
-    js = "./property/hover.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/hover.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -317,7 +317,7 @@ if(document.querySelector("body").classList.contains("hover")) {
 }
 
 if(document.querySelector("body").classList.contains("icon")) {
-    js = "./property/icons.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/icons.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -328,13 +328,13 @@ if(document.querySelector("body").classList.contains("icon")) {
     head = document.getElementsByTagName("head")[0]
 
     tmp = link ;
-    tmp.href ='https://cdn.jsdelivr.net/gh/valclassdevelop/valclassDocumentation/icons/css/all.min.css'
+    tmp.href ='https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/icons/css/all.min.css'
     link.rel = "stylesheet"
     head.appendChild(tmp)
 }
 
 if(document.querySelector("body").classList.contains("increment")) {
-    js = "./property/increment.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/increment.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -343,7 +343,7 @@ if(document.querySelector("body").classList.contains("increment")) {
 }
 
 if(document.querySelector("body").classList.contains("justify-content")) {
-    js = "./property/justifyContent.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/justifyContent.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -352,7 +352,7 @@ if(document.querySelector("body").classList.contains("justify-content")) {
 }
 
 if(document.querySelector("body").classList.contains("justify-items")) {
-    js = "./property/justifyItems.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/justifyItems.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -361,7 +361,7 @@ if(document.querySelector("body").classList.contains("justify-items")) {
 }
 
 if(document.querySelector("body").classList.contains("justify-self")) {
-    js = "./property/justifySelf.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/justifySelf.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -370,7 +370,7 @@ if(document.querySelector("body").classList.contains("justify-self")) {
 }
 
 if(document.querySelector("body").classList.contains("letter-spacing")) {
-    js = "./property/letterSpacing.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/letterSpacing.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -379,7 +379,7 @@ if(document.querySelector("body").classList.contains("letter-spacing")) {
 }
 
 if(document.querySelector("body").classList.contains("line-height")) {
-    js = "./property/lineHeight.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/lineHeight.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -388,7 +388,7 @@ if(document.querySelector("body").classList.contains("line-height")) {
 }
 
 if(document.querySelector("body").classList.contains("line-style")) {
-    js = "./property/lineStyle.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/lineStyle.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -397,7 +397,7 @@ if(document.querySelector("body").classList.contains("line-style")) {
 }
 
 if(document.querySelector("body").classList.contains("margin")) {
-    js = "./property/margin.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/margin.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -407,9 +407,9 @@ if(document.querySelector("body").classList.contains("margin")) {
 
 if(document.querySelector("body").classList.contains("office")) {
     js = [ 
-        "./property/officeExcel.js",
-        "./property/officePdf.js",
-        "./property/officeWord.js"
+        "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/officeExcel.js",
+        "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/officePdf.js",
+        "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/officeWord.js"
     ]
     
     for(i = 0; i < js.length; i++) {
@@ -421,7 +421,7 @@ if(document.querySelector("body").classList.contains("office")) {
 }
 
 if(document.querySelector("body").classList.contains("opacity")) {
-    js = "./property/opacity.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/opacity.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -430,7 +430,7 @@ if(document.querySelector("body").classList.contains("opacity")) {
 }
 
 if(document.querySelector("body").classList.contains("outline")) {
-    js = "./property/outline.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/outline.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -439,7 +439,7 @@ if(document.querySelector("body").classList.contains("outline")) {
 }
 
 if(document.querySelector("body").classList.contains("overflow")) {
-    js = "./property/overflow.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/overflow.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -448,7 +448,7 @@ if(document.querySelector("body").classList.contains("overflow")) {
 }
 
 if(document.querySelector("body").classList.contains("padding")) {
-    js = "./property/padding.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/padding.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -457,7 +457,7 @@ if(document.querySelector("body").classList.contains("padding")) {
 }
 
 if(document.querySelector("body").classList.contains("page")) {
-    js = "./property/page.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/page.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -466,7 +466,7 @@ if(document.querySelector("body").classList.contains("page")) {
 }
 
 if(document.querySelector("body").classList.contains("perspective")) {
-    js = "./property/perspective.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/perspective.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -475,7 +475,7 @@ if(document.querySelector("body").classList.contains("perspective")) {
 }
 
 if(document.querySelector("body").classList.contains("position")) {
-    js = "./property/position.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/position.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -484,7 +484,7 @@ if(document.querySelector("body").classList.contains("position")) {
 }
 
 if(document.querySelector("body").classList.contains("reload")) {
-    js = "./property/reload.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/reload.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -493,7 +493,7 @@ if(document.querySelector("body").classList.contains("reload")) {
 }
 
 if(document.querySelector("body").classList.contains("result")) {
-    js = "./property/result.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/result.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -502,7 +502,7 @@ if(document.querySelector("body").classList.contains("result")) {
 }
 
 if(document.querySelector("body").classList.contains("sosmed")) {
-    js = "./property/sosmed.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/sosmed.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -511,7 +511,7 @@ if(document.querySelector("body").classList.contains("sosmed")) {
 }
 
 if(document.querySelector("body").classList.contains("text-align")) {
-    js = "./property/textAlign.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/textAlign.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -520,7 +520,7 @@ if(document.querySelector("body").classList.contains("text-align")) {
 }
 
 if(document.querySelector("body").classList.contains("text-color")) {
-    js = "./property/textColor.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/textColor.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -529,7 +529,7 @@ if(document.querySelector("body").classList.contains("text-color")) {
 }
 
 if(document.querySelector("body").classList.contains("text-shadow")) {
-    js = "./property/textShadow.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/textShadow.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -538,7 +538,7 @@ if(document.querySelector("body").classList.contains("text-shadow")) {
 }
 
 if(document.querySelector("body").classList.contains("text-transform")) {
-    js = "./property/textTransform.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/textTransform.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -547,7 +547,7 @@ if(document.querySelector("body").classList.contains("text-transform")) {
 }
 
 if(document.querySelector("body").classList.contains("time")) {
-    js = "./property/time.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/time.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -556,7 +556,7 @@ if(document.querySelector("body").classList.contains("time")) {
 }
 
 if(document.querySelector("body").classList.contains("tlrb")) {
-    js = "./property/tlrb.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/tlrb.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -565,7 +565,7 @@ if(document.querySelector("body").classList.contains("tlrb")) {
 }
 
 if(document.querySelector("body").classList.contains("transform")) {
-    js = "./property/transform.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/transform.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -574,7 +574,7 @@ if(document.querySelector("body").classList.contains("transform")) {
 }
 
 if(document.querySelector("body").classList.contains("transition")) {
-    js = "./property/transition.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/transition.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -583,7 +583,7 @@ if(document.querySelector("body").classList.contains("transition")) {
 }
 
 if(document.querySelector("body").classList.contains("vertical")) {
-    js = "./property/vertical.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/vertical.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -592,7 +592,7 @@ if(document.querySelector("body").classList.contains("vertical")) {
 }
 
 if(document.querySelector("body").classList.contains("visibility")) {
-    js = "./property/visibility.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/visibility.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -601,7 +601,7 @@ if(document.querySelector("body").classList.contains("visibility")) {
 }
 
 if(document.querySelector("body").classList.contains("white-space")) {
-    js = "./property/whiteSpace.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/whiteSpace.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -610,7 +610,7 @@ if(document.querySelector("body").classList.contains("white-space")) {
 }
 
 if(document.querySelector("body").classList.contains("width-height")) {
-    js = "./property/widthHeight.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/widthHeight.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -619,7 +619,7 @@ if(document.querySelector("body").classList.contains("width-height")) {
 }
 
 if(document.querySelector("body").classList.contains("word-break")) {
-    js = "./property/wordBreak.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/wordBreak.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -628,7 +628,7 @@ if(document.querySelector("body").classList.contains("word-break")) {
 }
 
 if(document.querySelector("body").classList.contains("word-spacing")) {
-    js = "./property/wordSpacing.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/wordSpacing.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -637,7 +637,7 @@ if(document.querySelector("body").classList.contains("word-spacing")) {
 }
 
 if(document.querySelector("body").classList.contains("word-wrap")) {
-    js = "./property/wordWrap.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/wordWrap.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -646,7 +646,7 @@ if(document.querySelector("body").classList.contains("word-wrap")) {
 }
 
 if(document.querySelector("body").classList.contains("z-index")) {
-    js = "./property/zIndex.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/zIndex.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -655,7 +655,7 @@ if(document.querySelector("body").classList.contains("z-index")) {
 }
 
 if(document.querySelector("body").classList.contains("zoom")) {
-    js = "./property/zoom.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/zoom.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -664,7 +664,7 @@ if(document.querySelector("body").classList.contains("zoom")) {
 }
 
 if(document.querySelector("body").classList.contains("media")) {
-    js = "./property/media.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/media.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -673,7 +673,7 @@ if(document.querySelector("body").classList.contains("media")) {
 }
 
 if(document.querySelector("body").classList.contains("load")) {
-    js = "./property/load.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/load.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -682,7 +682,7 @@ if(document.querySelector("body").classList.contains("load")) {
 }
 
 if(document.querySelector("body").classList.contains("image")) {
-    js = "./property/image.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/image.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -692,8 +692,8 @@ if(document.querySelector("body").classList.contains("image")) {
 
 if(document.querySelector("body").classList.contains("3d")) {
      js = [ 
-        "./property/vanilla-tilt.js",
-        "./property/tilt.js"
+        "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/vanilla-tilt.js",
+        "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/tilt.js"
     ]
     
     for(i = 0; i < js.length; i++) {
@@ -710,7 +710,7 @@ if(document.querySelector("body").classList.contains("3d")) {
 }
 
 if(document.querySelector("body").classList.contains("currency")) {
-    js = "./property/currency.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/currency.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
@@ -719,7 +719,7 @@ if(document.querySelector("body").classList.contains("currency")) {
 }
 
 if(document.querySelector("body").classList.contains("scroll")) {
-    js = "./property/scroll.js";
+    js = "https://cdn.jsdelivr.net/gh/valclassdevelop/valclass/property/scroll.js";
 
     script = document.createElement("script")
     body = document.getElementsByTagName("body")[0]
