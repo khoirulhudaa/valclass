@@ -1,5 +1,1 @@
-let styles = ` 
-::-webkit-scrollbar { 
-    display: none;
-}`;
-document.getElementsByTagName('style')[0].appendChild(document.createTextNode(styles));
+let styles=" \n::-webkit-scrollbar { \n    display: none;\n}";document.getElementsByTagName("style")[0].appendChild(document.createTextNode(styles));
