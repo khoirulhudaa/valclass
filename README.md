@@ -14,9 +14,6 @@
 ## Instalation with CDN
 #### `https://cdn.jsdelivr.net/gh/valclassdevelop/valclassDocumentation/valclass.js`
 
-## Installation with NPM
-#### `$ npm install valclass`
-
 ## Visit the valclass documentation website
 #### :rocket: [CLICK HERE TO VISIT](https://cdn.jsdelivr.net/gh/valclassdevelop/valclassDocumentation/valclass.js)
 
