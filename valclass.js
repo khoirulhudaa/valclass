@@ -873,7 +873,7 @@ function valclass_initalization(){
         for(let _class of vallclass[className]){
             if(className === "display" && !document.querySelector('style').innerText.includes(`vc-d-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-d-${_class}{
                         display: ${_class};
                     }
@@ -883,7 +883,7 @@ function valclass_initalization(){
             }
             if(className === "alignItems" && !document.querySelector('style').innerText.includes(`vc-items-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-items-${_class}{
                         align-items: ${_class};
                     }
@@ -893,7 +893,7 @@ function valclass_initalization(){
             }
             if(className === "boxSizing" && !document.querySelector('style').innerText.includes(`vc-box-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-box-${_class}{
                         box-sizing: ${_class};
                     }
@@ -903,7 +903,7 @@ function valclass_initalization(){
             }
             if(className === "floats" && !document.querySelector('style').innerText.includes(`vc-float-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-float-${_class}{
                     }
                     float: ${_class};
@@ -913,7 +913,7 @@ function valclass_initalization(){
             }
             if(className === "overflow" && !document.querySelector('style').innerText.includes(`vc-overflow-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-overflow-${_class}{
                         overflow: ${_class};
                     }
@@ -923,7 +923,7 @@ function valclass_initalization(){
             }
             if(className === "overflowX" && !document.querySelector('style').innerText.includes(`vc-overflowX-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-overflowX-${_class}{
                         overflow-x: ${_class};
                     }
@@ -933,7 +933,7 @@ function valclass_initalization(){
             }
             if(className === "overflowY" && !document.querySelector('style').innerText.includes(`vc-overflowY-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-overflowY-${_class}{
                         overflow-y: ${_class};
                     }
@@ -943,7 +943,7 @@ function valclass_initalization(){
             }
             if(className === "position" && !document.querySelector('style').innerText.includes(`vc-pst-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-pst-${_class}{
                         position: ${_class};
                     }
@@ -953,7 +953,7 @@ function valclass_initalization(){
             }
             if(className === "top" && !document.querySelector('style').innerText.includes(`vc-t-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-t-${_class}{
                         top: ${_class};
                     }
@@ -963,7 +963,7 @@ function valclass_initalization(){
             }
             if(className === "left" && !document.querySelector('style').innerText.includes(`vc-l-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-l-${_class}{
                         left: ${_class};
                     }
@@ -973,7 +973,7 @@ function valclass_initalization(){
             }
             if(className === "right" && !document.querySelector('style').innerText.includes(`vc-r-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-r-${_class}{
                         right: ${_class};
                     }
@@ -983,7 +983,7 @@ function valclass_initalization(){
             }
             if(className === "bottom" && !document.querySelector('style').innerText.includes(`vc-b-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-b-${_class}{
                         bottom: ${_class};
                     }
@@ -993,7 +993,7 @@ function valclass_initalization(){
             }
             if(className === "index" && !document.querySelector('style').innerText.includes(`vc-index-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-index-${_class}{
                         z-index: ${_class};
                     }
@@ -1003,7 +1003,7 @@ function valclass_initalization(){
             }
             if(className === "visibility" && !document.querySelector('style').innerText.includes(`vc-visibility-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-visibility-${_class}{
                         visibility: ${_class};
                     }
@@ -1013,7 +1013,7 @@ function valclass_initalization(){
             }
             if(className === "flex" && !document.querySelector('style').innerText.includes(`vc-flex-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-flex-${_class}{
                         flex: ${_class};
                     }
@@ -1023,7 +1023,7 @@ function valclass_initalization(){
             }
             if(className === "direction" && !document.querySelector('style').innerText.includes(`vc-direction-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-direction-${_class}{
                         flex-direction: ${_class};
                     }
@@ -1033,7 +1033,7 @@ function valclass_initalization(){
             }
             if(className === "wrap" && !document.querySelector('style').innerText.includes(`vc-wrap-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-wrap-${_class}{
                         flex-wrap: ${_class};
                     }
@@ -1043,7 +1043,7 @@ function valclass_initalization(){
             }
             if(className === "shrink" && !document.querySelector('style').innerText.includes(`vc-shrink-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-shrink-${_class}{
                         flex-shrink: ${_class};
                     }
@@ -1053,7 +1053,7 @@ function valclass_initalization(){
             }
             if(className === "basis" && !document.querySelector('style').innerText.includes(`vc-basis-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-basis-${_class}{
                         flex-basis: ${_class};
                     }
@@ -1063,7 +1063,7 @@ function valclass_initalization(){
             }
             if(className === "justify" && !document.querySelector('style').innerText.includes(`vc-justify-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-justify-${_class}{
                         justify-content: ${_class};
                     }
@@ -1073,7 +1073,7 @@ function valclass_initalization(){
             }
             if(className === "justItems" && !document.querySelector('style').innerText.includes(`vc-just-items-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-just-items-${_class}{
                         justify-items: ${_class};
                     }
@@ -1083,7 +1083,7 @@ function valclass_initalization(){
             }
             if(className === "justSelf" && !document.querySelector('style').innerText.includes(`vc-just-self-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-just-self-${_class}{
                         justify-self: ${_class};
                     }
@@ -1093,7 +1093,7 @@ function valclass_initalization(){
             }
             if(className === "alignContent" && !document.querySelector('style').innerText.includes(`vc-content-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-content-${_class}{
                         align-content: ${_class};
                     }
@@ -1103,7 +1103,7 @@ function valclass_initalization(){
             }
             if(className === "alignItems" && !document.querySelector('style').innerText.includes(`vc-items-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-items-${_class}{
                         align-items: ${_class};
                     }
@@ -1113,7 +1113,7 @@ function valclass_initalization(){
             }
             if(className === "alignSelf" && !document.querySelector('style').innerText.includes(`vc-self-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-self-${_class}{
                         align-self: ${_class};
                     }
@@ -1123,7 +1123,7 @@ function valclass_initalization(){
             }
             if(className === "padding" && !document.querySelector('style').innerText.includes(`vc-p-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-p-${_class}{
                         padding: ${_class};
                     }
@@ -1133,7 +1133,7 @@ function valclass_initalization(){
             }
             if(className === "paddingTop" && !document.querySelector('style').innerText.includes(`vc-pt-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-pt-${_class}{
                         padding-top: ${_class};
                     }
@@ -1143,7 +1143,7 @@ function valclass_initalization(){
             }
             if(className === "paddingLeft" && !document.querySelector('style').innerText.includes(`vc-pl-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-pl-${_class}{
                         padding-left: ${_class};
                     }
@@ -1153,7 +1153,7 @@ function valclass_initalization(){
             }
             if(className === "paddingRight" && !document.querySelector('style').innerText.includes(`vc-pr-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-pr-${_class}{
                         padding-right: ${_class};
                     }
@@ -1163,7 +1163,7 @@ function valclass_initalization(){
             }
             if(className === "paddingBottom" && !document.querySelector('style').innerText.includes(`vc-pb-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-pb-${_class}{
                         padding-bottom: ${_class};
                     }
@@ -1173,7 +1173,7 @@ function valclass_initalization(){
             }
             if(className === "margin" && !document.querySelector('style').innerText.includes(`vc-m-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-m-${_class}{
                         margin: ${_class};
                     }
@@ -1183,7 +1183,7 @@ function valclass_initalization(){
             }
             if(className === "marginTop" && !document.querySelector('style').innerText.includes(`vc-mt-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-mt-${_class}{
                         margin-top: ${_class};
                     }
@@ -1193,7 +1193,7 @@ function valclass_initalization(){
             }
             if(className === "marginLeft" && !document.querySelector('style').innerText.includes(`vc-ml-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-ml-${_class}{
                         margin-left: ${_class};
                     }
@@ -1203,7 +1203,7 @@ function valclass_initalization(){
             }
             if(className === "marginRight" && !document.querySelector('style').innerText.includes(`vc-mr-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-mr-${_class}{
                         margin-right: ${_class};
                     }
@@ -1213,7 +1213,7 @@ function valclass_initalization(){
             }
             if(className === "marginBottom" && !document.querySelector('style').innerText.includes(`vc-mb-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-mb-${_class}{
                         margin-bottom: ${_class};
                     }
@@ -1223,7 +1223,7 @@ function valclass_initalization(){
             }
             if(className === "width" && !document.querySelector('style').innerText.includes(`vc-w-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-w-${_class}{
                         width: ${_class};
                     }
@@ -1233,7 +1233,7 @@ function valclass_initalization(){
             }
             if(className === "height" && !document.querySelector('style').innerText.includes(`vc-h-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-h-${_class}{
                         height: ${_class};
                     }
@@ -1243,7 +1243,7 @@ function valclass_initalization(){
             }
             if(className === "fontSize" && !document.querySelector('style').innerText.includes(`vc-font-sz-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-font-sz-${_class}{
                         font-size: ${_class};
                     }
@@ -1253,7 +1253,7 @@ function valclass_initalization(){
             }
             if(className === "fontStyle" && !document.querySelector('style').innerText.includes(`vc-font-style-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-font-style-${_class}{
                         font-style: ${_class};
                     }
@@ -1263,7 +1263,7 @@ function valclass_initalization(){
             }
             if(className === "fontWeight" && !document.querySelector('style').innerText.includes(`vc-weight-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-weight-${_class}{
                         font-weight: ${_class};
                     }
@@ -1273,7 +1273,7 @@ function valclass_initalization(){
             }
             if(className === "letterSpacing" && !document.querySelector('style').innerText.includes(`vc-let-spacing-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-let-spacing-${_class}{
                         letter-spacing: ${_class};
                     }
@@ -1283,7 +1283,7 @@ function valclass_initalization(){
             }
             if(className === "lineHeight" && !document.querySelector('style').innerText.includes(`vc-leading-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-leading-${_class}{
                         line-height: ${_class};
                     }
@@ -1293,7 +1293,7 @@ function valclass_initalization(){
             }
             if(className === "textAlign" && !document.querySelector('style').innerText.includes(`vc-text-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-text-${_class}{
                         text-align: ${_class};
                     }
@@ -1306,7 +1306,7 @@ function valclass_initalization(){
                 .vc-color-${_class}{
                     color: ${_class};
                 }
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-color-${_class}{
                         color: ${_class};
                     }
@@ -1316,7 +1316,7 @@ function valclass_initalization(){
             }
             if(className === "decoration" && !document.querySelector('style').innerText.includes(`vc-decoration-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-decoration-${_class}{
                         text-decoration: ${_class};
                     }
@@ -1326,7 +1326,7 @@ function valclass_initalization(){
             }
             if(className === "textTransform" && !document.querySelector('style').innerText.includes(`vc-text-transform-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-text-transform-${_class}{
                         text-transform: ${_class};
                     }
@@ -1336,7 +1336,7 @@ function valclass_initalization(){
             }
             if(className === "wordBreak" && !document.querySelector('style').innerText.includes(`vc-break-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-break-${_class}{
                         word-break: ${_class};
                         overflow-wrap: break-word;
@@ -1347,7 +1347,7 @@ function valclass_initalization(){
             }
             if(className === "bgAttachment" && !document.querySelector('style').innerText.includes(`vc-attachment-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-attachment-${_class}{
                         background-attachment: ${_class};
                     }
@@ -1357,7 +1357,7 @@ function valclass_initalization(){
             }
             if(className === "bgClip" && !document.querySelector('style').innerText.includes(`vc-bg-clip-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-bg-clip-${_class}{
                         background-clip: ${_class};
                     }
@@ -1367,7 +1367,7 @@ function valclass_initalization(){
             }
             if(className === "bgColor" && !document.querySelector('style').innerText.includes(`.vc-bg-${_class}`)){
                let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-bg-${_class}{
                         background-color: ${_class};
                     }
@@ -1377,7 +1377,7 @@ function valclass_initalization(){
             }
             if(className === "bgPosition" && !document.querySelector('style').innerText.includes(`vc-bg-post-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-bg-post-${_class}{
                         background-position: ${_class};
                     }
@@ -1387,7 +1387,7 @@ function valclass_initalization(){
             }
             if(className === "bgRepeat" && !document.querySelector('style').innerText.includes(`vc-bg-rpt-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-bg-rpt-${_class}{
                         background-repeat: ${_class};
                     }
@@ -1397,7 +1397,7 @@ function valclass_initalization(){
             }
             if(className === "bgSize" && !document.querySelector('style').innerText.includes(`vc-bg-sz-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-bg-sz-${_class}{
                         background-size: ${_class};
                     }
@@ -1407,7 +1407,7 @@ function valclass_initalization(){
             }
             if(className === "border" && !document.querySelector('style').innerText.includes(`vc-border-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-border-${_class}{
                         border: ${_class};
                     }
@@ -1417,7 +1417,7 @@ function valclass_initalization(){
             }
             if(className === "borderTop" && !document.querySelector('style').innerText.includes(`vc-border-top-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-border-top-${_class}{
                         border-top: ${_class};
                     }
@@ -1427,7 +1427,7 @@ function valclass_initalization(){
             }
             if(className === "borderLeft" && !document.querySelector('style').innerText.includes(`vc-border-l-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-border-l-${_class}{
                         border-left: ${_class};
                     }
@@ -1437,7 +1437,7 @@ function valclass_initalization(){
             }
             if(className === "borderRight" && !document.querySelector('style').innerText.includes(`vc-border-r-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-border-r-${_class}{
                         border-right: ${_class};
                     }
@@ -1447,7 +1447,7 @@ function valclass_initalization(){
             }
             if(className === "borderBottom" && !document.querySelector('style').innerText.includes(`vc-border-b-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-border-b-${_class}{
                         border-bottom: ${_class};
                     }
@@ -1457,7 +1457,7 @@ function valclass_initalization(){
             }
             if(className === "borderRadius" && !document.querySelector('style').innerText.includes(`vc-radius-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-radius-${_class}{
                         border-radius: ${_class};
                     }
@@ -1467,7 +1467,7 @@ function valclass_initalization(){
             }
             if(className === "borderStyle" && !document.querySelector('style').innerText.includes(`vc-style-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-style-${_class}{
                         border-style: ${_class};
                     }
@@ -1477,7 +1477,7 @@ function valclass_initalization(){
             }
             if(className === "borderColor" && !document.querySelector('style').innerText.includes(`vc-border-clr-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-border-clr-${_class}{
                         border-color: ${_class};
                     }
@@ -1487,7 +1487,7 @@ function valclass_initalization(){
             }
             if(className === "borderType" && !document.querySelector('style').innerText.includes(`vc-border-type-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-border-type-${_class}{
                         border-collapse: ${_class};
                     }
@@ -1497,7 +1497,7 @@ function valclass_initalization(){
             }
             if(className === "rotate" && !document.querySelector('style').innerText.includes(`vc-rotate-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-rotate-${_class}{
                         transform: rotate(${_class});
                     }
@@ -1507,7 +1507,7 @@ function valclass_initalization(){
             }
             if(className === "skew" && !document.querySelector('style').innerText.includes(`vc-skew-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-skew-${_class}{
                         transform: skew(${_class});
                     }
@@ -1517,7 +1517,7 @@ function valclass_initalization(){
             }
             if(className === "scale" && !document.querySelector('style').innerText.includes(`vc-scale-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-scale-${_class}{
                         transform: scale(${_class});
                     }
@@ -1527,7 +1527,7 @@ function valclass_initalization(){
             }
             if(className === "translate" && !document.querySelector('style').innerText.includes(`vc-translate-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-translate-${_class}{
                         transform: translate(${_class});
                     }
@@ -1537,7 +1537,7 @@ function valclass_initalization(){
             }
             if(className === "translateX" && !document.querySelector('style').innerText.includes(`vc-translateX-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-translateX-${_class}{
                         transform: translateX(${_class});
                     }
@@ -1547,7 +1547,7 @@ function valclass_initalization(){
             }
             if(className === "translateY" && !document.querySelector('style').innerText.includes(`vc-translateY-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-translateY-${_class}{
                         transform: translateY(${_class});
                     }
@@ -1557,7 +1557,7 @@ function valclass_initalization(){
             }
             if(className === "translateZ" && !document.querySelector('style').innerText.includes(`vc-translateZ-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-translateZ-${_class}{
                         transform: translateZ(${_class});
                     }
@@ -1567,7 +1567,7 @@ function valclass_initalization(){
             }
             if(className === "cursor" && !document.querySelector('style').innerText.includes(`vc-cursor-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-cursor-${_class}{
                         cursor: ${_class};
                     }
@@ -1577,7 +1577,7 @@ function valclass_initalization(){
             }
             if(className === "transition" && !document.querySelector('style').innerText.includes(`vc-transition-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-transition-${_class}{
                         transition: ${_class};
                     }
@@ -1587,7 +1587,7 @@ function valclass_initalization(){
             }
             if(className === "outline" && !document.querySelector('style').innerText.includes(`vc-o-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-o-${_class}{
                         outline: ${_class};
                     }
@@ -1597,7 +1597,7 @@ function valclass_initalization(){
             }
             if(className === "oTop" && !document.querySelector('style').innerText.includes(`vc-o-top-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-o-top-${_class}{
                         outline-top: ${_class};
                     }
@@ -1607,7 +1607,7 @@ function valclass_initalization(){
             }
             if(className === "oLeft" && !document.querySelector('style').innerText.includes(`vc-o-left-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-o-left-${_class}{
                         outline-left: ${_class};
                     }
@@ -1617,7 +1617,7 @@ function valclass_initalization(){
             }
             if(className === "oRight" && !document.querySelector('style').innerText.includes(`vc-o-right-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-o-right-${_class}{
                         outline-right: ${_class};
                     }
@@ -1627,7 +1627,7 @@ function valclass_initalization(){
             }
             if(className === "oBottom" && !document.querySelector('style').innerText.includes(`vc-o-bottom-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-o-bottom-${_class}{
                         outline-bottom: ${_class};
                     }
@@ -1637,7 +1637,7 @@ function valclass_initalization(){
             }
             if(className === "oColor" && !document.querySelector('style').innerText.includes(`vc-o-color-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-o-color-${_class}{
                         outline-color: ${_class};
                     }
@@ -1647,7 +1647,7 @@ function valclass_initalization(){
             }
             if(className === "oStyle" && !document.querySelector('style').innerText.includes(`vc-o-style-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-o-style-${_class}{
                         outline-style: ${_class};
                     }
@@ -1657,7 +1657,7 @@ function valclass_initalization(){
             }
             if(className === "opacity" && !document.querySelector('style').innerText.includes(`vc-opacity-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-opacity-${_class}{
                         opacity: ${_class};
                     }
@@ -1667,7 +1667,7 @@ function valclass_initalization(){
             }
             if(className === "blur" && !document.querySelector('style').innerText.includes(`vc-blur-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-blur-${_class}{
                         filter: blur(${_class});
                     }
@@ -1677,7 +1677,7 @@ function valclass_initalization(){
             }
             if(className === "grayscale" && !document.querySelector('style').innerText.includes(`vc-grayscale-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-grayscale-${_class}{
                         filter: grayscale(${_class});
                     }
@@ -1687,7 +1687,7 @@ function valclass_initalization(){
             }
             if(className === "saturate" && !document.querySelector('style').innerText.includes(`vc-saturate-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-saturate-${_class}{
                         filter: saturate(${_class});
                     }
@@ -1697,7 +1697,7 @@ function valclass_initalization(){
             }
             if(className === "brightness" && !document.querySelector('style').innerText.includes(`vc-brightness-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-brightness-${_class}{
                         filter: brightness(${_class});
                     }
@@ -1707,7 +1707,7 @@ function valclass_initalization(){
             }
             if(className === "contrast" && !document.querySelector('style').innerText.includes(`vc-contrast-${_class}`)){
                 let style_sheet =`
-                @media screen and (min-width: 900px) and (max-width: 1920px) {
+                @media screen and (min-width: 900px) and (max-width: 2400px) {
                     .vc-contrast-${_class}{
                         filter: contrast(${_class});
                     }
@@ -4314,7 +4314,7 @@ function createMakerUtilitiesName(card){
             }else if(makerUtilitiesName.createBreakPointsUtilities[i] === 'tb') {
                 breakpoints = '@media screen and (min-width: 601px) and (max-width: 900px) {'
             }else if(makerUtilitiesName.createBreakPointsUtilities[i] === 'df') {
-                breakpoints = '@media screen and (min-width: 901px) and (max-width: 1920px) {'
+                breakpoints = '@media screen and (min-width: 901px) and (max-width: 2400px) {'
             }else if(makerUtilitiesName.createBreakPointsUtilities[i] === 'pc') {
                 breakpoints = '@media screen and (min-width: 1921px) {'
             }
@@ -6357,7 +6357,7 @@ let valuesDisplay = [
     'height: 90%;',
     'height: 95%;',
     'height: 100%;',
-    'height: 100vw;',
+    'height: 100vh;',
     'height: min-content;',
     'height: max-content;',
     'height: 50%;',
@@ -6426,7 +6426,7 @@ for (var i = 0; i <= propertiesDisplay.length; i++) {
             .${propertiesDisplay[i]} { 
                 ${valuesDisplay[i]}
             }
-            @media screen and (min-width: 901px) and (max-width: 1920px) {
+            @media screen and (min-width: 901px) and (max-width: 2400px) {
                 .${propertiesDisplay[i]} { 
                     ${valuesDisplay[i]}
                 }
@@ -8456,7 +8456,7 @@ let valuesDisplay2 = [
     'height: 90%;',
     'height: 95%;',
     'height: 100%;',
-    'height: 100vw;',
+    'height: 100vh;',
     'height: min-content;',
     'height: max-content;',
     'height: 50%;',
@@ -10552,7 +10552,7 @@ let valuesDisplay3 = [
     'height: 90%;',
     'height: 95%;',
     'height: 100%;',
-    'height: 100vw;',
+    'height: 100vh;',
     'height: min-content;',
     'height: max-content;',
     'height: 50%;',
@@ -12648,7 +12648,7 @@ let valuesDisplay4 = [
     'height: 90%;',
     'height: 95%;',
     'height: 100%;',
-    'height: 100vw;',
+    'height: 100vh;',
     'height: min-content;',
     'height: max-content;',
     'height: 50%;',
