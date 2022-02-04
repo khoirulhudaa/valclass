@@ -18,19 +18,5 @@
 #### :rocket: [CLICK HERE TO VISIT](https://cdn.jsdelivr.net/gh/valclassdevelop/valclassDocumentation/valclass.js)
 
 ## how to use valclass in .html file:grey_question:
-#### `<body class="font text-color display justify-content align-items">`
-#### :round_pushpin: Include the class in the body tag according to the css property name required
 
 #### `<h1 class="v-font-poppins v-font-xl v-weight-bold v-text-warning v-d-flex v-justify-center v-items-center"></h1>` 
-
-:point_down:
-
--------------------------
-
-#### :electric_plug: v-font-poppins : `from the font class in the body tag`
-#### :electric_plug: v-font-xl : `from the font class in the body tag`
-#### :electric_plug: v-weight-bold : `of the font class in the body tag`
-#### :electric_plug: v-text-warning : `from the text-color class in the body tag`
-#### :electric_plug: v-d-flex : `from the display class in the body tag`
-#### :electric_plug: v-justify-center : `from the justify-content class in the body tag`
-#### :electric_plug: v-items-center : `from the align-items class in the body tag`
