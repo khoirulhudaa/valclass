@@ -19,4 +19,4 @@
 
 ## how to use valclass in .html file:grey_question:
 
-#### `<h1 class="v-font-poppins v-font-xl v-weight-bold v-text-warning v-d-flex v-justify-center v-items-center"></h1>` 
+#### `<h1 class="v-font-poppins v-font-xl v-weight-bold v-text-warning v-d-flex"></h1>` 
