@@ -13506,6 +13506,34 @@ for (var i = 0; i <= propertiesAnimations.length; i++) {
     }
 }
 
+if(document.querySelector('.v-email')) {
+    let to = document.querySelector('.v-email').attributes.toEmail.value;
+    let subject= document.querySelector('.v-email').attributes.subject.value;
+    let cc= document.querySelector('.v-email').attributes.cc.value;
+    document.querySelector('.v-btn-email').addEventListener('click', () => {
+        let link = `mailto:${to}`
+                + `?cc=${cc}`
+                + "&subject=" + encodeURIComponent(`${subject}`)
+                + "&body=" + encodeURIComponent(document.querySelector('.v-email').value)
+        window.open(link)
+    })
+}
+
+if(document.querySelectorAll('.v-email')) {
+    for(let a=0;a<=document.querySelectorAll('.v-email').length;a++) {
+        let to = document.querySelectorAll('.v-email')[a].attributes.toEmail.value;
+        let subject= document.querySelectorAll('.v-email')[a].attributes.subject.value;
+        let cc= document.querySelectorAll('.v-email')[a].attributes.cc.value;
+        document.querySelectorAll('.v-btn-email')[a].addEventListener('click', () => {
+            let link = `mailto:${to}`
+            + `?cc=${cc}`
+            + "&subject=" + encodeURIComponent(`${subject}`)
+            + "&body=" + encodeURIComponent(document.querySelectorAll('.v-email')[a].value)
+            window.open(link)
+        })
+    }
+}
+
 //============================//==============================//
 
 // end of the conditions for calling the file property
